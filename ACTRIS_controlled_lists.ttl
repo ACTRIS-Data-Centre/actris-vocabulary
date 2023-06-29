@@ -1,0 +1,514 @@
+@prefix schema: <http://schema.org/> .
+@prefix pav: <http://purl.org/pav/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix iop: <https://w3id.org/iadopt/ont/> .
+@prefix ACTRIS_ctrl_lists: <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+
+<https://vocabulary.actris.nilu.no/actris_controlled_lists/> a skos:ConceptScheme;
+  skos:prefLabel "ACTRIS Controlled Lists"@en;
+  dct:title "ACTRIS Controlled Lists"@en;
+  dct:description "Lists of controlled terms used in ACTRIS"@en;
+  dct:creator <https://orcid.org/0000-0002-3380-3470/>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813/>;
+  dc:license <https://creativecommons.org/publicdomain/zero/1.0/>;
+  pav:createdOn "2022-12-16T16:40:00+01:00"@en;
+  pav:lastUpdatedOn "2023-06-29T11:24:00+02:00"@en;
+  pav:version "1.0.0"@en;
+  skos:hasTopConcept ACTRIS_ctrl_lists:level, ACTRIS_ctrl_lists:userroles, ACTRIS_ctrl_lists:identifiertype,
+    ACTRIS_ctrl_lists:framework .
+
+ACTRIS_ctrl_lists:level a skos:Concept;
+  skos:prefLabel "level"@en;
+  skos:altLabel "hierarchyLevel"@en;
+  skos:definition "Taken from ISO19115, and used to conform with WIS metadata standard and profile. ISO 19115 defines a det of hierarchy levels of metadata, where most metadata are defined on higher levels, and only modifications are done at lower levels. Definitions for individual level concepts can’t be given since the definitions in ISO 19115 don’t give useful additional information."@en;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:narrower ACTRIS_ctrl_lists:aggregate, ACTRIS_ctrl_lists:application, ACTRIS_ctrl_lists:attribute,
+    ACTRIS_ctrl_lists:attributeType, ACTRIS_ctrl_lists:collection, ACTRIS_ctrl_lists:collectionHardware,
+    ACTRIS_ctrl_lists:collectionSession, ACTRIS_ctrl_lists:coverage, ACTRIS_ctrl_lists:dataset,
+    ACTRIS_ctrl_lists:dimensionGroup, ACTRIS_ctrl_lists:document, ACTRIS_ctrl_lists:feature,
+    ACTRIS_ctrl_lists:featureType, ACTRIS_ctrl_lists:fieldSession, ACTRIS_ctrl_lists:initiative,
+    ACTRIS_ctrl_lists:metadata, ACTRIS_ctrl_lists:model, ACTRIS_ctrl_lists:nonGeographicDataset,
+    ACTRIS_ctrl_lists:product, ACTRIS_ctrl_lists:propertyType, ACTRIS_ctrl_lists:repository,
+    ACTRIS_ctrl_lists:sample, ACTRIS_ctrl_lists:series, ACTRIS_ctrl_lists:service, ACTRIS_ctrl_lists:software,
+    ACTRIS_ctrl_lists:tile;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
+  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:aggregate a skos:Concept;
+  skos:prefLabel "aggregate"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:application a skos:Concept;
+  skos:prefLabel "application"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:attribute a skos:Concept;
+  skos:prefLabel "attribute"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:attributeType a skos:Concept;
+  skos:prefLabel "attributeType"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:collection a skos:Concept;
+  skos:prefLabel "collection"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:collectionHardware a skos:Concept;
+  skos:prefLabel "collectionHardware"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:collectionSession a skos:Concept;
+  skos:prefLabel "collectionSession"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:coverage a skos:Concept;
+  skos:prefLabel "coverage"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:dataset a skos:Concept;
+  skos:prefLabel "dataset"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:dimensionGroup a skos:Concept;
+  skos:prefLabel "dimensionGroup"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:document a skos:Concept;
+  skos:prefLabel "document"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:feature a skos:Concept;
+  skos:prefLabel "feature"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:featureType a skos:Concept;
+  skos:prefLabel "featureType"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:fieldSession a skos:Concept;
+  skos:prefLabel "fieldSession"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:initiative a skos:Concept;
+  skos:prefLabel "initiative"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:metadata a skos:Concept;
+  skos:prefLabel "metadata"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:model a skos:Concept;
+  skos:prefLabel "model"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:nonGeographicDataset a skos:Concept;
+  skos:prefLabel "nonGeographicDataset"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:product a skos:Concept;
+  skos:prefLabel "product"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:propertyType a skos:Concept;
+  skos:prefLabel "propertyType"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:repository a skos:Concept;
+  skos:prefLabel "repository"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:sample a skos:Concept;
+  skos:prefLabel "sample"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:series a skos:Concept;
+  skos:prefLabel "series"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:service a skos:Concept;
+  skos:prefLabel "service"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:software a skos:Concept;
+  skos:prefLabel "software"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:tile a skos:Concept;
+  skos:prefLabel "tile"@en;
+  skos:broader ACTRIS_ctrl_lists:level;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:userroles a skos:Concept;
+  skos:prefLabel "user roles"@en;
+  skos:altLabel "UserRoles"@en;
+  skos:definition "Function performed by the responsible party."@en;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:narrower ACTRIS_ctrl_lists:author, ACTRIS_ctrl_lists:custodian, ACTRIS_ctrl_lists:distributor,
+    ACTRIS_ctrl_lists:originator, ACTRIS_ctrl_lists:owner, ACTRIS_ctrl_lists:pointOfContact,
+    ACTRIS_ctrl_lists:principalInvestigator, ACTRIS_ctrl_lists:processor, ACTRIS_ctrl_lists:publisher,
+    ACTRIS_ctrl_lists:resourceProvider, ACTRIS_ctrl_lists:user;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
+  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:author a skos:Concept;
+  skos:prefLabel "author"@en;
+  skos:definition "The individual or organization whose name should appear first in the citation for the resource (for names that come after the first use co-author). While it is possible to have an author and principle investigator be the same individual or organization, author is not the same as nor synonymous with principle investigator. Applicable mainly to documents, reports, memos, etc."@en;
+  skos:broader ACTRIS_ctrl_lists:userroles;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:custodian a skos:Concept;
+  skos:prefLabel "custodian"@en;
+  skos:definition "The individual or organization that has accountability and responsibility for the data and ensures appropriate care and maintenance of the resource."@en;
+  skos:broader ACTRIS_ctrl_lists:userroles;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:distributor a skos:Concept;
+  skos:prefLabel "distributor"@en;
+  skos:definition "The organization that is responsible for providing the PARR required access to the data."@en;
+  skos:broader ACTRIS_ctrl_lists:userroles;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:originator a skos:Concept;
+  skos:prefLabel "originator"@en;
+  skos:definition "The name of the individual or organization who is responsible for the data at the point when the data was first created. Applicable for data sets that are an aggregation of two or more data sets or if the data set is the first instance of the signal having been converted into data."@en;
+  skos:broader ACTRIS_ctrl_lists:userroles;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:owner a skos:Concept;
+  skos:prefLabel "owner"@en;
+  skos:definition "The individual or organization that has ownership of the resource."@en;
+  skos:broader ACTRIS_ctrl_lists:userroles;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:pointOfContact a skos:Concept;
+  skos:prefLabel "pointOfContact"@en;
+  skos:definition "The individual or organization who is responsible for the initial triage of and answering questions related to the resource."@en;
+  skos:broader ACTRIS_ctrl_lists:userroles;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:principalInvestigator a skos:Concept;
+  skos:prefLabel "principalInvestigator"@en;
+  skos:definition "The individual or individuals who are the lead researchers for a grant (i.e. head of the laboratory, research group leader, etc.). If there are co-principal investigators then this field will repeat for each principle investigator. While it is possible to have a principal investigator and author be the same individual or organization, principal investigator is not the same nor synonymous with author."@en;
+  skos:broader ACTRIS_ctrl_lists:userroles;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:processor a skos:Concept;
+  skos:prefLabel "processor"@en;
+  skos:definition "The name of the individual or organization who has processed the data in a manner such that the resource has been modified."@en;
+  skos:broader ACTRIS_ctrl_lists:userroles;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:publisher a skos:Concept;
+  skos:prefLabel "publisher"@en;
+  skos:definition "The individual or organization who prepares and issues the resource."@en;
+  skos:broader ACTRIS_ctrl_lists:userroles;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:resourceProvider a skos:Concept;
+  skos:prefLabel "resourceProvider"@en;
+  skos:definition "The individual or organization that supplies or allocates the resource for another entity."@en;
+  skos:broader ACTRIS_ctrl_lists:userroles;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:user a skos:Concept;
+  skos:prefLabel "user"@en;
+  skos:definition "The individuals or organizations who are the intended consumers of the resource."@en;
+  skos:broader ACTRIS_ctrl_lists:userroles;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:identifiertype a skos:Concept;
+  skos:prefLabel "identifier type"@en;
+  skos:altLabel "IdentifierTypes"@en;
+  skos:definition "Types of persistent identifiers used in ACTRIS."@en;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:narrower ACTRIS_ctrl_lists:DOI, ACTRIS_ctrl_lists:handle, ACTRIS_ctrl_lists:ePIC;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
+  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:DOI a skos:Concept;
+  skos:prefLabel "DOI"@en;
+  skos:altLabel "Digital Object Identifier"@en;
+  skos:broader ACTRIS_ctrl_lists:identifiertype;
+  skos:exactMatch <https://www.doi.org/>;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:handle a skos:Concept;
+  skos:prefLabel "handle"@en;
+  skos:broader ACTRIS_ctrl_lists:identifiertype;
+  skos:exactMatch <https://www.handle.net/>;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:ePIC a skos:Concept;
+  skos:prefLabel "ePIC"@en;
+  skos:broader ACTRIS_ctrl_lists:identifiertype;
+  skos:exactMatch <https://www.pidconsortium.net/>;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:framework a skos:Concept;
+  skos:prefLabel "framework"@en;
+  skos:altLabel "network"@en;
+  skos:definition "Association of entities to which the data are associated to. May be a project, a reasearch infrastructure, a network, or similar."@en;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:narrower ACTRIS_ctrl_lists:ACTRIS, ACTRIS_ctrl_lists:AMAP, ACTRIS_ctrl_lists:ARM,
+    ACTRIS_ctrl_lists:CAMP, ACTRIS_ctrl_lists:CLOUDNET, ACTRIS_ctrl_lists:CREATE, ACTRIS_ctrl_lists:EARLINET,
+    ACTRIS_ctrl_lists:EMEP, ACTRIS_ctrl_lists:EUROCHAMP, ACTRIS_ctrl_lists:EUSAAR, ACTRIS_ctrl_lists:GAW-WDCA,
+    ACTRIS_ctrl_lists:GAW-WDCRG, ACTRIS_ctrl_lists:GUAN, ACTRIS_ctrl_lists:HELCOM, ACTRIS_ctrl_lists:NDACC,
+    ACTRIS_ctrl_lists:NILU, ACTRIS_ctrl_lists:NOAA-ESRL, ACTRIS_ctrl_lists:GALION, ACTRIS_ctrl_lists:AERONET;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
+  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:ACTRIS a skos:Concept;
+  skos:prefLabel "ACTRIS"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:AMAP a skos:Concept;
+  skos:prefLabel "AMAP"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:ARM a skos:Concept;
+  skos:prefLabel "ARM"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:CAMP a skos:Concept;
+  skos:prefLabel "CAMP"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:CLOUDNET a skos:Concept;
+  skos:prefLabel "CLOUDNET"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:CREATE a skos:Concept;
+  skos:prefLabel "CREATE"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:EARLINET a skos:Concept;
+  skos:prefLabel "EARLINET"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:EMEP a skos:Concept;
+  skos:prefLabel "EMEP"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:EUROCHAMP a skos:Concept;
+  skos:prefLabel "EUROCHAMP"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:EUSAAR a skos:Concept;
+  skos:prefLabel "EUSAAR"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:GAW-WDCA a skos:Concept;
+  skos:prefLabel "GAW-WDCA"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:GAW-WDCRG a skos:Concept;
+  skos:prefLabel "GAW-WDCRG"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:GUAN a skos:Concept;
+  skos:prefLabel "GUAN"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:HELCOM a skos:Concept;
+  skos:prefLabel "HELCOM"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NDACC a skos:Concept;
+  skos:prefLabel "NDACC"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NILU a skos:Concept;
+  skos:prefLabel "NILU"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NOAA-ESRL a skos:Concept;
+  skos:prefLabel "NOAA-ESRL"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:GALION a skos:Concept;
+  skos:prefLabel "GALION"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:AERONET a skos:Concept;
+  skos:prefLabel "AERONET"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
