@@ -30,7 +30,7 @@
   dct:contributor <https://orcid.org/0000-0001-9250-9813/>;
   dc:license <https://creativecommons.org/publicdomain/zero/1.0/>;
   pav:createdOn "2022-12-16T16:40:00+01:00"@en;
-  pav:lastUpdatedOn "2023-08-15T17:16:00+02:00"@en;
+  pav:lastUpdatedOn "2023-09-04T22:30:00+02:00"@en;
   pav:version "1.0.0"@en;
   skos:hasTopConcept ACTRIS_ctrl_lists:level, ACTRIS_ctrl_lists:userroles, ACTRIS_ctrl_lists:identifiertype,
     ACTRIS_ctrl_lists:framework .
@@ -390,7 +390,8 @@ ACTRIS_ctrl_lists:framework a skos:Concept;
     ACTRIS_ctrl_lists:CAMP, ACTRIS_ctrl_lists:CLOUDNET, ACTRIS_ctrl_lists:CREATE, ACTRIS_ctrl_lists:EARLINET,
     ACTRIS_ctrl_lists:EMEP, ACTRIS_ctrl_lists:EUROCHAMP, ACTRIS_ctrl_lists:EUSAAR, ACTRIS_ctrl_lists:GAW-WDCA,
     ACTRIS_ctrl_lists:GAW-WDCRG, ACTRIS_ctrl_lists:GUAN, ACTRIS_ctrl_lists:HELCOM, ACTRIS_ctrl_lists:NDACC,
-    ACTRIS_ctrl_lists:NILU, ACTRIS_ctrl_lists:NOAA-ESRL, ACTRIS_ctrl_lists:GALION, ACTRIS_ctrl_lists:AERONET;
+    ACTRIS_ctrl_lists:NILU, ACTRIS_ctrl_lists:NOAA-ESRL, ACTRIS_ctrl_lists:GALION, ACTRIS_ctrl_lists:AERONET,
+    ACTRIS_ctrl_lists:RI-URBANS;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
   skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
@@ -516,9 +517,17 @@ ACTRIS_ctrl_lists:NOAA-ESRL a skos:Concept;
 ACTRIS_ctrl_lists:GALION a skos:Concept;
   skos:prefLabel "GALION"@en;
   skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
 ACTRIS_ctrl_lists:AERONET a skos:Concept;
   skos:prefLabel "AERONET"@en;
   skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:RI-URBANS a skos:Concept;
+  skos:prefLabel "RI-URBANS"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
