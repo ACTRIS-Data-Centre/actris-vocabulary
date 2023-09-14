@@ -10,6 +10,7 @@
 @prefix iop: <https://w3id.org/iadopt/ont/> .
 @prefix ACTRIS_ctrl_lists: <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 @prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix ACTRIS_vocab: <https://vocabulary.actris.nilu.no/actris_vocab/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
@@ -30,10 +31,10 @@
   dct:contributor <https://orcid.org/0000-0001-9250-9813/>;
   dc:license <https://creativecommons.org/publicdomain/zero/1.0/>;
   pav:createdOn "2022-12-16T16:40:00+01:00"@en;
-  pav:lastUpdatedOn "2023-09-04T22:30:00+02:00"@en;
+  pav:lastUpdatedOn "2023-09-05T19:00:00+02:00"@en;
   pav:version "1.0.0"@en;
-  skos:hasTopConcept ACTRIS_ctrl_lists:level, ACTRIS_ctrl_lists:userroles, ACTRIS_ctrl_lists:identifiertype,
-    ACTRIS_ctrl_lists:framework .
+  skos:hasTopConcept ACTRIS_ctrl_lists:level, ACTRIS_ctrl_lists:userroles, ACTRIS_ctrl_lists:identifier,
+    ACTRIS_ctrl_lists:framework, ACTRIS_ctrl_lists:Glossary .
 
 ACTRIS_ctrl_lists:level a skos:Concept;
   skos:prefLabel "level"@en;
@@ -336,16 +337,24 @@ ACTRIS_ctrl_lists:user a skos:Concept;
   dct:contributor <https://orcid.org/0000-0001-9250-9813>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
+ACTRIS_ctrl_lists:identifier a skos:Concept;
+  skos:prefLabel "identifier"@en;
+  skos:definition "Identifiers used in ACTRIS."@en;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:identifiertype, ACTRIS_ctrl_lists:identifieruse;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
+  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
 ACTRIS_ctrl_lists:identifiertype a skos:Concept;
   skos:prefLabel "identifier type"@en;
   skos:altLabel "IdentifierTypes"@en;
   skos:definition "Types of persistent identifiers used in ACTRIS."@en;
+  skos:broader ACTRIS_ctrl_lists:identifier;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9250-9813>;
   skos:narrower ACTRIS_ctrl_lists:DOI, ACTRIS_ctrl_lists:handle, ACTRIS_ctrl_lists:ePIC,
     ACTRIS_ctrl_lists:otherPID;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
-  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
 ACTRIS_ctrl_lists:DOI a skos:Concept;
   skos:prefLabel "DOI"@en;
@@ -354,6 +363,40 @@ ACTRIS_ctrl_lists:DOI a skos:Concept;
   skos:exactMatch <https://www.doi.org/>;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:narrower ACTRIS_ctrl_lists:submissionDOI, ACTRIS_ctrl_lists:versionDOI, ACTRIS_ctrl_lists:conceptDOI,
+    ACTRIS_ctrl_lists:collectionDOI;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:submissionDOI a skos:Concept;
+  skos:prefLabel "submission DOI"@en;
+  skos:definition "Digital object identifier for a single data delivery from an identified instrument at an identified location. Used to document data production chain (provenance)."@en;
+  skos:broader ACTRIS_ctrl_lists:DOI;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0003-3587-5926>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:versionDOI a skos:Concept;
+  skos:prefLabel "version DOI"@en;
+  skos:definition "Digital object identifier for a consistent set of data submissions from an identified instrument type and model at an identified location. Consistent means connected without known ruptures, e.g. changes in operating procedures. Used to identify exact version of a data stream in an analysis."@en;
+  skos:broader ACTRIS_ctrl_lists:DOI;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0003-3587-5926>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:conceptDOI a skos:Concept;
+  skos:prefLabel "concept DOI"@en;
+  skos:definition "Digital object identifier representing all versions of a record. Here, record means consistent set of data submissions from an identified instrument type and model at an identified location. Used to identify all previous, current, and future versions of the record."@en;
+  skos:broader ACTRIS_ctrl_lists:DOI;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0003-3587-5926>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:collectionDOI a skos:Concept;
+  skos:prefLabel "collection DOI"@en;
+  skos:definition "Digital object identifier pointing towards an assembly of DOI identified objects of any type. Often used to identify collections of data objects analysed for a publication."@en;
+  skos:broader ACTRIS_ctrl_lists:DOI;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0003-3587-5926>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
 ACTRIS_ctrl_lists:handle a skos:Concept;
@@ -378,6 +421,40 @@ ACTRIS_ctrl_lists:otherPID a skos:Concept;
   skos:definition "Any non-standard type of persistent identifier."@en;
   skos:broader ACTRIS_ctrl_lists:identifiertype;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:identifieruse a skos:Concept;
+  skos:prefLabel "identifier use"@en;
+  skos:definition "Uses of persistent identifiers used in ACTRIS."@en;
+  skos:broader ACTRIS_ctrl_lists:identifier;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:narrower ACTRIS_ctrl_lists:submissionPID, ACTRIS_ctrl_lists:versionPID, ACTRIS_ctrl_lists:conceptPID,
+    ACTRIS_ctrl_lists:collectionPID;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:submissionPID a skos:Concept;
+  skos:prefLabel "submission PID"@en;
+  skos:definition "Persistent identifier for a single data delivery from an identified instrument at an identified location. Used to document data production chain (provenance)."@en;
+  skos:broader ACTRIS_ctrl_lists:identifieruse;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:versionPID a skos:Concept;
+  skos:prefLabel "version PID"@en;
+  skos:definition "Persistent identifier for a consistent set of data submissions from an identified instrument type and model at an identified location. Consistent means connected without known ruptures, e.g. changes in operating procedures. Used to identify exact version of a data stream in an analysis."@en;
+  skos:broader ACTRIS_ctrl_lists:identifieruse;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:conceptPID a skos:Concept;
+  skos:prefLabel "concept PID"@en;
+  skos:definition "Persistent identifier representing all versions of a record. Here, record means consistent set of data submissions from an identified instrument type and model at an identified location. Used to identify all previous, current, and future versions of the record."@en;
+  skos:broader ACTRIS_ctrl_lists:identifieruse;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:collectionPID a skos:Concept;
+  skos:prefLabel "collection PID"@en;
+  skos:definition "Persistent identifier pointing towards an assembly of PID identified objects of any type. Often used to identify collections of data objects analysed for a publication."@en;
+  skos:broader ACTRIS_ctrl_lists:identifieruse;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
 ACTRIS_ctrl_lists:framework a skos:Concept;
@@ -530,4 +607,19 @@ ACTRIS_ctrl_lists:RI-URBANS a skos:Concept;
   skos:prefLabel "RI-URBANS"@en;
   skos:broader ACTRIS_ctrl_lists:framework;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Glossary a skos:Concept;
+  skos:prefLabel "Glossary"@en;
+  skos:exactMatch <https://en.wikipedia.org/wiki/Glossary>;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:ACTRISdata;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
+  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:ACTRISdata a skos:Concept;
+  skos:prefLabel "ACTRIS data"@en;
+  skos:definition "ACTRIS data are data from observational or exploratory National Facilities complying with the procedures established within ACTRIS. ACTRIS data have received the \"ACTRIS labelled\" designator."@en;
+  skos:broader ACTRIS_ctrl_lists:Glossary;
+  skos:related ACTRIS_vocab:ACTRISlabelled;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
