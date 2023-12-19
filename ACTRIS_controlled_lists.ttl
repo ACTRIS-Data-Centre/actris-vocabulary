@@ -34,7 +34,7 @@
   pav:lastUpdatedOn "2023-09-05T19:00:00+02:00"@en;
   pav:version "1.0.0"@en;
   skos:hasTopConcept ACTRIS_ctrl_lists:level, ACTRIS_ctrl_lists:userroles, ACTRIS_ctrl_lists:identifier,
-    ACTRIS_ctrl_lists:framework, ACTRIS_ctrl_lists:Glossary .
+    ACTRIS_ctrl_lists:framework, ACTRIS_ctrl_lists:Glossary, ACTRIS_ctrl_lists:usemetadata .
 
 ACTRIS_ctrl_lists:level a skos:Concept;
   skos:prefLabel "level"@en;
@@ -622,4 +622,135 @@ ACTRIS_ctrl_lists:ACTRISdata a skos:Concept;
   skos:definition "ACTRIS data are data from observational or exploratory National Facilities complying with the procedures established within ACTRIS. ACTRIS data have received the \"ACTRIS labelled\" designator."@en;
   skos:broader ACTRIS_ctrl_lists:Glossary;
   skos:related ACTRIS_vocab:ACTRISlabelled;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:usemetadata a skos:Concept;
+  skos:prefLabel "use metadata"@en;
+  skos:definition "Controlled vocabulary for detailed descriptions of operating procedures."@en;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:simulationchambercontrolledlists, ACTRIS_ctrl_lists:aerosolinsitucontrolledlists,
+    ACTRIS_ctrl_lists:cloudinsitucontrolledlists, ACTRIS_ctrl_lists:reactivetracegasinsitucontrolledlists,
+    ACTRIS_ctrl_lists:aerosolremotesensingcontrolledlists, ACTRIS_ctrl_lists:cloudremotesensingcontrolledlists,
+    ACTRIS_ctrl_lists:reactivetracegasremotesensingcontrolledlists;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
+  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:simulationchambercontrolledlists a skos:Concept;
+  skos:prefLabel "simulation chamber controlled lists"@en;
+  skos:broader ACTRIS_ctrl_lists:usemetadata;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:simulationchamberlightsources, ACTRIS_ctrl_lists:simulationchamberwalltypes;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:simulationchamberlightsources a skos:Concept;
+  skos:prefLabel "simulation chamber light sources"@en;
+  skos:broader ACTRIS_ctrl_lists:simulationchambercontrolledlists;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:darkchamber, ACTRIS_ctrl_lists:fluorescentlamps, ACTRIS_ctrl_lists:naturalsunlight,
+    ACTRIS_ctrl_lists:otherartificiallightsource, ACTRIS_ctrl_lists:xenonarclamps;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:darkchamber a skos:Concept;
+  skos:prefLabel "dark chamber"@en;
+  skos:broader ACTRIS_ctrl_lists:simulationchamberlightsources;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:fluorescentlamps a skos:Concept;
+  skos:prefLabel "fluorescent lamps"@en;
+  skos:broader ACTRIS_ctrl_lists:simulationchamberlightsources;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:naturalsunlight a skos:Concept;
+  skos:prefLabel "natural sunlight"@en;
+  skos:broader ACTRIS_ctrl_lists:simulationchamberlightsources;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:otherartificiallightsource a skos:Concept;
+  skos:prefLabel "other artificial light source"@en;
+  skos:broader ACTRIS_ctrl_lists:simulationchamberlightsources;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:xenonarclamps a skos:Concept;
+  skos:prefLabel "xenon arc lamps"@en;
+  skos:broader ACTRIS_ctrl_lists:simulationchamberlightsources;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:simulationchamberwalltypes a skos:Concept;
+  skos:prefLabel "simulation chamber wall types"@en;
+  skos:broader ACTRIS_ctrl_lists:simulationchambercontrolledlists;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:aluminium, ACTRIS_ctrl_lists:fluorinatedethylenepropylenefilm,
+    ACTRIS_ctrl_lists:Pyrex, ACTRIS_ctrl_lists:quartz, ACTRIS_ctrl_lists:stainlesssteel;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:aluminium a skos:Concept;
+  skos:prefLabel "aluminium"@en;
+  skos:broader ACTRIS_ctrl_lists:simulationchamberwalltypes;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:fluorinatedethylenepropylenefilm a skos:Concept;
+  skos:prefLabel "fluorinated ethylene propylene film"@en;
+  skos:altLabel "FEP film"@en;
+  skos:broader ACTRIS_ctrl_lists:simulationchamberwalltypes;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Pyrex a skos:Concept;
+  skos:prefLabel "Pyrex"@en;
+  skos:broader ACTRIS_ctrl_lists:simulationchamberwalltypes;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:quartz a skos:Concept;
+  skos:prefLabel "quartz"@en;
+  skos:broader ACTRIS_ctrl_lists:simulationchamberwalltypes;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:stainlesssteel a skos:Concept;
+  skos:prefLabel "stainless steel"@en;
+  skos:broader ACTRIS_ctrl_lists:simulationchamberwalltypes;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:aerosolinsitucontrolledlists a skos:Concept;
+  skos:prefLabel "aerosol in situ controlled lists"@en;
+  skos:broader ACTRIS_ctrl_lists:usemetadata;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:cloudinsitucontrolledlists a skos:Concept;
+  skos:prefLabel "cloud in situ controlled lists"@en;
+  skos:broader ACTRIS_ctrl_lists:usemetadata;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:reactivetracegasinsitucontrolledlists a skos:Concept;
+  skos:prefLabel "reactive trace gas in situ controlled lists"@en;
+  skos:broader ACTRIS_ctrl_lists:usemetadata;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:aerosolremotesensingcontrolledlists a skos:Concept;
+  skos:prefLabel "aerosol remote sensing controlled lists"@en;
+  skos:broader ACTRIS_ctrl_lists:usemetadata;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:cloudremotesensingcontrolledlists a skos:Concept;
+  skos:prefLabel "cloud remote sensing controlled lists"@en;
+  skos:broader ACTRIS_ctrl_lists:usemetadata;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:reactivetracegasremotesensingcontrolledlists a skos:Concept;
+  skos:prefLabel "reactive trace gas remote sensing controlled lists"@en;
+  skos:broader ACTRIS_ctrl_lists:usemetadata;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
