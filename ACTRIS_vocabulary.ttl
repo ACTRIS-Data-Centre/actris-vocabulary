@@ -43,8 +43,8 @@
     <https://orcid.org/0000-0002-8981-0805>;
   dc:license <https://creativecommons.org/publicdomain/zero/1.0/>;
   pav:createdOn "2022-12-16T17:00:00+01:00"@en;
-  pav:lastUpdatedOn "2024-04-12T21:18:00+02:00"@en;
-  pav:version "1.1.3"@en;
+  pav:lastUpdatedOn "2024-04-17T13:30:00+02:00"@en;
+  pav:version "1.1.4"@en;
   skos:hasTopConcept ACTRIS_vocab:variablegroup, ACTRIS_vocab:manufacturer, ACTRIS_vocab:datasource,
     ACTRIS_vocab:spatialcoverage, ACTRIS_vocab:facility, ACTRIS_vocab:variablegeometry,
     ACTRIS_vocab:variableconstraints, ACTRIS_vocab:timeliness, ACTRIS_vocab:variablepropertyofinterest,
@@ -35623,7 +35623,9 @@ ACTRIS_vocab:Dadolab a skos:Concept;
   skos:prefLabel "Dado lab"@en;
   skos:broader ACTRIS_vocab:manufacturer;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  skos:narrower ACTRIS_vocab:DadolabGiano, ACTRIS_vocab:DadolabGemini, ACTRIS_vocab:Dadolab1PMx;
+  skos:narrower ACTRIS_vocab:DadolabGiano, ACTRIS_vocab:DadolabGemini, ACTRIS_vocab:Dadolab1PMx,
+    ACTRIS_vocab:DerendaLVS3.1, ACTRIS_vocab:DerendaPNS16T, ACTRIS_vocab:DerendaPNS18-DM-3.1,
+    ACTRIS_vocab:DerendaPNS18T-DM-3.1, ACTRIS_vocab:DerendaPNS24-DM-3.1, ACTRIS_vocab:DerendaPNS24T-DM-3.1;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:Dasibi a skos:Concept;
@@ -35637,9 +35639,7 @@ ACTRIS_vocab:Derenda a skos:Concept;
   skos:prefLabel "Derenda"@en;
   skos:broader ACTRIS_vocab:manufacturer;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  skos:narrower ACTRIS_vocab:DerendaLVS3.1, ACTRIS_vocab:DerendaPNS16T, ACTRIS_vocab:DerendaPNS18-DM-3.1,
-    ACTRIS_vocab:DerendaPNS18T-DM-3.1, ACTRIS_vocab:DerendaPNS24-DM-3.1, ACTRIS_vocab:DerendaPNS24T-DM-3.1,
-    ACTRIS_vocab:DerendaMVS6.1, ACTRIS_vocab:DerendaPNS18-DM-6.1, ACTRIS_vocab:DerendaPNS18T-DM-6.1,
+  skos:narrower ACTRIS_vocab:DerendaMVS6.1, ACTRIS_vocab:DerendaPNS18-DM-6.1, ACTRIS_vocab:DerendaPNS18T-DM-6.1,
     ACTRIS_vocab:DerendaPNS24-DM-6.1, ACTRIS_vocab:DerendaPNS24T-DM-6.1;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
@@ -36344,15 +36344,16 @@ ACTRIS_vocab:instrumenttype a skos:Concept;
   skos:narrower ACTRIS_vocab:insituparticleopticalparameterinstrument, ACTRIS_vocab:instrumenttypeunknown,
     ACTRIS_vocab:particlecounter, ACTRIS_vocab:particlesizespectrometer, ACTRIS_vocab:thermo-opticalanalyser,
     ACTRIS_vocab:lidar, ACTRIS_vocab:inductivelycoupledplasmaspectrometer, ACTRIS_vocab:ionbeamanalysis,
-    ACTRIS_vocab:aerosolparticlefiltersampler, ACTRIS_vocab:sorbentsampler, ACTRIS_vocab:lightspectrometer,
-    ACTRIS_vocab:lightemissionspectrometer, ACTRIS_vocab:lightextinctionspectrometer,
+    ACTRIS_vocab:aerosolparticlesampler, ACTRIS_vocab:aerosolparticlefiltersampler, ACTRIS_vocab:sorbentsampler,
+    ACTRIS_vocab:gassampler, ACTRIS_vocab:precipitationsampler, ACTRIS_vocab:sampler-others,
+    ACTRIS_vocab:lightspectrometer, ACTRIS_vocab:lightemissionspectrometer, ACTRIS_vocab:lightextinctionspectrometer,
     ACTRIS_vocab:lightscatteringspectrometer, ACTRIS_vocab:lightabsorptionspectrometer,
     ACTRIS_vocab:gas-phasemassspectrometer, ACTRIS_vocab:massspectrometer, ACTRIS_vocab:lightemissionDivabsorptiondetector,
-    ACTRIS_vocab:nuclearradiationdetector, ACTRIS_vocab:radiationabsorptiondetector, ACTRIS_vocab:precipitationsampler,
-    ACTRIS_vocab:meteorologicalbaseparametersensor, ACTRIS_vocab:sampleconditioner, ACTRIS_vocab:highperformanceliquidchromatograph,
-    ACTRIS_vocab:ionchromatograph, ACTRIS_vocab:gaschromatograph, ACTRIS_vocab:cloudradar,
-    ACTRIS_vocab:microwaveradiometer, ACTRIS_vocab:photometer, ACTRIS_vocab:electronparamagneticresonancespectrometer,
-    ACTRIS_vocab:positioningsystem, ACTRIS_vocab:electrochemicalsensor;
+    ACTRIS_vocab:nuclearradiationdetector, ACTRIS_vocab:radiationabsorptiondetector, ACTRIS_vocab:meteorologicalbaseparametersensor,
+    ACTRIS_vocab:sampleconditioner, ACTRIS_vocab:highperformanceliquidchromatograph, ACTRIS_vocab:ionchromatograph,
+    ACTRIS_vocab:gaschromatograph, ACTRIS_vocab:cloudradar, ACTRIS_vocab:microwaveradiometer,
+    ACTRIS_vocab:photometer, ACTRIS_vocab:electronparamagneticresonancespectrometer, ACTRIS_vocab:positioningsystem,
+    ACTRIS_vocab:electrochemicalsensor, ACTRIS_vocab:microbalance;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:insituparticleopticalparameterinstrument a skos:Concept;
@@ -36503,7 +36504,7 @@ ACTRIS_vocab:particlesizespectrometer a skos:Concept;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:narrower ACTRIS_vocab:mobilityparticlesizespectrometer, ACTRIS_vocab:nucleationparticlesizespectrometer,
     ACTRIS_vocab:aerodynamicparticlesizespectrometer, ACTRIS_vocab:opticalparticlesizespectrometer,
-    ACTRIS_vocab:disdrometer;
+    ACTRIS_vocab:disdrometer, ACTRIS_vocab:hygroscopiciytandemdifferentialmobilityanalyzer;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:mobilityparticlesizespectrometer a skos:Concept;
@@ -36641,6 +36642,14 @@ ACTRIS_vocab:ThiesLNM a skos:Concept;
   skos:prefLabel "Thies LNM"@en;
   skos:broader ACTRIS_vocab:disdrometer, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Thies;
   dct:creator <https://orcid.org/0000-0001-9834-5100>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:hygroscopiciytandemdifferentialmobilityanalyzer a skos:Concept;
+  skos:prefLabel "hygroscopiciy tandem differential mobility analyzer"@en;
+  skos:altLabel "HTDMA"@en;
+  skos:definition "Instrument quantifying the hygroscopic growth of aerosol particles as a function of relative humidity below 100% by first drying the aerosol particles, size selecting them in a first differential mobility analyzer, exposing them to an atmosphere of defined relative humidity, and measuring the size distribution of the grown particles with a second differential mobility analyzer and subsequent counting."@en;
+  skos:broader ACTRIS_vocab:particlesizespectrometer;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:thermo-opticalanalyser a skos:Concept;
@@ -37014,12 +37023,23 @@ ACTRIS_vocab:Rutherfordbackscatteringspectrometry a skos:Concept;
   dct:contributor <https://orcid.org/0000-0001-6993-3149>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
+ACTRIS_vocab:aerosolparticlesampler a skos:Concept;
+  skos:prefLabel "aerosol particle sampler"@en;
+  skos:definition "Device designed for passing a stream of air sample through a filter for depositing the aerosol particles on the filter."@en;
+  skos:broader ACTRIS_vocab:instrumenttype;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9785-8561>;
+  skos:narrower ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:mediumvolumefiltersampler,
+    ACTRIS_vocab:highvolumefiltersampler, ACTRIS_vocab:impactionsampler;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
 ACTRIS_vocab:aerosolparticlefiltersampler a skos:Concept;
   skos:prefLabel "aerosol particle filter sampler"@en;
   skos:definition "Device designed for passing a stream of air sample through a filter for depositing the aerosol particles on the filter."@en;
   skos:broader ACTRIS_vocab:instrumenttype;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
+  owl:deprecated "true"@en;
   skos:narrower ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:mediumvolumesampler, ACTRIS_vocab:highvolumesampler;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
@@ -37028,6 +37048,17 @@ ACTRIS_vocab:lowvolumesampler a skos:Concept;
   skos:altLabel "LVS"@en;
   skos:definition "Aerosol particle filter sampler with a flow rate of up to 40 l/min."@en;
   skos:broader ACTRIS_vocab:aerosolparticlefiltersampler;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9785-8561>;
+  owl:deprecated "true"@en;
+  dct:isReplacedBy ACTRIS_vocab:lowvolumefiltersampler;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:lowvolumefiltersampler a skos:Concept;
+  skos:prefLabel "low volume filter sampler"@en;
+  skos:altLabel "LVS"@en, "low volume sampler"@en;
+  skos:definition "Aerosol particle filter sampler with a flow rate of up to 40 l/min."@en;
+  skos:broader ACTRIS_vocab:aerosolparticlesampler;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:narrower ACTRIS_vocab:DadolabGiano, ACTRIS_vocab:DadolabGemini, ACTRIS_vocab:Dadolab1PMx,
@@ -37042,169 +37073,169 @@ ACTRIS_vocab:lowvolumesampler a skos:Concept;
 
 ACTRIS_vocab:DadolabGiano a skos:Concept;
   skos:prefLabel "Dado lab Giano"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Dadolab;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Dadolab;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-6993-3149>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DadolabGemini a skos:Concept;
   skos:prefLabel "Dado lab Gemini"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Dadolab;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Dadolab;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-6993-3149>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:Dadolab1PMx a skos:Concept;
   skos:prefLabel "Dado lab 1PMx"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Dadolab,
-    ACTRIS_vocab:highvolumesampler;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Dadolab,
+    ACTRIS_vocab:highvolumefiltersampler;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-6993-3149>, <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DerendaLVS3.1 a skos:Concept;
   skos:prefLabel "Derenda LVS3.1"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Derenda;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Dadolab;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DerendaPNS16T a skos:Concept;
   skos:prefLabel "Derenda PNS 16T"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Derenda;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Dadolab;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DerendaPNS18-DM-3.1 a skos:Concept;
   skos:prefLabel "Derenda PNS 18-DM-3.1"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Derenda;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Dadolab;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DerendaPNS18T-DM-3.1 a skos:Concept;
   skos:prefLabel "Derenda PNS 18T-DM-3.1"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Derenda;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Dadolab;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DerendaPNS24-DM-3.1 a skos:Concept;
   skos:prefLabel "Derenda PNS 24-DM-3.1"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Derenda;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Dadolab;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DerendaPNS24T-DM-3.1 a skos:Concept;
   skos:prefLabel "Derenda PNS 24T-DM-3.1"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Derenda;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Dadolab;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DigitelDPA02 a skos:Concept;
   skos:prefLabel "Digitel DPA02"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DigitelDPA14 a skos:Concept;
   skos:prefLabel "Digitel DPA14"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DigitelDPA96 a skos:Concept;
   skos:prefLabel "Digitel DPA96"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:FAISWAM5A a skos:Concept;
   skos:prefLabel "FAI SWAM 5A"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:FAI;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:FAI;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:FAIHYDRA a skos:Concept;
   skos:prefLabel "FAI HYDRA"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:FAI;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:FAI;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:KNFN86KTE a skos:Concept;
   skos:prefLabel "KNF N86KTE"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:KNF;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:KNF;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:LeckelLVS3 a skos:Concept;
   skos:prefLabel "Leckel LVS3"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Leckel;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Leckel;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:LeckelSEQ47Div49 a skos:Concept;
   skos:prefLabel "Leckel SEQ47/49"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Leckel;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Leckel;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:LeckelSEQ47Div50 a skos:Concept;
   skos:prefLabel "Leckel SEQ47/50"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Leckel;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Leckel;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:LeckelLVS6 a skos:Concept;
   skos:prefLabel "Leckel LVS6"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Leckel;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Leckel;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:TecoraSentinel a skos:Concept;
   skos:prefLabel "Tecora Sentinel"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Tecora;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Tecora;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:TecoraSkypostPMFX a skos:Concept;
   skos:prefLabel "Tecora Skypost PM FX"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Tecora;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Tecora;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:ThermoFisherPartisol2025 a skos:Concept;
   skos:prefLabel "Thermo Fisher Partisol 2025"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:ThermoFisherScientific;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:ThermoFisherScientific;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:ThermoFisherPartisol2025i a skos:Concept;
   skos:prefLabel "Thermo Fisher Partisol 2025i"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:ThermoFisherScientific;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:ThermoFisherScientific;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:ThermoFisherPartisol2025i-D a skos:Concept;
   skos:prefLabel "Thermo Fisher Partisol 2025i-D"@en;
-  skos:broader ACTRIS_vocab:lowvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:ThermoFisherScientific;
+  skos:broader ACTRIS_vocab:lowvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:ThermoFisherScientific;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
@@ -37216,41 +37247,57 @@ ACTRIS_vocab:mediumvolumesampler a skos:Concept;
   skos:broader ACTRIS_vocab:aerosolparticlefiltersampler;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
+  owl:deprecated "true"@en;
+  dct:isReplacedBy ACTRIS_vocab:mediumvolumefiltersampler;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:mediumvolumefiltersampler a skos:Concept;
+  skos:prefLabel "medium volume filter sampler"@en;
+  skos:altLabel "MVS"@en, "medium volume sampler"@en;
+  skos:definition "Aerosol particle filter sampler with a flow rate between 60-100 l/min."@en;
+  skos:broader ACTRIS_vocab:aerosolparticlesampler;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:narrower ACTRIS_vocab:DerendaMVS6.1, ACTRIS_vocab:DerendaPNS18-DM-6.1, ACTRIS_vocab:DerendaPNS18T-DM-6.1,
     ACTRIS_vocab:DerendaPNS24-DM-6.1, ACTRIS_vocab:DerendaPNS24T-DM-6.1;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DerendaMVS6.1 a skos:Concept;
   skos:prefLabel "Derenda MVS6.1"@en;
-  skos:broader ACTRIS_vocab:mediumvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Derenda;
+  skos:broader ACTRIS_vocab:mediumvolumefiltersampler, ACTRIS_vocab:instrumentmodel,
+    ACTRIS_vocab:Derenda;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DerendaPNS18-DM-6.1 a skos:Concept;
   skos:prefLabel "Derenda PNS 18-DM-6.1"@en;
-  skos:broader ACTRIS_vocab:mediumvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Derenda;
+  skos:broader ACTRIS_vocab:mediumvolumefiltersampler, ACTRIS_vocab:instrumentmodel,
+    ACTRIS_vocab:Derenda;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DerendaPNS18T-DM-6.1 a skos:Concept;
   skos:prefLabel "Derenda PNS 18T-DM-6.1"@en;
-  skos:broader ACTRIS_vocab:mediumvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Derenda;
+  skos:broader ACTRIS_vocab:mediumvolumefiltersampler, ACTRIS_vocab:instrumentmodel,
+    ACTRIS_vocab:Derenda;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DerendaPNS24-DM-6.1 a skos:Concept;
   skos:prefLabel "Derenda PNS 24-DM-6.1"@en;
-  skos:broader ACTRIS_vocab:mediumvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Derenda;
+  skos:broader ACTRIS_vocab:mediumvolumefiltersampler, ACTRIS_vocab:instrumentmodel,
+    ACTRIS_vocab:Derenda;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DerendaPNS24T-DM-6.1 a skos:Concept;
   skos:prefLabel "Derenda PNS 24T-DM-6.1"@en;
-  skos:broader ACTRIS_vocab:mediumvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Derenda;
+  skos:broader ACTRIS_vocab:mediumvolumefiltersampler, ACTRIS_vocab:instrumentmodel,
+    ACTRIS_vocab:Derenda;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
@@ -37262,6 +37309,17 @@ ACTRIS_vocab:highvolumesampler a skos:Concept;
   skos:broader ACTRIS_vocab:aerosolparticlefiltersampler;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
+  owl:deprecated "true"@en;
+  dct:isReplacedBy ACTRIS_vocab:highvolumefiltersampler;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:highvolumefiltersampler a skos:Concept;
+  skos:prefLabel "high volume filter sampler"@en;
+  skos:altLabel "HVS"@en, "high volume sampler"@en;
+  skos:definition "Aerosol particle filter sampler with a flow rate of more than 500 l/min."@en;
+  skos:broader ACTRIS_vocab:aerosolparticlesampler;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:narrower ACTRIS_vocab:Dadolab1PMx, ACTRIS_vocab:DigitelDA-80, ACTRIS_vocab:DigitelDHA-80,
     ACTRIS_vocab:DigitelDH-77, ACTRIS_vocab:DigitelDS-02, ACTRIS_vocab:MCVCAV-ADivMSb,
     ACTRIS_vocab:MCVCAV-ADivmb, ACTRIS_vocab:TecoraEchoPM;
@@ -37269,49 +37327,57 @@ ACTRIS_vocab:highvolumesampler a skos:Concept;
 
 ACTRIS_vocab:DigitelDA-80 a skos:Concept;
   skos:prefLabel "Digitel DA-80"@en;
-  skos:broader ACTRIS_vocab:highvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
+  skos:broader ACTRIS_vocab:highvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DigitelDHA-80 a skos:Concept;
   skos:prefLabel "Digitel DHA-80"@en;
-  skos:broader ACTRIS_vocab:highvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
+  skos:broader ACTRIS_vocab:highvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DigitelDH-77 a skos:Concept;
   skos:prefLabel "Digitel DH-77"@en;
-  skos:broader ACTRIS_vocab:highvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
+  skos:broader ACTRIS_vocab:highvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:DigitelDS-02 a skos:Concept;
   skos:prefLabel "Digitel DS-02"@en;
-  skos:broader ACTRIS_vocab:highvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
+  skos:broader ACTRIS_vocab:highvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Digitel;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:MCVCAV-ADivMSb a skos:Concept;
   skos:prefLabel "MCV CAV-A/MSb"@en;
-  skos:broader ACTRIS_vocab:highvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:MCV;
+  skos:broader ACTRIS_vocab:highvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:MCV;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:MCVCAV-ADivmb a skos:Concept;
   skos:prefLabel "MCV CAV-A/mb"@en;
-  skos:broader ACTRIS_vocab:highvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:MCV;
+  skos:broader ACTRIS_vocab:highvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:MCV;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:TecoraEchoPM a skos:Concept;
   skos:prefLabel "Tecora Echo PM"@en;
-  skos:broader ACTRIS_vocab:highvolumesampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Tecora;
+  skos:broader ACTRIS_vocab:highvolumefiltersampler, ACTRIS_vocab:instrumentmodel, ACTRIS_vocab:Tecora;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0001-9785-8561>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:impactionsampler a skos:Concept;
+  skos:prefLabel "impaction sampler"@en;
+  skos:definition "Aerosol particle filter sampler depositing the particles on a substrate by accelerating them in a jet pointing towards the substrate, thereby creating sharply bended streamlines which the particles can't follow. Geometry and jet velocity determine lower size limit of particles sampled."@en;
+  skos:broader ACTRIS_vocab:aerosolparticlesampler;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9785-8561>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
@@ -37323,7 +37389,8 @@ ACTRIS_vocab:sorbentsampler a skos:Concept;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:narrower ACTRIS_vocab:absorptionsolutionsampler, ACTRIS_vocab:absorptiontube,
     ACTRIS_vocab:adsorptiontube, ACTRIS_vocab:amalgamationtube, ACTRIS_vocab:absorptionsolutionspectro-photometricsensor,
-    ACTRIS_vocab:nebulizedabsorptionsolutionsampler;
+    ACTRIS_vocab:nebulizedabsorptionsolutionsampler, ACTRIS_vocab:absorptionfiltersampler,
+    ACTRIS_vocab:passivesampleronpolyurethanfoamdisk;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:absorptionsolutionsampler a skos:Concept;
@@ -37374,6 +37441,87 @@ ACTRIS_vocab:nebulizedabsorptionsolutionsampler a skos:Concept;
   dct:contributor <https://orcid.org/0000-0002-2908-1970>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
+ACTRIS_vocab:absorptionfiltersampler a skos:Concept;
+  skos:prefLabel "absorption filter sampler"@en;
+  skos:definition "Device sampling an airborne component by leading an air sample through an impregnated filter, where the substance used for impregnation as adapted to the targeted component."@en;
+  skos:broader ACTRIS_vocab:sorbentsampler;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0002-2908-1970>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:passivesampleronpolyurethanfoamdisk a skos:Concept;
+  skos:prefLabel "passive sampler on polyurethan foam disk"@en;
+  skos:definition "Device sampling an airborne component on a polyurethan foam sorbent by exposing the sorbent passively to freely circulating air while protecting it from precipitation."@en;
+  skos:broader ACTRIS_vocab:sorbentsampler;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0002-2908-1970>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:gassampler a skos:Concept;
+  skos:prefLabel "gas sampler"@en;
+  skos:definition "Device sampling a gas sample by storing the gas itself in an enclosure."@en;
+  skos:broader ACTRIS_vocab:instrumenttype;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_vocab:glasscanistersampler, ACTRIS_vocab:steelcanistersampler,
+    ACTRIS_vocab:passivegassampler, ACTRIS_vocab:plasticbagsampler;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:glasscanistersampler a skos:Concept;
+  skos:prefLabel "glass canister sampler"@en;
+  skos:definition "Device sampling a gas sample by storing the gas itself in a glass enclosure."@en;
+  skos:broader ACTRIS_vocab:gassampler;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0002-2908-1970>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:steelcanistersampler a skos:Concept;
+  skos:prefLabel "steel canister sampler"@en;
+  skos:definition "Device sampling a gas sample by storing the gas itself in a stainless steel enclosure."@en;
+  skos:broader ACTRIS_vocab:gassampler;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0002-2908-1970>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:passivegassampler a skos:Concept;
+  skos:prefLabel "passive gas sampler"@en;
+  skos:definition "Device sampling a gas without generating an artificial flow. Container or sorbent not specified."@en;
+  skos:broader ACTRIS_vocab:gassampler;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0002-2908-1970>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:plasticbagsampler a skos:Concept;
+  skos:prefLabel "plastic bag sampler"@en;
+  skos:definition "Device sampling a gas sample by storing the gas itself in a plastic bag enclosure."@en;
+  skos:broader ACTRIS_vocab:gassampler;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0002-2908-1970>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:precipitationsampler a skos:Concept;
+  skos:prefLabel "precipitation sampler"@en;
+  skos:definition "Device sampling a precipitation sample by storing it in an enclosure."@en;
+  skos:broader ACTRIS_vocab:instrumenttype;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0002-2908-1970>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:sampler-others a skos:Concept;
+  skos:prefLabel "sampler, others"@en;
+  skos:definition "Default collection of methods for taking a specimen sample."@en;
+  skos:broader ACTRIS_vocab:instrumenttype;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_vocab:manualsampling;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:manualsampling a skos:Concept;
+  skos:prefLabel "manual sampling"@en;
+  skos:definition "Sample is taken manually by a human, and stored according to specifications according to the analysis method for avoiding contamination."@en;
+  skos:broader ACTRIS_vocab:sampler-others;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0002-2908-1970>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
 ACTRIS_vocab:lightspectrometer a skos:Concept;
   skos:prefLabel "light spectrometer"@en;
   skos:definition "Device deducing information about a sample by registering intensity and wavelength dependence of light emitted by the sample."@en;
@@ -37388,7 +37536,7 @@ ACTRIS_vocab:lightemissionspectrometer a skos:Concept;
   skos:broader ACTRIS_vocab:instrumenttype;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:narrower ACTRIS_vocab:X-rayfluorescencespectrometer, ACTRIS_vocab:laser-inducedfluorescencespectrometer,
-    ACTRIS_vocab:ultra-violetfluorescencespectrometer;
+    ACTRIS_vocab:ultra-violetfluorescencespectrometer, ACTRIS_vocab:amalgamationcoldvapouratomicfluorescencespectrometer;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:X-rayfluorescencespectrometer a skos:Concept;
@@ -37479,6 +37627,14 @@ ACTRIS_vocab:EcotechSerinus50SulphurDioxideAnalyzer a skos:Concept;
     ACTRIS_vocab:Ecotech;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-6993-3149>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:amalgamationcoldvapouratomicfluorescencespectrometer a skos:Concept;
+  skos:prefLabel "amalgamation cold vapour atomic fluorescence spectrometer"@en;
+  skos:definition "Instrument detrmining the concentration og gaseous mercury in an air sample by exciting the mercury atoms with a collimated beam of UV light at 253.7 nm wavelength, and registering the undirected reemission. The mercury is pre-concentrated by amalgamation onto a gold absorber."@en;
+  skos:broader ACTRIS_vocab:lightemissionspectrometer;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0003-2042-9333>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:lightextinctionspectrometer a skos:Concept;
@@ -38802,13 +38958,6 @@ ACTRIS_vocab:betaattenuationparticlemassmeter a skos:Concept;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
-ACTRIS_vocab:precipitationsampler a skos:Concept;
-  skos:prefLabel "precipitation sampler"@en;
-  skos:definition "Any device sampling precipitation over a given amount of time."@en;
-  skos:broader ACTRIS_vocab:instrumenttype;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
-
 ACTRIS_vocab:meteorologicalbaseparametersensor a skos:Concept;
   skos:prefLabel "meteorological base parameter sensor"@en;
   skos:definition "Sensor for measuring an essential parameter of the atmospheric state in a sample, such as wind field, temperature, pressure, humidity, often in a combined unit."@en;
@@ -39514,7 +39663,7 @@ ACTRIS_vocab:photometer a skos:Concept;
   skos:exactMatch gcmd:806d0bc3-8d08-4418-800b-972292f3db99, <https://codes.wmo.int/wmdr/ObservingMethodAtmosphere/315>;
   dct:creator <https://orcid.org/0000-0001-8911-7253>;
   dct:contributor <https://orcid.org/0000-0003-2972-2851>;
-  skos:narrower ACTRIS_vocab:sunphotometer, ACTRIS_vocab:sunskylunarphotometer;
+  skos:narrower ACTRIS_vocab:sunphotometer, ACTRIS_vocab:sunskylunarphotometer, ACTRIS_vocab:rotatingshadowbandspectralradiometer;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:sunphotometer a skos:Concept;
@@ -39554,6 +39703,13 @@ ACTRIS_vocab:CimelCE318-T a skos:Concept;
   dct:creator <https://orcid.org/0000-0001-8911-7253>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
+ACTRIS_vocab:rotatingshadowbandspectralradiometer a skos:Concept;
+  skos:prefLabel "rotating shadowband spectral radiometer"@en;
+  skos:definition "Instrument measuring the global and diffuse components of solar irradiance spectrally resolved."@en;
+  skos:broader ACTRIS_vocab:photometer;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
 ACTRIS_vocab:electronparamagneticresonancespectrometer a skos:Concept;
   skos:prefLabel "electron paramagnetic resonance spectrometer"@en;
   skos:definition "Instrument measuring the emission spectrum of excited electron spins in the atomic shell of sample atoms. Used to study metal complexes and organic radicals."@en;
@@ -39566,7 +39722,7 @@ ACTRIS_vocab:positioningsystem a skos:Concept;
   skos:definition "Any instrument providing a position on the globe."@en;
   skos:broader ACTRIS_vocab:instrumenttype;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  skos:narrower ACTRIS_vocab:airdatacomputer;
+  skos:narrower ACTRIS_vocab:airdatacomputer, ACTRIS_vocab:globalnavigationsatellitesystem;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:airdatacomputer a skos:Concept;
@@ -39576,10 +39732,34 @@ ACTRIS_vocab:airdatacomputer a skos:Concept;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
+ACTRIS_vocab:globalnavigationsatellitesystem a skos:Concept;
+  skos:prefLabel "global navigation satellite system"@en;
+  skos:altLabel "GNSS"@en;
+  skos:definition "Satellite receiver calculating the receiver position by means of a high-precision time signal and satellite poistion data transmitted from several satellites, and calculating the position from these by means of triliteration."@en;
+  skos:broader ACTRIS_vocab:positioningsystem;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
 ACTRIS_vocab:electrochemicalsensor a skos:Concept;
   skos:prefLabel "electrochemical sensor"@en;
   skos:definition "Instrument measuring the concentration of a gas phase component by passing it through an electrolyte where the component reacts, and measuring the electric signal produced."@en;
   skos:broader ACTRIS_vocab:instrumenttype;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:microbalance a skos:Concept;
+  skos:prefLabel "microbalance"@en;
+  skos:definition "Any device measuring the mass of objects in the range around one millionth of a gram."@en;
+  skos:broader ACTRIS_vocab:instrumenttype;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_vocab:taperedelementoscillatingmicrobalance;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:taperedelementoscillatingmicrobalance a skos:Concept;
+  skos:prefLabel "tapered element oscillating microbalance"@en;
+  skos:altLabel "TEOM"@en;
+  skos:definition "Device measuring the mass concentration of aerosol particles in a sample as a function of time. The sample is led through a glass tube which is equipped with a filter where the particles are deposited. The glass tube is set into vibration. While the filter in the tube is being loaded with particles, the vibration frequency of the tube changes, allowing to deduce the particle mass deposited as a function of time. Together with the measured sample flow, the particle mass concentration can be calculated."@en;
+  skos:broader ACTRIS_vocab:microbalance;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
