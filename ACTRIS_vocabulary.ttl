@@ -43,8 +43,8 @@
     <https://orcid.org/0000-0002-8981-0805>;
   dc:license <https://creativecommons.org/publicdomain/zero/1.0/>;
   pav:createdOn "2022-12-16T17:00:00+01:00"@en;
-  pav:lastUpdatedOn "2024-04-17T13:30:00+02:00"@en;
-  pav:version "1.1.4"@en;
+  pav:lastUpdatedOn "2024-05-27T14:35:00+02:00"@en;
+  pav:version "1.1.6"@en;
   skos:hasTopConcept ACTRIS_vocab:variablegroup, ACTRIS_vocab:manufacturer, ACTRIS_vocab:datasource,
     ACTRIS_vocab:spatialcoverage, ACTRIS_vocab:facility, ACTRIS_vocab:variablegeometry,
     ACTRIS_vocab:variableconstraints, ACTRIS_vocab:timeliness, ACTRIS_vocab:variablepropertyofinterest,
@@ -34787,16 +34787,17 @@ ACTRIS_vocab:cloudvariables a skos:Concept;
     ACTRIS_vocab:cloudareafraction, ACTRIS_vocab:cloudvolumefraction, ACTRIS_vocab:liquiddropletmassconcentration,
     ACTRIS_vocab:liquiddropletmassverticalflux, ACTRIS_vocab:liquiddropletnumberconcentration,
     ACTRIS_vocab:liquiddropletequivolumetricmediandiameter, ACTRIS_vocab:liquiddropleteffectiveradius,
-    ACTRIS_vocab:liquiddropletnumbersizedistribution, ACTRIS_vocab:iceparticlemassconcentration,
-    ACTRIS_vocab:iceparticlemassverticalflux, ACTRIS_vocab:iceparticlenumberconcentration,
-    ACTRIS_vocab:iceparticleequivolumetricmediandiameter, ACTRIS_vocab:iceparticleeffectiveradius,
-    ACTRIS_vocab:iceparticlenumbersizedistribution, ACTRIS_vocab:iceparticleshapeclassification,
-    ACTRIS_vocab:drizzledropletmassconcentration, ACTRIS_vocab:drizzledropletmassverticalflux,
-    ACTRIS_vocab:drizzledropletnumberconcentration, ACTRIS_vocab:drizzledropletnumbersizedistribution,
-    ACTRIS_vocab:drizzledropletequivolumetricmediandiameter, ACTRIS_vocab:drizzledropleteffectiveradius,
-    ACTRIS_vocab:raindropmassconcentration, ACTRIS_vocab:raindropmassverticalflux, ACTRIS_vocab:raindropnumberconcentration,
-    ACTRIS_vocab:raindropnumbersizedistribution, ACTRIS_vocab:raindropequivolumetricmediandiameter,
-    ACTRIS_vocab:raindropeffectiveradius, ACTRIS_vocab:cloudopticaldepth, ACTRIS_vocab:liquiddroplettotalcolumnmasscontent,
+    ACTRIS_vocab:liquiddropletnumbersizedistribution, ACTRIS_vocab:liquiddropletparticlesurfaceareaconcentration,
+    ACTRIS_vocab:iceparticlemassconcentration, ACTRIS_vocab:iceparticlemassverticalflux,
+    ACTRIS_vocab:iceparticlenumberconcentration, ACTRIS_vocab:iceparticleequivolumetricmediandiameter,
+    ACTRIS_vocab:iceparticleeffectiveradius, ACTRIS_vocab:iceparticlenumbersizedistribution,
+    ACTRIS_vocab:iceparticleshapeclassification, ACTRIS_vocab:drizzledropletmassconcentration,
+    ACTRIS_vocab:drizzledropletmassverticalflux, ACTRIS_vocab:drizzledropletnumberconcentration,
+    ACTRIS_vocab:drizzledropletnumbersizedistribution, ACTRIS_vocab:drizzledropletequivolumetricmediandiameter,
+    ACTRIS_vocab:drizzledropleteffectiveradius, ACTRIS_vocab:raindropmassconcentration,
+    ACTRIS_vocab:raindropmassverticalflux, ACTRIS_vocab:raindropnumberconcentration, ACTRIS_vocab:raindropnumbersizedistribution,
+    ACTRIS_vocab:raindropequivolumetricmediandiameter, ACTRIS_vocab:raindropeffectiveradius,
+    ACTRIS_vocab:cloudopticaldepth, ACTRIS_vocab:liquiddroplettotalcolumnmasscontent,
     ACTRIS_vocab:iceparticletotalcolumncontent, ACTRIS_vocab:icenucleatingparticlenumberconcentration,
     ACTRIS_vocab:cloudbasealtitude, ACTRIS_vocab:cloudtopaltitude, ACTRIS_vocab:cloudbaseheight,
     ACTRIS_vocab:cloudtopheight, ACTRIS_vocab:hydrometeorradialvelocity, ACTRIS_vocab:liquiddropletchloridemassconcentration,
@@ -34900,6 +34901,16 @@ ACTRIS_vocab:liquiddropletnumbersizedistribution a skos:Concept;
   iop:hasObjectOfInterest ACTRIS_vocab:liquiddroplet;
   iop:hasMatrix ACTRIS_vocab:cloudphase;
   dct:creator <https://orcid.org/0000-0001-9834-5100>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:liquiddropletparticlesurfaceareaconcentration a skos:Concept;
+  skos:prefLabel "liquid droplet particle surface area concentration"@en;
+  skos:definition "Liquid droplets are liquid water droplets (can be supercooled) that have no appreciable terminal fall velocity (< 0.1 m s-1). Size range: 1-50 microns in diameter. The particle surface area concentration is the surface area of all concerned particles, integrated over a unit volume."@en;
+  skos:broader ACTRIS_vocab:cloudvariables;
+  iop:hasProperty ACTRIS_vocab:particlesurfaceareaconcentration;
+  iop:hasObjectOfInterest ACTRIS_vocab:liquiddroplet;
+  iop:hasMatrix ACTRIS_vocab:cloudphase;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:iceparticlemassconcentration a skos:Concept;
@@ -36341,15 +36352,16 @@ ACTRIS_vocab:instrumenttype a skos:Concept;
   skos:broader ACTRIS_vocab:instrument;
   skos:relatedMatch <http://vocab.nerc.ac.uk/collection/L05/current/>;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  skos:narrower ACTRIS_vocab:insituparticleopticalparameterinstrument, ACTRIS_vocab:instrumenttypeunknown,
-    ACTRIS_vocab:particlecounter, ACTRIS_vocab:particlesizespectrometer, ACTRIS_vocab:thermo-opticalanalyser,
-    ACTRIS_vocab:lidar, ACTRIS_vocab:inductivelycoupledplasmaspectrometer, ACTRIS_vocab:ionbeamanalysis,
-    ACTRIS_vocab:aerosolparticlesampler, ACTRIS_vocab:aerosolparticlefiltersampler, ACTRIS_vocab:sorbentsampler,
-    ACTRIS_vocab:gassampler, ACTRIS_vocab:precipitationsampler, ACTRIS_vocab:sampler-others,
-    ACTRIS_vocab:lightspectrometer, ACTRIS_vocab:lightemissionspectrometer, ACTRIS_vocab:lightextinctionspectrometer,
-    ACTRIS_vocab:lightscatteringspectrometer, ACTRIS_vocab:lightabsorptionspectrometer,
-    ACTRIS_vocab:gas-phasemassspectrometer, ACTRIS_vocab:massspectrometer, ACTRIS_vocab:lightemissionDivabsorptiondetector,
-    ACTRIS_vocab:nuclearradiationdetector, ACTRIS_vocab:radiationabsorptiondetector, ACTRIS_vocab:meteorologicalbaseparametersensor,
+  skos:narrower ACTRIS_vocab:insituparticleopticalparameterinstrument, ACTRIS_vocab:multipleinstrumenttypes,
+    ACTRIS_vocab:instrumenttypeunknown, ACTRIS_vocab:particlecounter, ACTRIS_vocab:particlesizespectrometer,
+    ACTRIS_vocab:thermo-opticalanalyser, ACTRIS_vocab:lidar, ACTRIS_vocab:inductivelycoupledplasmaspectrometer,
+    ACTRIS_vocab:ionbeamanalysis, ACTRIS_vocab:aerosolparticlesampler, ACTRIS_vocab:aerosolparticlefiltersampler,
+    ACTRIS_vocab:sorbentsampler, ACTRIS_vocab:gassampler, ACTRIS_vocab:precipitationsampler,
+    ACTRIS_vocab:sampler-others, ACTRIS_vocab:lightspectrometer, ACTRIS_vocab:lightemissionspectrometer,
+    ACTRIS_vocab:lightextinctionspectrometer, ACTRIS_vocab:lightscatteringspectrometer,
+    ACTRIS_vocab:lightabsorptionspectrometer, ACTRIS_vocab:gas-phasemassspectrometer,
+    ACTRIS_vocab:massspectrometer, ACTRIS_vocab:lightemissionDivabsorptiondetector, ACTRIS_vocab:nuclearradiationdetector,
+    ACTRIS_vocab:radiationabsorptiondetector, ACTRIS_vocab:meteorologicalbaseparametersensor,
     ACTRIS_vocab:sampleconditioner, ACTRIS_vocab:highperformanceliquidchromatograph, ACTRIS_vocab:ionchromatograph,
     ACTRIS_vocab:gaschromatograph, ACTRIS_vocab:cloudradar, ACTRIS_vocab:microwaveradiometer,
     ACTRIS_vocab:photometer, ACTRIS_vocab:electronparamagneticresonancespectrometer, ACTRIS_vocab:positioningsystem,
@@ -36362,6 +36374,13 @@ ACTRIS_vocab:insituparticleopticalparameterinstrument a skos:Concept;
   skos:broader ACTRIS_vocab:instrumenttype;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   owl:deprecated "true"@en;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:multipleinstrumenttypes a skos:Concept;
+  skos:prefLabel "multiple instrument types"@en;
+  skos:definition "Descriptor indicating that more than one instrument type has been used to acquire a dataset. In order to enable meaningful searches, use of \"multiple instrument types\" is strongly discouraged in favour of a list of specific instrument types used to acquire the dataset."@en;
+  skos:broader ACTRIS_vocab:instrumenttype;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:instrumenttypeunknown a skos:Concept;
@@ -40752,7 +40771,7 @@ ACTRIS_vocab:variablepropertyofinterest a skos:Concept;
     ACTRIS_vocab:refractiveindex, ACTRIS_vocab:growthfactor, ACTRIS_vocab:massabsorptioncoefficient,
     ACTRIS_vocab:massextinctioncoefficient, ACTRIS_vocab:massscatteringcoefficient, ACTRIS_vocab:photolysisfrequency,
     ACTRIS_vocab:quantumyield, ACTRIS_vocab:singlescateringalbedo, ACTRIS_vocab:secondaryorganicaerosolparticleyield,
-    ACTRIS_vocab:vapourpressure;
+    ACTRIS_vocab:vapourpressure, ACTRIS_vocab:particlesurfaceareaconcentration;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/>;
   skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
@@ -40977,6 +40996,7 @@ ACTRIS_vocab:growthfactor a skos:Concept;
 ACTRIS_vocab:massabsorptioncoefficient a skos:Concept;
   skos:prefLabel "mass absorption coefficient"@en;
   skos:altLabel "MAC"@en;
+  skos:definition "The mass absorption coefficient is the ratio of the mass of a target object, integrated over a unit volume, and the light absorption coefficient, integrated over the same unit volume."@en;
   skos:broader ACTRIS_vocab:variablepropertyofinterest, ACTRIS_vocab:fundamentalparameter;
   dct:creator <https://orcid.org/0000-0001-5158-8703>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
@@ -40984,6 +41004,7 @@ ACTRIS_vocab:massabsorptioncoefficient a skos:Concept;
 ACTRIS_vocab:massextinctioncoefficient a skos:Concept;
   skos:prefLabel "mass extinction coefficient"@en;
   skos:altLabel "MEC"@en;
+  skos:definition "The mass extinction coefficient is the ratio of the mass of a target object, integrated over a unit volume, and the light extinction coefficient, integrated over the same unit volume."@en;
   skos:broader ACTRIS_vocab:variablepropertyofinterest, ACTRIS_vocab:fundamentalparameter;
   dct:creator <https://orcid.org/0000-0001-5158-8703>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
@@ -40991,6 +41012,7 @@ ACTRIS_vocab:massextinctioncoefficient a skos:Concept;
 ACTRIS_vocab:massscatteringcoefficient a skos:Concept;
   skos:prefLabel "mass scattering coefficient"@en;
   skos:altLabel "MSC"@en;
+  skos:definition "The mass scattering coefficient is the ratio of the mass of a target object, integrated over a unit volume, and the light scattering coefficient, integrated over the same unit volume."@en;
   skos:broader ACTRIS_vocab:variablepropertyofinterest, ACTRIS_vocab:fundamentalparameter;
   dct:creator <https://orcid.org/0000-0001-5158-8703>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
@@ -41010,6 +41032,7 @@ ACTRIS_vocab:quantumyield a skos:Concept;
 ACTRIS_vocab:singlescateringalbedo a skos:Concept;
   skos:prefLabel "single scatering albedo"@en;
   skos:altLabel "SSA"@en;
+  skos:definition "The single scattering albedo is the ratio of the scattering and extinction coefficients of the aerosol particles in a unit volume."@en;
   skos:broader ACTRIS_vocab:variablepropertyofinterest, ACTRIS_vocab:fundamentalparameter;
   dct:creator <https://orcid.org/0000-0001-5158-8703>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
@@ -41024,6 +41047,13 @@ ACTRIS_vocab:vapourpressure a skos:Concept;
   skos:prefLabel "vapour pressure"@en;
   skos:broader ACTRIS_vocab:variablepropertyofinterest, ACTRIS_vocab:fundamentalparameter;
   dct:creator <https://orcid.org/0000-0001-5158-8703>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:particlesurfaceareaconcentration a skos:Concept;
+  skos:prefLabel "particle surface area concentration"@en;
+  skos:definition "The particle surface area concentration is the area of all surfaces of all concerned particles, integrated over a unit volume."@en;
+  skos:broader ACTRIS_vocab:variablepropertyofinterest;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:producttype a skos:Concept;
