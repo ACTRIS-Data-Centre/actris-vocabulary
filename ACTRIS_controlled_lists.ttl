@@ -31,10 +31,11 @@
   dct:contributor <https://orcid.org/0000-0001-9250-9813/>;
   dc:license <https://creativecommons.org/publicdomain/zero/1.0/>;
   pav:createdOn "2022-12-16T16:40:00+01:00"@en;
-  pav:lastUpdatedOn "2023-09-05T19:00:00+02:00"@en;
-  pav:version "1.0.0"@en;
+  pav:lastUpdatedOn "2025-03-21T20:00:00+01:00"@en;
+  pav:version "1.0.1"@en;
   skos:hasTopConcept ACTRIS_ctrl_lists:level, ACTRIS_ctrl_lists:userroles, ACTRIS_ctrl_lists:identifier,
-    ACTRIS_ctrl_lists:framework, ACTRIS_ctrl_lists:Glossary, ACTRIS_ctrl_lists:usemetadata .
+    ACTRIS_ctrl_lists:framework, ACTRIS_ctrl_lists:Glossary, ACTRIS_ctrl_lists:calibrationscale,
+    ACTRIS_ctrl_lists:usemetadata .
 
 ACTRIS_ctrl_lists:level a skos:Concept;
   skos:prefLabel "level"@en;
@@ -464,10 +465,11 @@ ACTRIS_ctrl_lists:framework a skos:Concept;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9250-9813>;
   skos:narrower ACTRIS_ctrl_lists:ACTRIS, ACTRIS_ctrl_lists:AMAP, ACTRIS_ctrl_lists:ARM,
-    ACTRIS_ctrl_lists:CAMP, ACTRIS_ctrl_lists:CLOUDNET, ACTRIS_ctrl_lists:CREATE, ACTRIS_ctrl_lists:EARLINET,
-    ACTRIS_ctrl_lists:EMEP, ACTRIS_ctrl_lists:EUROCHAMP, ACTRIS_ctrl_lists:EUSAAR, ACTRIS_ctrl_lists:GAW-WDCA,
-    ACTRIS_ctrl_lists:GAW-WDCRG, ACTRIS_ctrl_lists:GUAN, ACTRIS_ctrl_lists:HELCOM, ACTRIS_ctrl_lists:NDACC,
-    ACTRIS_ctrl_lists:NILU, ACTRIS_ctrl_lists:NOAA-ESRL, ACTRIS_ctrl_lists:GALION, ACTRIS_ctrl_lists:AERONET,
+    ACTRIS_ctrl_lists:ATMO-ACCESS, ACTRIS_ctrl_lists:CAMP, ACTRIS_ctrl_lists:CLOUDNET,
+    ACTRIS_ctrl_lists:CREATE, ACTRIS_ctrl_lists:EARLINET, ACTRIS_ctrl_lists:EMEP, ACTRIS_ctrl_lists:EUROCHAMP,
+    ACTRIS_ctrl_lists:EUSAAR, ACTRIS_ctrl_lists:GAW-WDCA, ACTRIS_ctrl_lists:GAW-WDCRG,
+    ACTRIS_ctrl_lists:GUAN, ACTRIS_ctrl_lists:HELCOM, ACTRIS_ctrl_lists:NDACC, ACTRIS_ctrl_lists:NILU,
+    ACTRIS_ctrl_lists:NOAA-ESRL, ACTRIS_ctrl_lists:GALION, ACTRIS_ctrl_lists:AERONET,
     ACTRIS_ctrl_lists:RI-URBANS;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
   skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
@@ -491,6 +493,11 @@ ACTRIS_ctrl_lists:ARM a skos:Concept;
   skos:broader ACTRIS_ctrl_lists:framework;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0001-9250-9813>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:ATMO-ACCESS a skos:Concept;
+  skos:prefLabel "ATMO-ACCESS"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
 ACTRIS_ctrl_lists:CAMP a skos:Concept;
@@ -624,6 +631,172 @@ ACTRIS_ctrl_lists:ACTRISdata a skos:Concept;
   skos:related ACTRIS_vocab:ACTRISlabelled;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
+ACTRIS_ctrl_lists:calibrationscale a skos:Concept;
+  skos:prefLabel "calibration scale"@en;
+  skos:definition "Reference to an identified, metrological, primary standard."@en;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:Apel-Riemer, ACTRIS_ctrl_lists:Empa-2015-p, ACTRIS_ctrl_lists:MPI-2009,
+    ACTRIS_ctrl_lists:NOAA-2003, ACTRIS_ctrl_lists:NOAA-2003B, ACTRIS_ctrl_lists:NOAA-2004,
+    ACTRIS_ctrl_lists:NOAA-Jul10-p, ACTRIS_ctrl_lists:NOAA04, ACTRIS_ctrl_lists:NPL, ACTRIS_ctrl_lists:NPLplusGPT,
+    ACTRIS_ctrl_lists:SIO1998, ACTRIS_ctrl_lists:SIO2005, ACTRIS_ctrl_lists:SIO2007, ACTRIS_ctrl_lists:SIO2012,
+    ACTRIS_ctrl_lists:SIO2014, ACTRIS_ctrl_lists:SIO-p, ACTRIS_ctrl_lists:UB-98, ACTRIS_ctrl_lists:UB-p,
+    ACTRIS_ctrl_lists:WMOCH4X2004, ACTRIS_ctrl_lists:WMOCOX2004, ACTRIS_ctrl_lists:WMOCOX2014,
+    ACTRIS_ctrl_lists:WMOCOX2014A, ACTRIS_ctrl_lists:WMOCO2X2007, ACTRIS_ctrl_lists:WMOCO2X2019,
+    ACTRIS_ctrl_lists:WMON2OX2006A;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
+  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Apel-Riemer a skos:Concept;
+  skos:prefLabel "Apel-Riemer"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  skos:related ACTRIS_vocab:ACTRISlabelled;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Empa-2015-p a skos:Concept;
+  skos:prefLabel "Empa-2015-p"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:MPI-2009 a skos:Concept;
+  skos:prefLabel "MPI-2009"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NOAA-2003 a skos:Concept;
+  skos:prefLabel "NOAA-2003"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NOAA-2003B a skos:Concept;
+  skos:prefLabel "NOAA-2003B"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NOAA-2004 a skos:Concept;
+  skos:prefLabel "NOAA-2004"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NOAA-Jul10-p a skos:Concept;
+  skos:prefLabel "NOAA-Jul10-p"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NOAA04 a skos:Concept;
+  skos:prefLabel "NOAA04"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NPL a skos:Concept;
+  skos:prefLabel "NPL"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NPLplusGPT a skos:Concept;
+  skos:prefLabel "NPL+GPT"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SIO1998 a skos:Concept;
+  skos:prefLabel "SIO1998"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SIO2005 a skos:Concept;
+  skos:prefLabel "SIO2005"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SIO2007 a skos:Concept;
+  skos:prefLabel "SIO2007"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SIO2012 a skos:Concept;
+  skos:prefLabel "SIO2012"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SIO2014 a skos:Concept;
+  skos:prefLabel "SIO2014"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SIO-p a skos:Concept;
+  skos:prefLabel "SIO-p"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:UB-98 a skos:Concept;
+  skos:prefLabel "UB-98"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:UB-p a skos:Concept;
+  skos:prefLabel "UB-p"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMOCH4X2004 a skos:Concept;
+  skos:prefLabel "WMO CH4 X2004"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMOCOX2004 a skos:Concept;
+  skos:prefLabel "WMO CO X2004"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMOCOX2014 a skos:Concept;
+  skos:prefLabel "WMO CO X2014"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMOCOX2014A a skos:Concept;
+  skos:prefLabel "WMO CO X2014A"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMOCO2X2007 a skos:Concept;
+  skos:prefLabel "WMO CO2 X2007"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMOCO2X2019 a skos:Concept;
+  skos:prefLabel "WMO CO2 X2019"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMON2OX2006A a skos:Concept;
+  skos:prefLabel "WMO N2O X2006A"@en;
+  skos:broader ACTRIS_ctrl_lists:calibrationscale;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
 ACTRIS_ctrl_lists:usemetadata a skos:Concept;
   skos:prefLabel "use metadata"@en;
   skos:definition "Controlled vocabulary for detailed descriptions of operating procedures."@en;
@@ -722,6 +895,35 @@ ACTRIS_ctrl_lists:stainlesssteel a skos:Concept;
 ACTRIS_ctrl_lists:aerosolinsitucontrolledlists a skos:Concept;
   skos:prefLabel "aerosol in situ controlled lists"@en;
   skos:broader ACTRIS_ctrl_lists:usemetadata;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:filtertype;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:filtertype a skos:Concept;
+  skos:prefLabel "filter type"@en;
+  skos:broader ACTRIS_ctrl_lists:aerosolinsitucontrolledlists;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:MageeAE33-FT, ACTRIS_ctrl_lists:Magee8050, ACTRIS_ctrl_lists:Magee8060;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:MageeAE33-FT a skos:Concept;
+  skos:prefLabel "Magee AE33-FT"@en;
+  skos:broader ACTRIS_ctrl_lists:filtertype;
+  skos:related ACTRIS_vocab:AerosolAE33;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Magee8050 a skos:Concept;
+  skos:prefLabel "Magee 8050"@en;
+  skos:broader ACTRIS_ctrl_lists:filtertype;
+  skos:related ACTRIS_vocab:AerosolAE33;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Magee8060 a skos:Concept;
+  skos:prefLabel "Magee 8060"@en;
+  skos:broader ACTRIS_ctrl_lists:filtertype;
+  skos:related ACTRIS_vocab:AerosolAE33;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
