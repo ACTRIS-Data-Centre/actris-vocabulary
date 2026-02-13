@@ -31,8 +31,8 @@
   dct:contributor <https://orcid.org/0000-0001-9250-9813/>;
   dc:license <https://creativecommons.org/publicdomain/zero/1.0/>;
   pav:createdOn "2022-12-16T16:40:00+01:00"@en;
-  pav:lastUpdatedOn "2025-03-21T20:00:00+01:00"@en;
-  pav:version "1.0.1"@en;
+  pav:lastUpdatedOn "2026-02-13T18:45:00+01:00"@en;
+  pav:version "1.1.0"@en;
   skos:hasTopConcept ACTRIS_ctrl_lists:level, ACTRIS_ctrl_lists:userroles, ACTRIS_ctrl_lists:identifier,
     ACTRIS_ctrl_lists:framework, ACTRIS_ctrl_lists:Glossary, ACTRIS_ctrl_lists:calibrationscale,
     ACTRIS_ctrl_lists:usemetadata .
@@ -896,7 +896,8 @@ ACTRIS_ctrl_lists:aerosolinsitucontrolledlists a skos:Concept;
   skos:prefLabel "aerosol in situ controlled lists"@en;
   skos:broader ACTRIS_ctrl_lists:usemetadata;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  skos:narrower ACTRIS_ctrl_lists:filtertype;
+  skos:narrower ACTRIS_ctrl_lists:filtertype, ACTRIS_ctrl_lists:instrumentstatuscheck,
+    ACTRIS_ctrl_lists:instrumentperformancecheck, ACTRIS_ctrl_lists:instrumentcalibration;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
 ACTRIS_ctrl_lists:filtertype a skos:Concept;
@@ -909,21 +910,222 @@ ACTRIS_ctrl_lists:filtertype a skos:Concept;
 ACTRIS_ctrl_lists:MageeAE33-FT a skos:Concept;
   skos:prefLabel "Magee AE33-FT"@en;
   skos:broader ACTRIS_ctrl_lists:filtertype;
-  skos:related ACTRIS_vocab:AerosolAE33;
+  skos:related ACTRIS_vocab:AerosolAE33, ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
 ACTRIS_ctrl_lists:Magee8050 a skos:Concept;
   skos:prefLabel "Magee 8050"@en;
   skos:broader ACTRIS_ctrl_lists:filtertype;
-  skos:related ACTRIS_vocab:AerosolAE33;
+  skos:related ACTRIS_vocab:AerosolAE33, ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
 ACTRIS_ctrl_lists:Magee8060 a skos:Concept;
   skos:prefLabel "Magee 8060"@en;
   skos:broader ACTRIS_ctrl_lists:filtertype;
-  skos:related ACTRIS_vocab:AerosolAE33;
+  skos:related ACTRIS_vocab:AerosolAE33, ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:instrumentstatuscheck a skos:Concept;
+  skos:prefLabel "instrument status check"@en;
+  skos:broader ACTRIS_ctrl_lists:aerosolinsitucontrolledlists, ACTRIS_ctrl_lists:reactivetracegasinsitucontrolledlists,
+    ACTRIS_ctrl_lists:aerosolremotesensingcontrolledlists;
+  skos:exactMatch ACTRIS_vocab:instrumentstatuscheck;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:checkdiagnosticvalues, ACTRIS_ctrl_lists:checkcleanlinessofoptics,
+    ACTRIS_ctrl_lists:boundarycheck, ACTRIS_ctrl_lists:checksampleflow, ACTRIS_ctrl_lists:checksheathairflow,
+    ACTRIS_ctrl_lists:checkdataacquisition, ACTRIS_ctrl_lists:checkoperatingfluids, ACTRIS_ctrl_lists:checkfiltertapelength,
+    ACTRIS_ctrl_lists:checktransmittancedecrease, ACTRIS_ctrl_lists:voltagesettingcheck,
+    ACTRIS_ctrl_lists:flowsettingcheck, ACTRIS_ctrl_lists:pressuresettingcheck, ACTRIS_ctrl_lists:instrumentinterferencecheck,
+    ACTRIS_ctrl_lists:batterylevelcheck, ACTRIS_ctrl_lists:trackingsystemcheck, ACTRIS_ctrl_lists:humiditysensorcheck,
+    ACTRIS_ctrl_lists:temperaturesensorcheck, ACTRIS_ctrl_lists:calibrationshiftcheck,
+    ACTRIS_ctrl_lists:opticscheck, ACTRIS_ctrl_lists:collimatorcheck, ACTRIS_ctrl_lists:systemcablingcheck,
+    ACTRIS_ctrl_lists:telecovertest, ACTRIS_ctrl_lists:Rayleightfittest, ACTRIS_ctrl_lists:fulloverlapminimumheighttest,
+    ACTRIS_ctrl_lists:triggerdelaytest, ACTRIS_ctrl_lists:darkcurrenttest, ACTRIS_ctrl_lists:offsetanglecheck,
+    ACTRIS_ctrl_lists:calibrationfactorcheck, ACTRIS_ctrl_lists:GHKcoefficientscheck;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkdiagnosticvalues a skos:Concept;
+  skos:prefLabel "check diagnostic values"@en;
+  skos:definition "check if the status values are within the pre-determined ranges"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkcleanlinessofoptics a skos:Concept;
+  skos:prefLabel "check cleanliness of optics"@en;
+  skos:definition "check if the status value for optics cleanliness is within pre-determined ranges"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:boundarycheck a skos:Concept;
+  skos:prefLabel "boundary check"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck, ACTRIS_ctrl_lists:aerosolremotesensingcontrolledlists;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:exactMatch ACTRIS_vocab:boundarycheck;
+  skos:narrower ACTRIS_ctrl_lists:negativeerrorcheck, ACTRIS_ctrl_lists:negativevaluescheck,
+    ACTRIS_ctrl_lists:checkonAerosolOpticalDepth, ACTRIS_ctrl_lists:checkonIntegratedBackscatter,
+    ACTRIS_ctrl_lists:checkonlidarratio, ACTRIS_ctrl_lists:checkonvolumedepolarization,
+    ACTRIS_ctrl_lists:checkonparticledepolarization, ACTRIS_ctrl_lists:checkonwatervapormixingratio;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checksampleflow a skos:Concept;
+  skos:prefLabel "check sample flow"@en;
+  skos:definition "check if the sample flow rate is nominal"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checksheathairflow a skos:Concept;
+  skos:prefLabel "check sheath air flow"@en;
+  skos:definition "check if the sheat flow rate is nominal"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkdataacquisition a skos:Concept;
+  skos:prefLabel "check data acquisition"@en;
+  skos:definition "This control performs a check on the proper communication of the instrument with the data acquisition software (if applicable)."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkoperatingfluids a skos:Concept;
+  skos:prefLabel "check operating fluids"@en;
+  skos:definition "This control performs a check of the sufficiency of the operating fluid."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkfiltertapelength a skos:Concept;
+  skos:prefLabel "check filter tape length"@en;
+  skos:definition "This control performs a check of the sufficiency of the filter tape."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checktransmittancedecrease a skos:Concept;
+  skos:prefLabel "check transmittance decrease"@en;
+  skos:definition "This control performs a check on the gradual decrease of the light transmittance."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:instrumentperformancecheck a skos:Concept;
+  skos:prefLabel "instrument performance check"@en;
+  skos:broader ACTRIS_ctrl_lists:aerosolinsitucontrolledlists;
+  skos:exactMatch ACTRIS_vocab:instrumentperformancecheck;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:checkofdetectionefficiency, ACTRIS_ctrl_lists:checkofsizingaccuracy,
+    ACTRIS_ctrl_lists:checkofbaseline-zerocheck, ACTRIS_ctrl_lists:checkofnoise, ACTRIS_ctrl_lists:checkofoffset,
+    ACTRIS_ctrl_lists:checkoffilterspot, ACTRIS_ctrl_lists:checkofhighvoltage, ACTRIS_ctrl_lists:highspancheckorspangascheck;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkofdetectionefficiency a skos:Concept;
+  skos:prefLabel "check of detection efficiency"@en;
+  skos:definition "this control performs a check on ability of the instrument to detect signals related to an observation"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkofsizingaccuracy a skos:Concept;
+  skos:prefLabel "check of sizing accuracy"@en;
+  skos:definition "this control performs a check on the ability of the instrument to determine the size of a particle"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkofbaseline-zerocheck a skos:Concept;
+  skos:prefLabel "check of baseline (zero check)"@en;
+  skos:definition "this control performs a check of the presence/absence of leaks or contamination within a system or an instrument"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkofnoise a skos:Concept;
+  skos:prefLabel "check of noise"@en;
+  skos:definition "this control performs a check of the presence or absence of random fluctuation in the signal that limits our ability to detect the presence of the underlying signal"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkofoffset a skos:Concept;
+  skos:prefLabel "check of offset"@en;
+  skos:definition "this control performs a check of the presense/absence of a deviation of the measured signal from the reference or known signal."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkoffilterspot a skos:Concept;
+  skos:prefLabel "check of filter spot"@en;
+  skos:definition "this control performs a visual check on spot on the filter where particles are loaded"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkofhighvoltage a skos:Concept;
+  skos:prefLabel "check of high voltage"@en;
+  skos:definition "check if the voltage output is nominal"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:highspancheckorspangascheck a skos:Concept;
+  skos:prefLabel "high span check or span gas check"@en;
+  skos:definition "this control performs a check on how well the nephelometer measures a quantity with a known scattering value"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:instrumentcalibration a skos:Concept;
+  skos:prefLabel "instrument calibration"@en;
+  skos:broader ACTRIS_ctrl_lists:aerosolinsitucontrolledlists;
+  skos:exactMatch ACTRIS_vocab:instrumentcalibration;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:highvoltagecalibration, ACTRIS_ctrl_lists:highspancalibration,
+    ACTRIS_ctrl_lists:flowcalibration;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:highvoltagecalibration a skos:Concept;
+  skos:prefLabel "high voltage calibration"@en;
+  skos:definition "This control performes an adjustment of the voltage output."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentcalibration;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:highspancalibration a skos:Concept;
+  skos:prefLabel "high span calibration"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentcalibration;
+  skos:related ACTRIS_vocab:aerosolinsitu;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:flowcalibration a skos:Concept;
+  skos:prefLabel "flow calibration"@en;
+  skos:definition "This control performs an adjustment of the flow if is out of the nominal range."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentcalibration;
+  skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
@@ -937,12 +1139,363 @@ ACTRIS_ctrl_lists:reactivetracegasinsitucontrolledlists a skos:Concept;
   skos:prefLabel "reactive trace gas in situ controlled lists"@en;
   skos:broader ACTRIS_ctrl_lists:usemetadata;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:instrumentstatuscheck, ACTRIS_ctrl_lists:stationaudit;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:voltagesettingcheck a skos:Concept;
+  skos:prefLabel "voltage setting check"@en;
+  skos:definition "Check if the voltage output is nominal."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:reactivetracegasesinsitu;
+  dct:creator <https://orcid.org/0000-0003-0648-6622>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:flowsettingcheck a skos:Concept;
+  skos:prefLabel "flow setting check"@en;
+  skos:definition "Check if the flow measurement is nominal."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:reactivetracegasesinsitu;
+  dct:creator <https://orcid.org/0000-0003-0648-6623>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:pressuresettingcheck a skos:Concept;
+  skos:prefLabel "pressure setting check"@en;
+  skos:definition "Check if the pressure measurement is nominal."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:reactivetracegasesinsitu;
+  dct:creator <https://orcid.org/0000-0003-0648-6624>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:instrumentinterferencecheck a skos:Concept;
+  skos:prefLabel "instrument interference check"@en;
+  skos:definition "Test whether measurement has interferences with other species in sample besides the targeted one, e.g. ozone and water vapour interferences for NOx measurements."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:reactivetracegasesinsitu;
+  dct:creator <https://orcid.org/0000-0003-0648-6625>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:stationaudit a skos:Concept;
+  skos:prefLabel "station audit"@en;
+  skos:broader ACTRIS_ctrl_lists:reactivetracegasinsitucontrolledlists, ACTRIS_ctrl_lists:aerosolremotesensingcontrolledlists;
+  skos:exactMatch ACTRIS_vocab:stationaudit;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-NMHCmeasurementguidelinerequirements,
+    ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-VOCmeasurementguidelinerequirements,
+    ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-NOxmeasurementguidelinerequirements,
+    ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-condensablesmeasurementguidelinerequirements,
+    ACTRIS_ctrl_lists:checkifprocessedbyCARSapprovedlidarconfiguration;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-NMHCmeasurementguidelinerequirements
+  a skos:Concept;
+  skos:prefLabel "check if processed according to CiGas-NMHC measurement guideline requirements"@en;
+  skos:definition "check if processed according to CiGas-NMHC measurement guideline requirements"@en;
+  skos:broader ACTRIS_ctrl_lists:stationaudit;
+  skos:related ACTRIS_vocab:reactivetracegasesinsitu;
+  dct:creator <https://orcid.org/0000-0003-0648-6622>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-VOCmeasurementguidelinerequirements
+  a skos:Concept;
+  skos:prefLabel "check if processed according to CiGas-VOC measurement guideline requirements"@en;
+  skos:definition "check if processed according to CiGas-VOC measurement guideline requirements"@en;
+  skos:broader ACTRIS_ctrl_lists:stationaudit;
+  skos:related ACTRIS_vocab:reactivetracegasesinsitu;
+  dct:creator <https://orcid.org/0000-0003-0648-6622>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-NOxmeasurementguidelinerequirements
+  a skos:Concept;
+  skos:prefLabel "check if processed according to CiGas-NOx measurement guideline requirements"@en;
+  skos:definition "check if processed according to CiGas-NOx measurement guideline requirements"@en;
+  skos:broader ACTRIS_ctrl_lists:stationaudit;
+  skos:related ACTRIS_vocab:reactivetracegasesinsitu;
+  dct:creator <https://orcid.org/0000-0003-0648-6622>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-condensablesmeasurementguidelinerequirements
+  a skos:Concept;
+  skos:prefLabel "check if processed according to CiGas-condensables measurement guideline requirements"@en;
+  skos:definition "check if processed according to CiGas-condensables measurement guideline requirements"@en;
+  skos:broader ACTRIS_ctrl_lists:stationaudit;
+  skos:related ACTRIS_vocab:reactivetracegasesinsitu;
+  dct:creator <https://orcid.org/0000-0003-0648-6622>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
 ACTRIS_ctrl_lists:aerosolremotesensingcontrolledlists a skos:Concept;
   skos:prefLabel "aerosol remote sensing controlled lists"@en;
   skos:broader ACTRIS_ctrl_lists:usemetadata;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:boundarycheck, ACTRIS_ctrl_lists:combinedassessment,
+    ACTRIS_ctrl_lists:physicaldependencecheck, ACTRIS_ctrl_lists:instrumentstatuscheck,
+    ACTRIS_ctrl_lists:stationaudit;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:negativeerrorcheck a skos:Concept;
+  skos:prefLabel "negative error check"@en;
+  skos:definition "Profile scanning and checking that error on the optical properties is positive for all defined values of the corresponding optical property."@en;
+  skos:broader ACTRIS_ctrl_lists:boundarycheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0003-4157-0838>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:negativevaluescheck a skos:Concept;
+  skos:prefLabel "negative values check"@en;
+  skos:definition "This control checks for negative peaks. It performs a profile scanning and checks that the aerosol optical properties are positive within 3σ, that there are not negative peaks and that very extreme values are present only in cirrus cloud cases."@en;
+  skos:broader ACTRIS_ctrl_lists:boundarycheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0003-4157-0838>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkonAerosolOpticalDepth a skos:Concept;
+  skos:prefLabel "check on Aerosol Optical Depth"@en;
+  skos:definition "The aerosol optical depth AOD (without any assumption in the lowest troposphere, so evaluated only in the portion of atmosphere covered by the provided profile) should remain under an established threshold for data not belonging to the cirrus category."@en;
+  skos:broader ACTRIS_ctrl_lists:boundarycheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0003-4157-0838>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkonIntegratedBackscatter a skos:Concept;
+  skos:prefLabel "check on Integrated Backscatter"@en;
+  skos:definition "The aerosol integrated backscatter IB (without any assumption in the lowest troposphere, so evaluated only in the portion of atmosphere covered by the provided profile) should remain under an established threshold for data not belonging to the cirrus category."@en;
+  skos:broader ACTRIS_ctrl_lists:boundarycheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0003-4157-0838>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkonlidarratio a skos:Concept;
+  skos:prefLabel "check on lidar ratio"@en;
+  skos:definition "This control performs a check on the Lidar Ratio values when Extinction and Backscatter are provided in the same product file (i.e. are provided at the same vertical resolution). Lidarratio is defined as positive value and values are typically between 10 and 120 sr."@en;
+  skos:broader ACTRIS_ctrl_lists:boundarycheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0003-4157-0838>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkonvolumedepolarization a skos:Concept;
+  skos:prefLabel "check on volume depolarization"@en;
+  skos:definition "This control is performed on the volume depolarization variable and its error (error_volumedepolarization) in order to check that the following conditions are preserved : |volumedepolarization|< 3 error_volumedepolarization volumedepolarization must be between [0, 1] within its error"@en;
+  skos:broader ACTRIS_ctrl_lists:boundarycheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0003-4157-0838>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkonparticledepolarization a skos:Concept;
+  skos:prefLabel "check on particle depolarization"@en;
+  skos:definition "This control is performed on the particle depolarization variable and its error (error_particledepolarization) in order to check that the following conditions are preserved : |particledepolarization|< 3 error_particledepolarization particledepolarization must be between [0, 1] within its error"@en;
+  skos:broader ACTRIS_ctrl_lists:boundarycheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0003-4157-0838>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkonwatervapormixingratio a skos:Concept;
+  skos:prefLabel "check on water vapor mixing ratio"@en;
+  skos:definition "This control is performed on the water vapor mixing ratio variable and its error (error_watervapor) in order to check that the following conditions are preserved : |watervapormixingratio|< 3 error_watervapor watervapormixingratio must be between [0, 100 g/Kg] within its error"@en;
+  skos:broader ACTRIS_ctrl_lists:boundarycheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0003-4157-0838>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:combinedassessment a skos:Concept;
+  skos:prefLabel "combined assessment"@en;
+  skos:broader ACTRIS_ctrl_lists:aerosolremotesensingcontrolledlists;
+  skos:exactMatch ACTRIS_vocab:combinedassessment;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:Earlinetlegacydatalabeledascirruscontaminated, ACTRIS_ctrl_lists:checkonatmosphericmolecularcalculationsource;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Earlinetlegacydatalabeledascirruscontaminated a skos:Concept;
+  skos:prefLabel "Earlinet legacy data labeled as cirrus contaminated"@en;
+  skos:definition "Data products uploaded before the new release of the database (2019-06-24), labeled as cirrus, and not reporting the cloud mask as vertical information are labeled as Level 1. This control is implemented as a message to data users of handling with care such data, because a cirrus cloud is present but the location in the vertical dimension of such cloud is not precisely reported into the data product."@en;
+  skos:broader ACTRIS_ctrl_lists:combinedassessment;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0003-4157-0838>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkonatmosphericmolecularcalculationsource a skos:Concept;
+  skos:prefLabel "check on atmospheric molecular calculation source"@en;
+  skos:definition "The use of standard atmosphere profiles is source of potentially high error in the optical property profiles. Therefore data products obtained using such molecular profiles are not considered as not high quality and will be labelled as Level 1 data product. This control is performed on the variable atmospheric_molecular_calculation_source. If its value is 0 (zero) the product is labelled as Level 1."@en;
+  skos:broader ACTRIS_ctrl_lists:combinedassessment;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0003-4157-0838>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:physicaldependencecheck a skos:Concept;
+  skos:prefLabel "physical dependence check"@en;
+  skos:broader ACTRIS_ctrl_lists:aerosolremotesensingcontrolledlists;
+  skos:exactMatch ACTRIS_vocab:physicaldependencecheck;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  skos:narrower ACTRIS_ctrl_lists:consistencyofdifferentopticalproperties;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:consistencyofdifferentopticalproperties a skos:Concept;
+  skos:prefLabel "consistency of different optical properties"@en;
+  skos:definition "Files correspondingly to the same observational scene (same station, same time of measurement within 15 minutes of tolerance), are checked in a combined way."@en;
+  skos:broader ACTRIS_ctrl_lists:physicaldependencecheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0003-4157-0838>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:batterylevelcheck a skos:Concept;
+  skos:prefLabel "battery level check"@en;
+  skos:definition "Check if the battery provides a sufficient level of energy for a nominal behavior of the instrument."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:trackingsystemcheck a skos:Concept;
+  skos:prefLabel "tracking system check"@en;
+  skos:definition "Check if the reference object (sun, moon...) tracking system is nominal."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:humiditysensorcheck a skos:Concept;
+  skos:prefLabel "humidity sensor check"@en;
+  skos:definition "Check if the humidity sensor is nominal."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:temperaturesensorcheck a skos:Concept;
+  skos:prefLabel "temperature sensor check"@en;
+  skos:definition "Check if the temperature sensor is nominal."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:calibrationshiftcheck a skos:Concept;
+  skos:prefLabel "calibration shift check"@en;
+  skos:definition "Check if the radiances shift between 2 photometer calibration events is below requirements."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:opticscheck a skos:Concept;
+  skos:prefLabel "optics check"@en;
+  skos:definition "Check if the optics is nominal."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:collimatorcheck a skos:Concept;
+  skos:prefLabel "collimator check"@en;
+  skos:definition "Check if the collimator is nominal."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:systemcablingcheck a skos:Concept;
+  skos:prefLabel "system cabling check"@en;
+  skos:definition "Check if all the system cabling (communication, controller, electrical...) is nominal."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:telecovertest a skos:Concept;
+  skos:prefLabel "telecover test"@en;
+  skos:definition "Deviations of the near range signals from different parts of the telescope and the comparison of such deviations of different lidar channels and with theoretical ray-tracing simulations can reveal the distance of full overlap and possible reasons for the deviations from the ideal case. The test is based on the fact that the backscattered photons collected from the near range by different parts of the telescope of a lidar system must give the same range dependency of the signal, and if not, the range dependency of the whole signal is uncertain."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Rayleightfittest a skos:Concept;
+  skos:prefLabel "Rayleight fit test"@en;
+  skos:definition "This checkup tells us the quality of the signals in the far range. Especially analog signals show distortions there. The Rayleigh-fit is a normalization of the range corrected lidar signal to the calculated attenuated molecular backscatter coefficient (Rayleigh signal) in a range where we assume clean air without aerosols and where the calculated signal fits the lidar signal sufficiently good."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:fulloverlapminimumheighttest a skos:Concept;
+  skos:prefLabel "full overlap minimum height test"@en;
+  skos:definition "This information is obtained from the Telecover Test and represents the minimum height where the overlap between the laser beam and the receiver field of view is full."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:triggerdelaytest a skos:Concept;
+  skos:prefLabel "trigger delay test"@en;
+  skos:definition "The trigger-delay tests aims to check the time difference between the actual laser pulse emission and the assumed zero range of the signal recording (zero bin). If this difference is different from zero, this can cause large errors in the near range signal up to about 1 km range and must be measured."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:darkcurrenttest a skos:Concept;
+  skos:prefLabel "dark current test"@en;
+  skos:definition "A dark measurement is a normal measurement with sufficient time averaging, but with a fully covered telescope or with covered detectors.This signal shows all electronic stray pick-ups and signal distortions which do not stem from the atmospheric backscatter, but from the lidar system itself: e.g. laser flash-lamp pulse pick-ups, or system trigger pick-ups. All system parameters, like e.g. detector HV, must be set in the same way as for a normal measurement."@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:offsetanglecheck a skos:Concept;
+  skos:prefLabel "offset angle check"@en;
+  skos:definition "Check the zero angle of the calibrator (for polarization channels)"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:calibrationfactorcheck a skos:Concept;
+  skos:prefLabel "calibration factor check"@en;
+  skos:definition "Check the calibration factor (for polarization channels)"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:GHKcoefficientscheck a skos:Concept;
+  skos:prefLabel "GHK coefficients check"@en;
+  skos:definition "Check the polarization cross-talk parameters GT,R and HT,R, and the calibration factor correction K (for polarization channels)"@en;
+  skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
+  dct:contributor <https://orcid.org/0000-0001-5722-3430>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkifprocessedbyCARSapprovedlidarconfiguration a skos:Concept;
+  skos:prefLabel "check if processed by CARS approved lidar configuration"@en;
+  skos:definition "Only data products obtained using the approved configuration into the Single Calculus Chain (i.e. Operational product) can be fully quality controlled products. Experimental products are still useful and interesting products btu the data users should be aware that they are not fully quality controlled in the workflow from preforming measurements till the optical data product provision."@en;
+  skos:broader ACTRIS_ctrl_lists:stationaudit;
+  skos:related ACTRIS_vocab:aerosolremotesensing;
+  dct:creator <https://orcid.org/0000-0001-8301-1319>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
 ACTRIS_ctrl_lists:cloudremotesensingcontrolledlists a skos:Concept;
