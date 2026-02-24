@@ -46,14 +46,14 @@
   dc:license <https://creativecommons.org/publicdomain/zero/1.0/>;
   <void:dataDump> <https://github.com/ACTRIS-Data-Centre/actris-vocabulary/blob/main/ACTRIS_vocabulary.ttl>;
   pav:createdOn "2022-12-16T17:00:00+01:00"@en;
-  pav:lastUpdatedOn "2026-02-13T18:45:00+01:00"@en;
-  pav:version "1.2.0"@en;
+  pav:lastUpdatedOn "2026-02-24T15:19:00+01:00"@en;
+  pav:version "1.2.1"@en;
   skos:hasTopConcept ACTRIS_vocab:variable, ACTRIS_vocab:variablegroup, ACTRIS_vocab:manufacturer,
     ACTRIS_vocab:datasource, ACTRIS_vocab:spatialcoverage, ACTRIS_vocab:facility, ACTRIS_vocab:variablegeometry,
-    ACTRIS_vocab:variableconstraints, ACTRIS_vocab:unspecified, ACTRIS_vocab:timeliness,
-    ACTRIS_vocab:variablepropertyofinterest, ACTRIS_vocab:producttype, ACTRIS_vocab:objectofinterest,
-    ACTRIS_vocab:objectgroup, ACTRIS_vocab:variablematrix, ACTRIS_vocab:qualitycontrol,
-    ACTRIS_vocab:qualityassurance, ACTRIS_vocab:licence, ACTRIS_vocab:datametrics .
+    ACTRIS_vocab:variableconstraints, ACTRIS_vocab:timeliness, ACTRIS_vocab:variablepropertyofinterest,
+    ACTRIS_vocab:producttype, ACTRIS_vocab:objectofinterest, ACTRIS_vocab:objectgroup,
+    ACTRIS_vocab:variablematrix, ACTRIS_vocab:qualitycontrol, ACTRIS_vocab:qualityassurance,
+    ACTRIS_vocab:licence, ACTRIS_vocab:datametrics .
 
 ACTRIS_vocab:variable a skos:Concept;
   skos:prefLabel "variable"@en;
@@ -560,34 +560,35 @@ ACTRIS_vocab:variable a skos:Concept;
     ACTRIS_vocab:2-perfluorodecylethanolmassconcentration, ACTRIS_vocab:2-perfluorodecylethanolamountfraction,
     ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzo-p-dioxinnumberconcentration, ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzo-p-dioxinmassconcentration,
     ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzo-p-dioxinamountfraction, ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-4-7-8-9-heptachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:1-2-3-4-7-8-9-heptachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-4-7-8-9-heptachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzo-p-dioxinnumberconcentration, ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzo-p-dioxinmassconcentration,
-    ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzo-p-dioxinamountfraction, ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzo-p-dioxinnumberconcentration, ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzo-p-dioxinmassconcentration,
-    ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzo-p-dioxinamountfraction, ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzo-p-dioxinnumberconcentration, ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzo-p-dioxinmassconcentration,
-    ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzo-p-dioxinamountfraction, ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzo-p-dioxinnumberconcentration, ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzo-p-dioxinmassconcentration,
-    ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzo-p-dioxinamountfraction, ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:2-chloronaphthalenenumberconcentration, ACTRIS_vocab:2-chloronaphthalenemassconcentration,
-    ACTRIS_vocab:2-chloronaphthaleneamountfraction, ACTRIS_vocab:2-methyl-1-butenenumberconcentration,
-    ACTRIS_vocab:2-methyl-1-butenemassconcentration, ACTRIS_vocab:2-methyl-1-buteneamountfraction,
-    ACTRIS_vocab:2-methylheptanenumberconcentration, ACTRIS_vocab:2-methylheptanemassconcentration,
-    ACTRIS_vocab:2-methylheptaneamountfraction, ACTRIS_vocab:2-methylnaphthalenenumberconcentration,
-    ACTRIS_vocab:2-methylnaphthalenemassconcentration, ACTRIS_vocab:2-methylnaphthaleneamountfraction,
-    ACTRIS_vocab:2-3-4-6-7-8-hexachlorodibenzofurannumberconcentration, ACTRIS_vocab:2-3-4-6-7-8-hexachlorodibenzofuranmassconcentration,
-    ACTRIS_vocab:2-3-4-6-7-8-hexachlorodibenzofuranamountfraction, ACTRIS_vocab:2-3-4-7-8-pentachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:2-3-4-7-8-pentachlorodibenzofuranmassconcentration, ACTRIS_vocab:2-3-4-7-8-pentachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:2-3-7-8-tetrachlorodibenzo-p-dioxinnumberconcentration, ACTRIS_vocab:2-3-7-8-tetrachlorodibenzo-p-dioxinmassconcentration,
-    ACTRIS_vocab:2-3-7-8-tetrachlorodibenzo-p-dioxinamountfraction, ACTRIS_vocab:2-3-7-8-tetrachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:2-3-7-8-tetrachlorodibenzofuranmassconcentration, ACTRIS_vocab:2-3-7-8-tetrachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:2-perfluorohexylethanolnumberconcentration, ACTRIS_vocab:2-perfluorohexylethanolmassconcentration,
-    ACTRIS_vocab:2-perfluorohexylethanolamountfraction, <https://vocabulary.actris.nilu.no/actris_vocab/-perfluorooctylethanolnumberconcentration>,
+    ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzofuranamountfraction,
+    ACTRIS_vocab:1-2-3-4-7-8-9-heptachlorodibenzofurannumberconcentration, ACTRIS_vocab:1-2-3-4-7-8-9-heptachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:1-2-3-4-7-8-9-heptachlorodibenzofuranamountfraction, ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzo-p-dioxinnumberconcentration,
+    ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzo-p-dioxinmassconcentration, ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzo-p-dioxinamountfraction,
+    ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzofurannumberconcentration, ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzofuranamountfraction, ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzo-p-dioxinnumberconcentration,
+    ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzo-p-dioxinmassconcentration, ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzo-p-dioxinamountfraction,
+    ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzofurannumberconcentration, ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzofuranamountfraction, ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzo-p-dioxinnumberconcentration,
+    ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzo-p-dioxinmassconcentration, ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzo-p-dioxinamountfraction,
+    ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzofurannumberconcentration, ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzofuranamountfraction, ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzo-p-dioxinnumberconcentration,
+    ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzo-p-dioxinmassconcentration, ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzo-p-dioxinamountfraction,
+    ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzofurannumberconcentration, ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzofuranamountfraction, ACTRIS_vocab:2-chloronaphthalenenumberconcentration,
+    ACTRIS_vocab:2-chloronaphthalenemassconcentration, ACTRIS_vocab:2-chloronaphthaleneamountfraction,
+    ACTRIS_vocab:2-methyl-1-butenenumberconcentration, ACTRIS_vocab:2-methyl-1-butenemassconcentration,
+    ACTRIS_vocab:2-methyl-1-buteneamountfraction, ACTRIS_vocab:2-methylheptanenumberconcentration,
+    ACTRIS_vocab:2-methylheptanemassconcentration, ACTRIS_vocab:2-methylheptaneamountfraction,
+    ACTRIS_vocab:2-methylnaphthalenenumberconcentration, ACTRIS_vocab:2-methylnaphthalenemassconcentration,
+    ACTRIS_vocab:2-methylnaphthaleneamountfraction, ACTRIS_vocab:2-3-4-6-7-8-hexachlorodibenzofurannumberconcentration,
+    ACTRIS_vocab:2-3-4-6-7-8-hexachlorodibenzofuranmassconcentration, ACTRIS_vocab:2-3-4-6-7-8-hexachlorodibenzofuranamountfraction,
+    ACTRIS_vocab:2-3-4-7-8-pentachlorodibenzofurannumberconcentration, ACTRIS_vocab:2-3-4-7-8-pentachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:2-3-4-7-8-pentachlorodibenzofuranamountfraction, ACTRIS_vocab:2-3-7-8-tetrachlorodibenzo-p-dioxinnumberconcentration,
+    ACTRIS_vocab:2-3-7-8-tetrachlorodibenzo-p-dioxinmassconcentration, ACTRIS_vocab:2-3-7-8-tetrachlorodibenzo-p-dioxinamountfraction,
+    ACTRIS_vocab:2-3-7-8-tetrachlorodibenzofurannumberconcentration, ACTRIS_vocab:2-3-7-8-tetrachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:2-3-7-8-tetrachlorodibenzofuranamountfraction, ACTRIS_vocab:2-perfluorohexylethanolnumberconcentration,
+    ACTRIS_vocab:2-perfluorohexylethanolmassconcentration, ACTRIS_vocab:2-perfluorohexylethanolamountfraction,
+    <https://vocabulary.actris.nilu.no/actris_vocab/-perfluorooctylethanolnumberconcentration>,
     <https://vocabulary.actris.nilu.no/actris_vocab/-perfluorooctylethanolmassconcentration>,
     <https://vocabulary.actris.nilu.no/actris_vocab/-perfluorooctylethanolamountfraction>,
     ACTRIS_vocab:allyl2-4-6-tribromophenylethernumberconcentration, ACTRIS_vocab:allyl2-4-6-tribromophenylethermassconcentration,
@@ -1646,9 +1647,6 @@ ACTRIS_vocab:variable a skos:Concept;
     ACTRIS_vocab:deposition1-2-3-7-8-pentachlorodibenzo-p-dioxinmassflux, ACTRIS_vocab:deposition1-2-3-7-8-pentachlorodibenzofuranmassflux,
     ACTRIS_vocab:deposition2-3-4-6-7-8-hexachlorodibenzofuranmassflux, ACTRIS_vocab:deposition2-3-4-7-8-pentachlorodibenzofuranmassflux,
     ACTRIS_vocab:deposition2-3-7-8-tetrachlorodibenzo-p-dioxinmassflux, ACTRIS_vocab:deposition2-3-7-8-tetrachlorodibenzofuranmassflux,
-    <https://vocabulary.actris.nilu.no/actris_vocab/deposition2-2'-4-4'-5-5'-hexabromodiphenylethermassflux>,
-    <https://vocabulary.actris.nilu.no/actris_vocab/deposition2-2'-4-4'-5-6'-hexabromodiphenylethermassflux>,
-    <https://vocabulary.actris.nilu.no/actris_vocab/deposition2-2'-3-4-4'-pentabromodiphenylethermassflux>,
     ACTRIS_vocab:deposition1h-1h-2h-2h-perfluorooctanesulfonicacidmassflux, ACTRIS_vocab:deposition1-2-5-6-9-10-hexabromocyclododecanemassflux,
     ACTRIS_vocab:depositionoctachlorodibenzo-p-dioxinmassflux, ACTRIS_vocab:depositionoctachlorodibenzofuranmassflux,
     ACTRIS_vocab:depositionheptafluorobutyricacidmassflux, ACTRIS_vocab:depositionperfluorobutanesulfonicacidmassflux,
@@ -2269,34 +2267,35 @@ ACTRIS_vocab:tracegasvariables a skos:Concept;
     ACTRIS_vocab:2-perfluorodecylethanolmassconcentration, ACTRIS_vocab:2-perfluorodecylethanolamountfraction,
     ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzo-p-dioxinnumberconcentration, ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzo-p-dioxinmassconcentration,
     ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzo-p-dioxinamountfraction, ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-4-7-8-9-heptachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:1-2-3-4-7-8-9-heptachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-4-7-8-9-heptachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzo-p-dioxinnumberconcentration, ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzo-p-dioxinmassconcentration,
-    ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzo-p-dioxinamountfraction, ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzo-p-dioxinnumberconcentration, ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzo-p-dioxinmassconcentration,
-    ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzo-p-dioxinamountfraction, ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzo-p-dioxinnumberconcentration, ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzo-p-dioxinmassconcentration,
-    ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzo-p-dioxinamountfraction, ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzo-p-dioxinnumberconcentration, ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzo-p-dioxinmassconcentration,
-    ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzo-p-dioxinamountfraction, ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:2-chloronaphthalenenumberconcentration, ACTRIS_vocab:2-chloronaphthalenemassconcentration,
-    ACTRIS_vocab:2-chloronaphthaleneamountfraction, ACTRIS_vocab:2-methyl-1-butenenumberconcentration,
-    ACTRIS_vocab:2-methyl-1-butenemassconcentration, ACTRIS_vocab:2-methyl-1-buteneamountfraction,
-    ACTRIS_vocab:2-methylheptanenumberconcentration, ACTRIS_vocab:2-methylheptanemassconcentration,
-    ACTRIS_vocab:2-methylheptaneamountfraction, ACTRIS_vocab:2-methylnaphthalenenumberconcentration,
-    ACTRIS_vocab:2-methylnaphthalenemassconcentration, ACTRIS_vocab:2-methylnaphthaleneamountfraction,
-    ACTRIS_vocab:2-3-4-6-7-8-hexachlorodibenzofurannumberconcentration, ACTRIS_vocab:2-3-4-6-7-8-hexachlorodibenzofuranmassconcentration,
-    ACTRIS_vocab:2-3-4-6-7-8-hexachlorodibenzofuranamountfraction, ACTRIS_vocab:2-3-4-7-8-pentachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:2-3-4-7-8-pentachlorodibenzofuranmassconcentration, ACTRIS_vocab:2-3-4-7-8-pentachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:2-3-7-8-tetrachlorodibenzo-p-dioxinnumberconcentration, ACTRIS_vocab:2-3-7-8-tetrachlorodibenzo-p-dioxinmassconcentration,
-    ACTRIS_vocab:2-3-7-8-tetrachlorodibenzo-p-dioxinamountfraction, ACTRIS_vocab:2-3-7-8-tetrachlorodibenzofurannumberconcentration,
-    ACTRIS_vocab:2-3-7-8-tetrachlorodibenzofuranmassconcentration, ACTRIS_vocab:2-3-7-8-tetrachlorodibenzofuranamountfraction,
-    ACTRIS_vocab:2-perfluorohexylethanolnumberconcentration, ACTRIS_vocab:2-perfluorohexylethanolmassconcentration,
-    ACTRIS_vocab:2-perfluorohexylethanolamountfraction, <https://vocabulary.actris.nilu.no/actris_vocab/-perfluorooctylethanolnumberconcentration>,
+    ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzofuranmassconcentration, ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzofuranamountfraction,
+    ACTRIS_vocab:1-2-3-4-7-8-9-heptachlorodibenzofurannumberconcentration, ACTRIS_vocab:1-2-3-4-7-8-9-heptachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:1-2-3-4-7-8-9-heptachlorodibenzofuranamountfraction, ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzo-p-dioxinnumberconcentration,
+    ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzo-p-dioxinmassconcentration, ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzo-p-dioxinamountfraction,
+    ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzofurannumberconcentration, ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:1-2-3-4-7-8-hexachlorodibenzofuranamountfraction, ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzo-p-dioxinnumberconcentration,
+    ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzo-p-dioxinmassconcentration, ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzo-p-dioxinamountfraction,
+    ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzofurannumberconcentration, ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:1-2-3-6-7-8-hexachlorodibenzofuranamountfraction, ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzo-p-dioxinnumberconcentration,
+    ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzo-p-dioxinmassconcentration, ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzo-p-dioxinamountfraction,
+    ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzofurannumberconcentration, ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:1-2-3-7-8-9-hexachlorodibenzofuranamountfraction, ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzo-p-dioxinnumberconcentration,
+    ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzo-p-dioxinmassconcentration, ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzo-p-dioxinamountfraction,
+    ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzofurannumberconcentration, ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:1-2-3-7-8-pentachlorodibenzofuranamountfraction, ACTRIS_vocab:2-chloronaphthalenenumberconcentration,
+    ACTRIS_vocab:2-chloronaphthalenemassconcentration, ACTRIS_vocab:2-chloronaphthaleneamountfraction,
+    ACTRIS_vocab:2-methyl-1-butenenumberconcentration, ACTRIS_vocab:2-methyl-1-butenemassconcentration,
+    ACTRIS_vocab:2-methyl-1-buteneamountfraction, ACTRIS_vocab:2-methylheptanenumberconcentration,
+    ACTRIS_vocab:2-methylheptanemassconcentration, ACTRIS_vocab:2-methylheptaneamountfraction,
+    ACTRIS_vocab:2-methylnaphthalenenumberconcentration, ACTRIS_vocab:2-methylnaphthalenemassconcentration,
+    ACTRIS_vocab:2-methylnaphthaleneamountfraction, ACTRIS_vocab:2-3-4-6-7-8-hexachlorodibenzofurannumberconcentration,
+    ACTRIS_vocab:2-3-4-6-7-8-hexachlorodibenzofuranmassconcentration, ACTRIS_vocab:2-3-4-6-7-8-hexachlorodibenzofuranamountfraction,
+    ACTRIS_vocab:2-3-4-7-8-pentachlorodibenzofurannumberconcentration, ACTRIS_vocab:2-3-4-7-8-pentachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:2-3-4-7-8-pentachlorodibenzofuranamountfraction, ACTRIS_vocab:2-3-7-8-tetrachlorodibenzo-p-dioxinnumberconcentration,
+    ACTRIS_vocab:2-3-7-8-tetrachlorodibenzo-p-dioxinmassconcentration, ACTRIS_vocab:2-3-7-8-tetrachlorodibenzo-p-dioxinamountfraction,
+    ACTRIS_vocab:2-3-7-8-tetrachlorodibenzofurannumberconcentration, ACTRIS_vocab:2-3-7-8-tetrachlorodibenzofuranmassconcentration,
+    ACTRIS_vocab:2-3-7-8-tetrachlorodibenzofuranamountfraction, ACTRIS_vocab:2-perfluorohexylethanolnumberconcentration,
+    ACTRIS_vocab:2-perfluorohexylethanolmassconcentration, ACTRIS_vocab:2-perfluorohexylethanolamountfraction,
+    <https://vocabulary.actris.nilu.no/actris_vocab/-perfluorooctylethanolnumberconcentration>,
     <https://vocabulary.actris.nilu.no/actris_vocab/-perfluorooctylethanolmassconcentration>,
     <https://vocabulary.actris.nilu.no/actris_vocab/-perfluorooctylethanolamountfraction>,
     ACTRIS_vocab:allyl2-4-6-tribromophenylethernumberconcentration, ACTRIS_vocab:allyl2-4-6-tribromophenylethermassconcentration,
@@ -13626,14 +13625,12 @@ ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzo-p-dioxinmassconcentration a skos:C
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzo-p-dioxinamountfraction a skos:Concept;
-  skos:prefLabel "gaseous 1,2,3,4,6,7,8-heptachlorodibenzo-p-dioxin amount fraction"@en,
-    "gaseous 1,2,3,4,6,7,8-heptachlorodibenzofuran amount fraction"@en;
-  skos:altLabel "1,2,3,4,6,7,8-heptachlorodibenzo-p-dioxin amount fraction"@en, "1,2,3,4,6,7,8-heptachlorodibenzofuran amount fraction"@en;
-  skos:definition "Amount fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y. The chemical formula for 1,2,3,4,6,7,8-heptachlorodibenzo-p-dioxin is C12HCl7O2. It is a member of the group of halogonated organics known as dioxins. The IUPAC name is 1,2,3,4,6,7,8-heptachlorodibenzo-p-dioxin"@en,
-    "Amount fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y. he chemical formula for 1,2,3,4,6,7,8-heptachlorodibenzofuran is C12HCl7O. It is a member of the group of halogonated organics known as furans. The IUPAC name is 1,2,3,4,6,7,8-heptachlorodibenzofuran"@en;
+  skos:prefLabel "gaseous 1,2,3,4,6,7,8-heptachlorodibenzo-p-dioxin amount fraction"@en;
+  skos:altLabel "1,2,3,4,6,7,8-heptachlorodibenzo-p-dioxin amount fraction"@en;
+  skos:definition "Amount fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y. The chemical formula for 1,2,3,4,6,7,8-heptachlorodibenzo-p-dioxin is C12HCl7O2. It is a member of the group of halogonated organics known as dioxins. The IUPAC name is 1,2,3,4,6,7,8-heptachlorodibenzo-p-dioxin"@en;
   skos:broader ACTRIS_vocab:variable, ACTRIS_vocab:tracegasvariables;
   iop:hasProperty ACTRIS_vocab:amountfraction;
-  iop:hasObjectOfInterest ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzo-p-dioxin, ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzofuran;
+  iop:hasObjectOfInterest ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzo-p-dioxin;
   iop:hasMatrix ACTRIS_vocab:gasphase;
   dct:creator <https://orcid.org/0000-0002-8981-0805>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
@@ -13655,6 +13652,17 @@ ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzofuranmassconcentration a skos:Conce
   skos:definition "Mass concentration means mass per unit volume and is used in the construction mass_concentration_of_X_in_Y, where X is a material constituent of Y. A chemical species denoted by X may be described by a single term such as 'nitrogen' or a phrase such as 'nox_expressed_as_nitrogen'. he chemical formula for 1,2,3,4,6,7,8-heptachlorodibenzofuran is C12HCl7O. It is a member of the group of halogonated organics known as furans. The IUPAC name is 1,2,3,4,6,7,8-heptachlorodibenzofuran"@en;
   skos:broader ACTRIS_vocab:variable, ACTRIS_vocab:tracegasvariables;
   iop:hasProperty ACTRIS_vocab:massconcentration;
+  iop:hasObjectOfInterest ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzofuran;
+  iop:hasMatrix ACTRIS_vocab:gasphase;
+  dct:creator <https://orcid.org/0000-0002-8981-0805>;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
+
+ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzofuranamountfraction a skos:Concept;
+  skos:prefLabel "gaseous 1,2,3,4,6,7,8-heptachlorodibenzofuran amount fraction"@en;
+  skos:altLabel "1,2,3,4,6,7,8-heptachlorodibenzofuran amount fraction"@en;
+  skos:definition "Amount fraction is used in the construction mole_fraction_of_X_in_Y, where X is a material constituent of Y. he chemical formula for 1,2,3,4,6,7,8-heptachlorodibenzofuran is C12HCl7O. It is a member of the group of halogonated organics known as furans. The IUPAC name is 1,2,3,4,6,7,8-heptachlorodibenzofuran"@en;
+  skos:broader ACTRIS_vocab:variable, ACTRIS_vocab:tracegasvariables;
+  iop:hasProperty ACTRIS_vocab:amountfraction;
   iop:hasObjectOfInterest ACTRIS_vocab:1-2-3-4-6-7-8-heptachlorodibenzofuran;
   iop:hasMatrix ACTRIS_vocab:gasphase;
   dct:creator <https://orcid.org/0000-0002-8981-0805>;
@@ -37312,9 +37320,6 @@ ACTRIS_vocab:depositionvariables a skos:Concept;
     ACTRIS_vocab:deposition1-2-3-7-8-pentachlorodibenzo-p-dioxinmassflux, ACTRIS_vocab:deposition1-2-3-7-8-pentachlorodibenzofuranmassflux,
     ACTRIS_vocab:deposition2-3-4-6-7-8-hexachlorodibenzofuranmassflux, ACTRIS_vocab:deposition2-3-4-7-8-pentachlorodibenzofuranmassflux,
     ACTRIS_vocab:deposition2-3-7-8-tetrachlorodibenzo-p-dioxinmassflux, ACTRIS_vocab:deposition2-3-7-8-tetrachlorodibenzofuranmassflux,
-    <https://vocabulary.actris.nilu.no/actris_vocab/deposition2-2'-4-4'-5-5'-hexabromodiphenylethermassflux>,
-    <https://vocabulary.actris.nilu.no/actris_vocab/deposition2-2'-4-4'-5-6'-hexabromodiphenylethermassflux>,
-    <https://vocabulary.actris.nilu.no/actris_vocab/deposition2-2'-3-4-4'-pentabromodiphenylethermassflux>,
     ACTRIS_vocab:deposition1h-1h-2h-2h-perfluorooctanesulfonicacidmassflux, ACTRIS_vocab:deposition1-2-5-6-9-10-hexabromocyclododecanemassflux,
     ACTRIS_vocab:depositionoctachlorodibenzo-p-dioxinmassflux, ACTRIS_vocab:depositionoctachlorodibenzofuranmassflux,
     ACTRIS_vocab:depositionheptafluorobutyricacidmassflux, ACTRIS_vocab:depositionperfluorobutanesulfonicacidmassflux,
@@ -37436,12 +37441,13 @@ ACTRIS_vocab:depositionPBDE47massflux a skos:Concept;
 
 ACTRIS_vocab:deposition2-2-3-4-4-pentabromodiphenylethermassflux a skos:Concept;
   skos:prefLabel "deposition 2,2′,3,4,4′-pentabromodiphenyl ether mass flux"@en;
-  skos:altLabel "deposition PBDE 85 mass flux"@en;
+  skos:altLabel "deposition PBDE 85 mass flux"@en, "deposition PBDE 85"@en, "deposition BDE 85 mass flux"@en;
   skos:definition "Mass flux is defined as the amount of mass transported per unit time across a unit area that is perpendicular to the direction of mass transport. Deposition is the sum of dry deposition (uptake at the earth's surface) and wet deposition (absorption into droplets followed by droplet precipitation, e.g., rain, snow, sleet) or impaction on the earth's surface (e.g., fog droplets). The chemical formula for 2,2',3,4,4'-Pentabromodiphenyl ether is C12H5Br5O. It belongs to the group of persitent organic pollutants (POPs) known as polybrominated diphenyl ethers (PBDEs). The IUPAC name is 1,2,3-tribromo-4-(2,4-dibromophenoxy)benzene."@en;
   skos:broader ACTRIS_vocab:variable, ACTRIS_vocab:depositionvariables;
   iop:hasProperty ACTRIS_vocab:massflux;
   iop:hasObjectOfInterest ACTRIS_vocab:PBDE85;
   iop:hasMatrix ACTRIS_vocab:deposition;
+  dct:creator <https://orcid.org/0000-0002-8981-0805>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:depositionPBDE99massflux a skos:Concept;
@@ -37457,22 +37463,24 @@ ACTRIS_vocab:depositionPBDE99massflux a skos:Concept;
 
 ACTRIS_vocab:deposition2-2-4-4-5-5-hexabromodiphenylethermassflux a skos:Concept;
   skos:prefLabel "deposition 2,2',4,4',5,5'-hexabromodiphenyl ether mass flux"@en;
-  skos:altLabel "deposition PBDE 153 mass flux"@en;
+  skos:altLabel "deposition PBDE 153 mass flux"@en, "deposition PBDE 153"@en, "deposition BDE 153 mass flux"@en;
   skos:definition "Mass flux is defined as the amount of mass transported per unit time across a unit area that is perpendicular to the direction of mass transport. Deposition is the sum of dry deposition (uptake at the earth's surface) and wet deposition (absorption into droplets followed by droplet precipitation, e.g., rain, snow, sleet) or impaction on the earth's surface (e.g., fog droplets). The chemical formula for 2,2',4,4',5,5'-hexabromodiphenyl ether is C12H4Br6O. It belongs to the group of persitent organic pollutants (POPs) known as polybrominated diphenyl ethers (PBDEs). The IUPAC name is 1,2,4-tribromo-5-(2,4,5-tribromophenoxy)benzene."@en;
   skos:broader ACTRIS_vocab:variable, ACTRIS_vocab:depositionvariables;
   iop:hasProperty ACTRIS_vocab:massflux;
   iop:hasObjectOfInterest ACTRIS_vocab:PBDE153;
   iop:hasMatrix ACTRIS_vocab:deposition;
+  dct:creator <https://orcid.org/0000-0002-8981-0805>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:deposition2-2-4-4-5-6-hexabromodiphenylethermassflux a skos:Concept;
   skos:prefLabel "deposition 2,2′,4,4′,5,6′-hexabromodiphenyl ether mass flux"@en;
-  skos:altLabel "deposition PBDE 154 mass flux"@en;
+  skos:altLabel "deposition PBDE 154 mass flux"@en, "deposition PBDE 154"@en, "deposition BDE 154 mass flux"@en;
   skos:definition "Mass flux is defined as the amount of mass transported per unit time across a unit area that is perpendicular to the direction of mass transport. Deposition is the sum of dry deposition (uptake at the earth's surface) and wet deposition (absorption into droplets followed by droplet precipitation, e.g., rain, snow, sleet) or impaction on the earth's surface (e.g., fog droplets). The chemical formula for 2,2′,4,4′,5,6′-hexabromodiphenyl ether is C12H4Br6O. It belongs to the group of persitent organic pollutants (POPs) known as polybrominated diphenyl ethers (PBDEs). The IUPAC name is 1,2,4-tribromo-5-(2,4,6-tribromophenoxy)benzene."@en;
   skos:broader ACTRIS_vocab:variable, ACTRIS_vocab:depositionvariables;
   iop:hasProperty ACTRIS_vocab:massflux;
   iop:hasObjectOfInterest ACTRIS_vocab:PBDE154;
   iop:hasMatrix ACTRIS_vocab:deposition;
+  dct:creator <https://orcid.org/0000-0002-8981-0805>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:deposition4h-cyclopenta-defphenanthrenemassflux a skos:Concept;
@@ -38388,42 +38396,6 @@ ACTRIS_vocab:deposition2-3-7-8-tetrachlorodibenzofuranmassflux a skos:Concept;
   skos:broader ACTRIS_vocab:variable, ACTRIS_vocab:depositionvariables;
   iop:hasProperty ACTRIS_vocab:massflux;
   iop:hasObjectOfInterest ACTRIS_vocab:2-3-7-8-tetrachlorodibenzofuran;
-  iop:hasMatrix ACTRIS_vocab:deposition;
-  dct:creator <https://orcid.org/0000-0002-8981-0805>;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
-
-<https://vocabulary.actris.nilu.no/actris_vocab/deposition2-2'-4-4'-5-5'-hexabromodiphenylethermassflux>
-  a skos:Concept;
-  skos:prefLabel "deposition 2,2',4,4',5,5'-hexabromodiphenyl ether mass flux"@en;
-  skos:altLabel "deposition PBDE 153"@en, "deposition BDE 153 mass flux"@en;
-  skos:definition "Mass flux is defined as the amount of mass transported per unit time across a unit area that is perpendicular to the direction of mass transport. Deposition is the sum of dry deposition (uptake at the earth's surface) and wet deposition (absorption into droplets followed by droplet precipitation, e.g., rain, snow, sleet) or impaction on the earth's surface (e.g., fog droplets). The chmical formula for 2,2',4,4',5,5'-hexabromodiphenyl ether is C12H4Br6O. It belongs to the group of polybrominated diphenyl ethers (PBDEs). The IUPAC name is 1,2,4-tribromo-5-(2,4,5-tribromophenoxy)benzene"@en;
-  skos:broader ACTRIS_vocab:variable, ACTRIS_vocab:depositionvariables;
-  iop:hasProperty ACTRIS_vocab:massflux;
-  iop:hasObjectOfInterest <https://vocabulary.actris.nilu.no/actris_vocab/2-2'-4-4'-5-5'-hexabromodiphenylether>;
-  iop:hasMatrix ACTRIS_vocab:deposition;
-  dct:creator <https://orcid.org/0000-0002-8981-0805>;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
-
-<https://vocabulary.actris.nilu.no/actris_vocab/deposition2-2'-4-4'-5-6'-hexabromodiphenylethermassflux>
-  a skos:Concept;
-  skos:prefLabel "deposition 2,2',4,4',5,6'-hexabromodiphenyl ether mass flux"@en;
-  skos:altLabel "deposition PBDE 154"@en, "deposition BDE 154 mass flux"@en;
-  skos:definition "Mass flux is defined as the amount of mass transported per unit time across a unit area that is perpendicular to the direction of mass transport. Deposition is the sum of dry deposition (uptake at the earth's surface) and wet deposition (absorption into droplets followed by droplet precipitation, e.g., rain, snow, sleet) or impaction on the earth's surface (e.g., fog droplets). The chmical formula for 2,2',4,4',5,6'-hexabromodiphenyl ether is C12H4Br6O. It belongs to the group of polybrominated diphenyl ethers (PBDEs). The IUPAC name is 1,2,4-tribromo-5-(2,4,6-tribromophenoxy)benzene"@en;
-  skos:broader ACTRIS_vocab:variable, ACTRIS_vocab:depositionvariables;
-  iop:hasProperty ACTRIS_vocab:massflux;
-  iop:hasObjectOfInterest <https://vocabulary.actris.nilu.no/actris_vocab/2-2'-4-4'-5-6'-hexabromodiphenylether>;
-  iop:hasMatrix ACTRIS_vocab:deposition;
-  dct:creator <https://orcid.org/0000-0002-8981-0805>;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
-
-<https://vocabulary.actris.nilu.no/actris_vocab/deposition2-2'-3-4-4'-pentabromodiphenylethermassflux>
-  a skos:Concept;
-  skos:prefLabel "deposition 2,2',3,4,4'-pentabromodiphenyl ether mass flux"@en;
-  skos:altLabel "deposition PBDE 85"@en, "deposition BDE 85 mass flux"@en;
-  skos:definition "Mass flux is defined as the amount of mass transported per unit time across a unit area that is perpendicular to the direction of mass transport. Deposition is the sum of dry deposition (uptake at the earth's surface) and wet deposition (absorption into droplets followed by droplet precipitation, e.g., rain, snow, sleet) or impaction on the earth's surface (e.g., fog droplets). The chmical formula for 2,2',3,4,4'-pentabromodiphenyl ether is C12H5Br5O. It belongs to the group of polybrominated diphenyl ethers (PBDEs). The IUPAC name is 1,2,3-tribromo-4-(2,4-dibromophenoxy)benzene"@en;
-  skos:broader ACTRIS_vocab:variable, ACTRIS_vocab:depositionvariables;
-  iop:hasProperty ACTRIS_vocab:massflux;
-  iop:hasObjectOfInterest <https://vocabulary.actris.nilu.no/actris_vocab/2-2'-3-4-4'-pentabromodiphenylether>;
   iop:hasMatrix ACTRIS_vocab:deposition;
   dct:creator <https://orcid.org/0000-0002-8981-0805>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
@@ -40540,7 +40512,7 @@ ACTRIS_vocab:iceparticlemassverticalflux a skos:Concept;
   skos:prefLabel "ice particle mass vertical flux"@en;
   skos:broader ACTRIS_vocab:variable, ACTRIS_vocab:cloudvariables;
   skos:exactMatch cf:FK458IR2;
-  iop:hasProperty ACTRIS_vocab:massflux, ACTRIS_vocab:upward;
+  iop:hasProperty ACTRIS_vocab:massflux;
   iop:hasObjectOfInterest ACTRIS_vocab:iceparticle;
   iop:hasMatrix ACTRIS_vocab:cloudphase;
   iop:hasConstraint ACTRIS_vocab:upward;
@@ -46843,7 +46815,7 @@ ACTRIS_vocab:variableconstraints a skos:Concept;
     ACTRIS_vocab:spectral, ACTRIS_vocab:non-refractory, ACTRIS_vocab:humidified, ACTRIS_vocab:expressedasnitrogen,
     ACTRIS_vocab:expressedassulfur, ACTRIS_vocab:expressedascarbon, ACTRIS_vocab:expressedaschlorine,
     ACTRIS_vocab:peak, ACTRIS_vocab:UVA, ACTRIS_vocab:solar, ACTRIS_vocab:seaspraysubtracted,
-    ACTRIS_vocab:seaspraycontribution, ACTRIS_vocab:gasphasecontributionsubtracted;
+    ACTRIS_vocab:seaspraycontribution, ACTRIS_vocab:gasphasecontributionsubtracted, ACTRIS_vocab:unspecified;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/>;
   skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
@@ -47139,8 +47111,8 @@ ACTRIS_vocab:gasphasecontributionsubtracted a skos:Concept;
 ACTRIS_vocab:unspecified a skos:Concept;
   skos:prefLabel "unspecified"@en;
   skos:definition "Even though object of interest denotes a group of species, variable only refers to a subgroup of the group. It is unknown which species of the group exactly are included."@en;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/>;
-  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_vocab/> .
+  skos:broader ACTRIS_vocab:variableconstraints;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:timeliness a skos:Concept;
   skos:prefLabel "timeliness"@en;
@@ -53308,7 +53280,6 @@ ACTRIS_vocab:PBDE205 a skos:Concept;
   skos:altLabel "BDE_205"@en, "PBDE 205"@en;
   skos:broader ACTRIS_vocab:objectofinterest, ACTRIS_vocab:PBDEs;
   skos:exactMatch pubchem:16212145;
-  iop:hasObjectOfInterest ACTRIS_vocab:deposition2-2-4-4-5-6-hexabromodiphenylethermassflux;
   dct:creator <https://orcid.org/0000-0002-8981-0805>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
@@ -57854,13 +57825,15 @@ ACTRIS_vocab:datametrics a skos:Concept;
   skos:definition "Parameter quantifying an aspect about data use or data access. May include both, parameters quantifying use by humams as well as machines."@en;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0003-3587-5926>;
+  skos:narrower ACTRIS_vocab:variableyear, ACTRIS_vocab:experimentdataset, ACTRIS_vocab:visit,
+    ACTRIS_vocab:datausemetrics, ACTRIS_vocab:dataprovisionmetrics;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/>;
   skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_vocab/> .
 
 ACTRIS_vocab:variableyear a skos:Concept;
   skos:prefLabel "variable year"@en;
   skos:definition "A variable year is defined as one year's worth of data for one variable. The time resolution of the data product is defined by the ACTRIS data management plan (DMP). The instrument has to be operational for at least 75% of the nominal operation time as defined in the DMP."@en;
-  skos:broader ACTRIS_vocab:datacurationmetrics;
+  skos:broader ACTRIS_vocab:datametrics;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0003-3587-5926>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
@@ -57868,7 +57841,7 @@ ACTRIS_vocab:variableyear a skos:Concept;
 ACTRIS_vocab:experimentdataset a skos:Concept;
   skos:prefLabel "experiment dataset"@en;
   skos:definition "Worth of data produced by one experiment, including data provided by all instruments involved in the experiment. Example of experiments are runs of atmospheric simulation chambers."@en;
-  skos:broader ACTRIS_vocab:datacurationmetrics;
+  skos:broader ACTRIS_vocab:datametrics;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0003-3587-5926>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
@@ -57876,7 +57849,7 @@ ACTRIS_vocab:experimentdataset a skos:Concept;
 ACTRIS_vocab:visit a skos:Concept;
   skos:prefLabel "visit"@en;
   skos:definition "A visitor enters a website or application for the first time, visits a page, or takes any tracked action more than 30 minutes after the last action / visit, it is counted as a new visit."@en;
-  skos:broader ACTRIS_vocab:datacurationmetrics;
+  skos:broader ACTRIS_vocab:datametrics;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0003-3587-5926>;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_vocab/> .
@@ -57884,7 +57857,7 @@ ACTRIS_vocab:visit a skos:Concept;
 ACTRIS_vocab:datausemetrics a skos:Concept;
   skos:prefLabel "data use metrics"@en;
   skos:definition "Parameter quantifying an aspect about data use or data access. May include both, parameters quantifying use by humams as well as machines."@en;
-  skos:broader ACTRIS_vocab:datacurationmetrics;
+  skos:broader ACTRIS_vocab:datametrics;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0003-3587-5926>;
   skos:narrower ACTRIS_vocab:variableyearsdownloadrate, ACTRIS_vocab:variableyearsdownloadrate-bycountry,
@@ -57960,7 +57933,7 @@ ACTRIS_vocab:visitnumberrate-bycountry a skos:Concept;
 ACTRIS_vocab:dataprovisionmetrics a skos:Concept;
   skos:prefLabel "data provision metrics"@en;
   skos:definition "Parameter quantifying an aspect about data use or data access. May include both, parameters quantifying use by humams as well as machines."@en;
-  skos:broader ACTRIS_vocab:datacurationmetrics;
+  skos:broader ACTRIS_vocab:datametrics;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   dct:contributor <https://orcid.org/0000-0003-3587-5926>;
   skos:narrower ACTRIS_vocab:variableyearcurationrate, ACTRIS_vocab:variableyearsubmissionrate,
@@ -58011,6 +57984,3 @@ ACTRIS_vocab:carbohydrates skos:narrower ACTRIS_vocab:arabitol, ACTRIS_vocab:ery
 ACTRIS_vocab:polychlorinatedbiphenyls skos:narrower ACTRIS_vocab:PCB11 .
 
 ACTRIS_vocab:carbohydrates:alcohols skos:narrower ACTRIS_vocab:maltose .
-
-ACTRIS_vocab:datacurationmetrics skos:narrower ACTRIS_vocab:variableyear, ACTRIS_vocab:experimentdataset,
-    ACTRIS_vocab:visit, ACTRIS_vocab:datausemetrics, ACTRIS_vocab:dataprovisionmetrics .
