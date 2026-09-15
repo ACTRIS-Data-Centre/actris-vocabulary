@@ -30,8 +30,8 @@
   dct:contributor <https://orcid.org/0000-0001-9250-9813/>;
   dc:license <https://creativecommons.org/publicdomain/zero/1.0/>;
   pav:createdOn "2022-12-16T16:40:00+01:00"@en;
-  pav:lastUpdatedOn "2026-08-03T16:50:00+02:00"@en;
-  pav:version "1.1.1"@en .
+  pav:lastUpdatedOn "2026-09-015T15:50:00+02:00"@en;
+  pav:version "1.1.2"@en .
 
 ACTRIS_ctrl_lists:level a skos:Concept;
   skos:prefLabel "level"@en;
@@ -397,117 +397,12 @@ ACTRIS_ctrl_lists:framework a skos:Concept;
   skos:prefLabel "framework"@en;
   skos:altLabel "network"@en;
   skos:definition "Association of entities to which the data are associated to. May be a project, a reasearch infrastructure, a network, or similar."@en;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
 ACTRIS_ctrl_lists:ACTRIS a skos:Concept;
   skos:prefLabel "ACTRIS"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:AMAP a skos:Concept;
-  skos:prefLabel "AMAP"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:ARM a skos:Concept;
-  skos:prefLabel "ARM"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:ATMO-ACCESS a skos:Concept;
-  skos:prefLabel "ATMO-ACCESS"@en;
-  skos:broader ACTRIS_ctrl_lists:framework .
-
-ACTRIS_ctrl_lists:CAMP a skos:Concept;
-  skos:prefLabel "CAMP"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:CLOUDNET a skos:Concept;
-  skos:prefLabel "CLOUDNET"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:CREATE a skos:Concept;
-  skos:prefLabel "CREATE"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:EARLINET a skos:Concept;
-  skos:prefLabel "EARLINET"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:EMEP a skos:Concept;
-  skos:prefLabel "EMEP"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:EUROCHAMP a skos:Concept;
-  skos:prefLabel "EUROCHAMP"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:EUSAAR a skos:Concept;
-  skos:prefLabel "EUSAAR"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:GAW-WDCA a skos:Concept;
-  skos:prefLabel "GAW-WDCA"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:GAW-WDCRG a skos:Concept;
-  skos:prefLabel "GAW-WDCRG"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:GUAN a skos:Concept;
-  skos:prefLabel "GUAN"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:HELCOM a skos:Concept;
-  skos:prefLabel "HELCOM"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:NDACC a skos:Concept;
-  skos:prefLabel "NDACC"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:NILU a skos:Concept;
-  skos:prefLabel "NILU"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:NOAA-ESRL a skos:Concept;
-  skos:prefLabel "NOAA-ESRL"@en;
-  skos:broader ACTRIS_ctrl_lists:framework;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  dct:contributor <https://orcid.org/0000-0001-9250-9813> .
-
-ACTRIS_ctrl_lists:GALION a skos:Concept;
-  skos:prefLabel "GALION"@en;
+  skos:altLabel "European Research Infrastructure for the observation of Aerosol, Clouds, and Trace gases"@en;
+  skos:definition "ACTRIS is the European Research Infrastructure for the observation of Aerosol, Clouds, and Trace gases. ACTRIS is composed of observing stations, exploratory platforms, instruments calibration centres, and a data centre."@en;
   skos:broader ACTRIS_ctrl_lists:framework;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
@@ -516,456 +411,591 @@ ACTRIS_ctrl_lists:AERONET a skos:Concept;
   skos:broader ACTRIS_ctrl_lists:framework;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:RI-URBANS a skos:Concept;
-  skos:prefLabel "RI-URBANS"@en;
+ACTRIS_ctrl_lists:AMAP skos:prefLabel "AMAP"@en;
   skos:broader ACTRIS_ctrl_lists:framework;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:Glossary a skos:Concept;
-  skos:prefLabel "Glossary"@en;
+ACTRIS_ctrl_lists:ARM skos:prefLabel "ARM"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:ATMO-ACCESS skos:prefLabel "ATMO-ACCESS"@en;
+  skos:altLabel "Sustainable Access to Atmospheric Research Facilities"@en;
+  skos:definition "ATMO-ACCESS is the organized response of distributed atmospheric research facilities for developing a pilot for a new model of Integrating Activities. The project will deliver a series of recommendations for establishing a comprehensive and sustainable framework for access to distributed atmospheric Research Infrastructures (RI), ensuring integrated access to and optimised use of the services they provide."@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:AutoPollen skos:prefLabel "AutoPollen"@en;
+  skos:altLabel "EUMETNET AutoPollen programme"@en;
+  skos:definition "Automatic European pollen monitoring network, integrating developing and planned projects"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:CAMP skos:prefLabel "CAMP"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:CAPMoN skos:prefLabel "CAPMoN"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:CARIBIC skos:prefLabel "CARIBIC"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:CLOUDNET skos:prefLabel "CLOUDNET"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:CREATE skos:prefLabel "CREATE"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:EANET skos:prefLabel "EANET"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:EARLINET skos:prefLabel "EARLINET"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:EMEP skos:prefLabel "EMEP"@en;
+  skos:altLabel "European Monitoring and Evaluation Programme"@en;
+  skos:definition "The European Monitoring and Evaluation Programme (EMEP) is a scientifically based and policy driven programme under the Convention on Long-range Transboundary Air Pollution (CLRTAP) for int'l co-operation to solve transboundary air pollution problems."@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:EMEP_campaign skos:prefLabel "EMEP_campaign"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:EUCAARI skos:prefLabel "EUCAARI"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:EUROCHAMP skos:prefLabel "EUROCHAMP"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:EUSAAR skos:prefLabel "EUSAAR"@en;
+  skos:altLabel "European Supersites for Atmospheric Aerosol Research"@en;
+  skos:definition "Integration of measurements of atmospheric aerosol properties performed in a distributed network of 20 high quality European ground-based stations in support of policy issues on air quality, long-range transport of pollutants and climate change."@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:GALION skos:prefLabel "GALION"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:GAW-WDCA skos:prefLabel "GAW-WDCA"@en;
+  skos:altLabel "World Data Centre for Aerosols"@en;
+  skos:definition "The World Data Centre for Aerosols is the data repository and archive for microphysical, optical, and chemical properties of atmospheric aerosol of the World Meteorological Organisation's (WMO) Global Atmosphere Watch (GAW) programme."@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:GAW-WDCRG skos:prefLabel "GAW-WDCRG"@en;
+  skos:altLabel "World Data Centre for Reactive Gases"@en;
+  skos:definition "The World Data Centre for Reactive Gases is the data repository and archive for reactive gases of the World Meteorological Organisation's (WMO) Global Atmosphere Watch (GAW) programme."@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0003-3587-5926> .
+
+ACTRIS_ctrl_lists:GEOmon skos:prefLabel "GEOmon"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:GUAN skos:prefLabel "GUAN"@en;
+  skos:altLabel "German Ultrafine Aerosol Networ"@en;
+  skos:definition "GUAN is a joint observation network, which aims to improve our understanding of atmospheric aerosol particles with regard to human particle exposure and aerosol climate effects."@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:HELCOM skos:prefLabel "HELCOM"@en;
+  skos:altLabel "Baltic Marine Environment Protection Commission - Helsinki Commission"@en;
+  skos:definition "Atmospheric monitoring data for the assessment of the atmospheric input of selected contaminants to the Baltic sea area."@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0002-3500-6096> .
+
+ACTRIS_ctrl_lists:IMPACTS skos:prefLabel "IMPACTS"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:IMPROVE skos:prefLabel "IMPROVE"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:INDAAF skos:prefLabel "INDAAF"@en;
+  skos:altLabel "International Network to study Deposition and Atmospheric chemistry in AFrica"@en;
+  skos:definition "Atmospheric composition and deposition long-term monitoring in Africa"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:InGOS skos:prefLabel "InGOS"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:MAMCS skos:prefLabel "MAMCS"@en;
+  skos:altLabel "Mediterranean atmospheric mercury cycle system"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:MOCA skos:prefLabel "MOCA"@en;
+  skos:altLabel "Methane emissions from the Arctic OCean to the Atmosphere"@en;
+  skos:definition "MOCA is a project funded by the Norwegian Research Council that will apply advanced measurements and modelling to quantify the amount and present atmospheric impact of CH4 originating from MH."@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:MOE skos:prefLabel "MOE"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:NAtChem skos:prefLabel "NAtChem"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:NDACC skos:prefLabel "NDACC"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:NILU skos:prefLabel "NILU"@en;
+  skos:altLabel "Norwegian Institute for Air Research"@en;
+  skos:definition "Atmospheric measuremnts produced at NILU."@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0002-3500-6096> .
+
+ACTRIS_ctrl_lists:noframework skos:prefLabel "no framework"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0002-3500-6096> .
+
+ACTRIS_ctrl_lists:NOAA-ESRL skos:prefLabel "NOAA-ESRL"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470>;
+  dct:contributor <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:NOAA-GGGRN skos:prefLabel "NOAA-GGGRN"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:OECD skos:prefLabel "OECD"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:PARIS skos:prefLabel "PARIS"@en;
+  skos:altLabel "Process Attribution of Regional Emissions"@en;
+  skos:definition "“Process Attribution of Regional Emissions“ (PARIS) is a 4-year Horizon Europe research project (2023-2026). We aim to significantly increase our knowledge about the emissions of climate forcers from eight European countries. PARIS focuses on the interface between bottom-up and top-down approaches and aims to strengthen the collaboration between scientists and national inventory teams for the evaluation and development of national inventories."@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:PollenScience skos:prefLabel "PollenScience"@en;
+  skos:altLabel "Pollen Science"@en;
+  skos:definition "The aim of Pollen Science is to collect and graphically display the data of different pollen measurement networks and stations."@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:ReGAME skos:prefLabel "ReGAME"@en;
+  skos:altLabel "REliable Global Methane Emissions estimates in a changing world"@en;
+  skos:definition "In ReGAME, Reliable Global Methane Emissions estimates in a changing world, we integrate new measurement technologies into models to determine why atmospheric methane (CH4) is increasing, and whether climate-sensitive Arctic CH4 reservoirs will release significant CH4 to the atmosphere"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:RI-URBANS skos:prefLabel "RI-URBANS"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:ROSHYDROMET skos:prefLabel "ROSHYDROMET"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:SOGE skos:prefLabel "SOGE"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:SYLVA skos:prefLabel "SYLVA"@en;
+  skos:altLabel "SYLVA"@en;
+  skos:definition "The overall goal of SYLVA is to achieve a radical improvement and fill gaps in temporal resolution, timeliness, coverage, and availability of information about aeroalaeroallergens and other bioaerosols"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:UKDECC skos:prefLabel "UK DECC"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:WeBaSOOP skos:prefLabel "WeBaSOOP"@en;
+  skos:altLabel "Research Reinforcing in the Western Balkans in Offline and Online Monitoring and Source Identification of Atmospheric Particles"@en;
+  skos:broader ACTRIS_ctrl_lists:framework;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:Glossary skos:prefLabel "Glossary"@en;
   skos:exactMatch <https://en.wikipedia.org/wiki/Glossary>;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:ACTRISdata a skos:Concept;
-  skos:prefLabel "ACTRIS data"@en;
+ACTRIS_ctrl_lists:ACTRISdata skos:prefLabel "ACTRIS data"@en;
   skos:definition "ACTRIS data are data from observational or exploratory National Facilities complying with the procedures established within ACTRIS. ACTRIS data have received the \"ACTRIS labelled\" designator."@en;
   skos:broader ACTRIS_ctrl_lists:Glossary;
   skos:related ACTRIS_vocab:ACTRISlabelled .
 
-ACTRIS_ctrl_lists:calibrationscale a skos:Concept;
-  skos:prefLabel "calibration scale"@en;
+ACTRIS_ctrl_lists:calibrationscale skos:prefLabel "calibration scale"@en;
   skos:definition "Reference to an identified, metrological, primary standard."@en;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:Apel-Riemer a skos:Concept;
-  skos:prefLabel "Apel-Riemer"@en;
+ACTRIS_ctrl_lists:Apel-Riemer skos:prefLabel "Apel-Riemer"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   skos:related ACTRIS_vocab:ACTRISlabelled;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:Empa-2015-p a skos:Concept;
-  skos:prefLabel "Empa-2015-p"@en;
+ACTRIS_ctrl_lists:Empa-2015-p skos:prefLabel "Empa-2015-p"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:MPI-2009 a skos:Concept;
-  skos:prefLabel "MPI-2009"@en;
+ACTRIS_ctrl_lists:MPI-2009 skos:prefLabel "MPI-2009"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:NOAA-2003 a skos:Concept;
-  skos:prefLabel "NOAA-2003"@en;
+ACTRIS_ctrl_lists:NOAA-2003 skos:prefLabel "NOAA-2003"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:NOAA-2003B a skos:Concept;
-  skos:prefLabel "NOAA-2003B"@en;
+ACTRIS_ctrl_lists:NOAA-2003B skos:prefLabel "NOAA-2003B"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:NOAA-2004 a skos:Concept;
-  skos:prefLabel "NOAA-2004"@en;
+ACTRIS_ctrl_lists:NOAA-2004 skos:prefLabel "NOAA-2004"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:NOAA-Jul10-p a skos:Concept;
-  skos:prefLabel "NOAA-Jul10-p"@en;
+ACTRIS_ctrl_lists:NOAA-Jul10-p skos:prefLabel "NOAA-Jul10-p"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:NOAA04 a skos:Concept;
-  skos:prefLabel "NOAA04"@en;
+ACTRIS_ctrl_lists:NOAA04 skos:prefLabel "NOAA04"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:NPL a skos:Concept;
-  skos:prefLabel "NPL"@en;
+ACTRIS_ctrl_lists:NPL skos:prefLabel "NPL"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:NPLplusGPT a skos:Concept;
-  skos:prefLabel "NPL+GPT"@en;
+ACTRIS_ctrl_lists:NPLplusGPT skos:prefLabel "NPL+GPT"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:SIO1998 a skos:Concept;
-  skos:prefLabel "SIO1998"@en;
+ACTRIS_ctrl_lists:SIO1998 skos:prefLabel "SIO1998"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:SIO2005 a skos:Concept;
-  skos:prefLabel "SIO2005"@en;
+ACTRIS_ctrl_lists:SIO2005 skos:prefLabel "SIO2005"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:SIO2007 a skos:Concept;
-  skos:prefLabel "SIO2007"@en;
+ACTRIS_ctrl_lists:SIO2007 skos:prefLabel "SIO2007"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:SIO2012 a skos:Concept;
-  skos:prefLabel "SIO2012"@en;
+ACTRIS_ctrl_lists:SIO2012 skos:prefLabel "SIO2012"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:SIO2014 a skos:Concept;
-  skos:prefLabel "SIO2014"@en;
+ACTRIS_ctrl_lists:SIO2014 skos:prefLabel "SIO2014"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:SIO-p a skos:Concept;
-  skos:prefLabel "SIO-p"@en;
+ACTRIS_ctrl_lists:SIO-p skos:prefLabel "SIO-p"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:UB-98 a skos:Concept;
-  skos:prefLabel "UB-98"@en;
+ACTRIS_ctrl_lists:UB-98 skos:prefLabel "UB-98"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:UB-p a skos:Concept;
-  skos:prefLabel "UB-p"@en;
+ACTRIS_ctrl_lists:UB-p skos:prefLabel "UB-p"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:WMOCH4X2004 a skos:Concept;
-  skos:prefLabel "WMO CH4 X2004"@en;
+ACTRIS_ctrl_lists:WMOCH4X2004 skos:prefLabel "WMO CH4 X2004"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:WMOCOX2004 a skos:Concept;
-  skos:prefLabel "WMO CO X2004"@en;
+ACTRIS_ctrl_lists:WMOCOX2004 skos:prefLabel "WMO CO X2004"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:WMOCOX2014 a skos:Concept;
-  skos:prefLabel "WMO CO X2014"@en;
+ACTRIS_ctrl_lists:WMOCOX2014 skos:prefLabel "WMO CO X2014"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:WMOCOX2014A a skos:Concept;
-  skos:prefLabel "WMO CO X2014A"@en;
+ACTRIS_ctrl_lists:WMOCOX2014A skos:prefLabel "WMO CO X2014A"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:WMOCO2X2007 a skos:Concept;
-  skos:prefLabel "WMO CO2 X2007"@en;
+ACTRIS_ctrl_lists:WMOCO2X2007 skos:prefLabel "WMO CO2 X2007"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:WMOCO2X2019 a skos:Concept;
-  skos:prefLabel "WMO CO2 X2019"@en;
+ACTRIS_ctrl_lists:WMOCO2X2019 skos:prefLabel "WMO CO2 X2019"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:WMON2OX2006A a skos:Concept;
-  skos:prefLabel "WMO N2O X2006A"@en;
+ACTRIS_ctrl_lists:WMON2OX2006A skos:prefLabel "WMO N2O X2006A"@en;
   skos:broader ACTRIS_ctrl_lists:calibrationscale;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:usemetadata a skos:Concept;
-  skos:prefLabel "use metadata"@en;
+ACTRIS_ctrl_lists:usemetadata skos:prefLabel "use metadata"@en;
   skos:definition "Controlled vocabulary for detailed descriptions of operating procedures."@en;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:simulationchambercontrolledlists a skos:Concept;
-  skos:prefLabel "simulation chamber controlled lists"@en;
+ACTRIS_ctrl_lists:simulationchambercontrolledlists skos:prefLabel "simulation chamber controlled lists"@en;
   skos:broader ACTRIS_ctrl_lists:usemetadata;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:simulationchamberlightsources a skos:Concept;
-  skos:prefLabel "simulation chamber light sources"@en;
+ACTRIS_ctrl_lists:simulationchamberlightsources skos:prefLabel "simulation chamber light sources"@en;
   skos:broader ACTRIS_ctrl_lists:simulationchambercontrolledlists;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:darkchamber a skos:Concept;
-  skos:prefLabel "dark chamber"@en;
+ACTRIS_ctrl_lists:darkchamber skos:prefLabel "dark chamber"@en;
   skos:broader ACTRIS_ctrl_lists:simulationchamberlightsources;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:fluorescentlamps a skos:Concept;
-  skos:prefLabel "fluorescent lamps"@en;
+ACTRIS_ctrl_lists:fluorescentlamps skos:prefLabel "fluorescent lamps"@en;
   skos:broader ACTRIS_ctrl_lists:simulationchamberlightsources;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:naturalsunlight a skos:Concept;
-  skos:prefLabel "natural sunlight"@en;
+ACTRIS_ctrl_lists:naturalsunlight skos:prefLabel "natural sunlight"@en;
   skos:broader ACTRIS_ctrl_lists:simulationchamberlightsources;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:otherartificiallightsource a skos:Concept;
-  skos:prefLabel "other artificial light source"@en;
+ACTRIS_ctrl_lists:otherartificiallightsource skos:prefLabel "other artificial light source"@en;
   skos:broader ACTRIS_ctrl_lists:simulationchamberlightsources;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:xenonarclamps a skos:Concept;
-  skos:prefLabel "xenon arc lamps"@en;
+ACTRIS_ctrl_lists:xenonarclamps skos:prefLabel "xenon arc lamps"@en;
   skos:broader ACTRIS_ctrl_lists:simulationchamberlightsources;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:simulationchamberwalltypes a skos:Concept;
-  skos:prefLabel "simulation chamber wall types"@en;
+ACTRIS_ctrl_lists:simulationchamberwalltypes skos:prefLabel "simulation chamber wall types"@en;
   skos:broader ACTRIS_ctrl_lists:simulationchambercontrolledlists;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:aluminium a skos:Concept;
-  skos:prefLabel "aluminium"@en;
+ACTRIS_ctrl_lists:aluminium skos:prefLabel "aluminium"@en;
   skos:broader ACTRIS_ctrl_lists:simulationchamberwalltypes;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:fluorinatedethylenepropylenefilm a skos:Concept;
-  skos:prefLabel "fluorinated ethylene propylene film"@en;
+ACTRIS_ctrl_lists:fluorinatedethylenepropylenefilm skos:prefLabel "fluorinated ethylene propylene film"@en;
   skos:altLabel "FEP film"@en;
   skos:broader ACTRIS_ctrl_lists:simulationchamberwalltypes;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:Pyrex a skos:Concept;
-  skos:prefLabel "Pyrex"@en;
+ACTRIS_ctrl_lists:Pyrex skos:prefLabel "Pyrex"@en;
   skos:broader ACTRIS_ctrl_lists:simulationchamberwalltypes;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:quartz a skos:Concept;
-  skos:prefLabel "quartz"@en;
+ACTRIS_ctrl_lists:quartz skos:prefLabel "quartz"@en;
   skos:broader ACTRIS_ctrl_lists:simulationchamberwalltypes;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:stainlesssteel a skos:Concept;
-  skos:prefLabel "stainless steel"@en;
+ACTRIS_ctrl_lists:stainlesssteel skos:prefLabel "stainless steel"@en;
   skos:broader ACTRIS_ctrl_lists:simulationchamberwalltypes;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:aerosolinsitucontrolledlists a skos:Concept;
-  skos:prefLabel "aerosol in situ controlled lists"@en;
+ACTRIS_ctrl_lists:aerosolinsitucontrolledlists skos:prefLabel "aerosol in situ controlled lists"@en;
   skos:broader ACTRIS_ctrl_lists:usemetadata;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:filtertype a skos:Concept;
-  skos:prefLabel "filter type"@en;
+ACTRIS_ctrl_lists:filtertype skos:prefLabel "filter type"@en;
   skos:broader ACTRIS_ctrl_lists:aerosolinsitucontrolledlists;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:MageeAE33-FT a skos:Concept;
-  skos:prefLabel "Magee AE33-FT"@en;
+ACTRIS_ctrl_lists:MageeAE33-FT skos:prefLabel "Magee AE33-FT"@en;
   skos:broader ACTRIS_ctrl_lists:filtertype;
   skos:related ACTRIS_vocab:AerosolAE33, ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:Magee8050 a skos:Concept;
-  skos:prefLabel "Magee 8050"@en;
+ACTRIS_ctrl_lists:Magee8050 skos:prefLabel "Magee 8050"@en;
   skos:broader ACTRIS_ctrl_lists:filtertype;
   skos:related ACTRIS_vocab:AerosolAE33, ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:Magee8060 a skos:Concept;
-  skos:prefLabel "Magee 8060"@en;
+ACTRIS_ctrl_lists:Magee8060 skos:prefLabel "Magee 8060"@en;
   skos:broader ACTRIS_ctrl_lists:filtertype;
   skos:related ACTRIS_vocab:AerosolAE33, ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:instrumentstatuscheck a skos:Concept;
-  skos:prefLabel "instrument status check"@en;
+ACTRIS_ctrl_lists:instrumentstatuscheck skos:prefLabel "instrument status check"@en;
   skos:broader ACTRIS_ctrl_lists:aerosolinsitucontrolledlists, ACTRIS_ctrl_lists:reactivetracegasinsitucontrolledlists,
     ACTRIS_ctrl_lists:aerosolremotesensingcontrolledlists;
   skos:exactMatch ACTRIS_vocab:instrumentstatuscheck;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checkdiagnosticvalues a skos:Concept;
-  skos:prefLabel "check diagnostic values"@en;
+ACTRIS_ctrl_lists:checkdiagnosticvalues skos:prefLabel "check diagnostic values"@en;
   skos:definition "check if the status values are within the pre-determined ranges"@en;
   skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checkcleanlinessofoptics a skos:Concept;
-  skos:prefLabel "check cleanliness of optics"@en;
+ACTRIS_ctrl_lists:checkcleanlinessofoptics skos:prefLabel "check cleanliness of optics"@en;
   skos:definition "check if the status value for optics cleanliness is within pre-determined ranges"@en;
   skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:boundarycheck a skos:Concept;
-  skos:prefLabel "boundary check"@en;
+ACTRIS_ctrl_lists:boundarycheck skos:prefLabel "boundary check"@en;
   skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck, ACTRIS_ctrl_lists:aerosolremotesensingcontrolledlists;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470>;
   skos:exactMatch ACTRIS_vocab:boundarycheck .
 
-ACTRIS_ctrl_lists:checksampleflow a skos:Concept;
-  skos:prefLabel "check sample flow"@en;
+ACTRIS_ctrl_lists:checksampleflow skos:prefLabel "check sample flow"@en;
   skos:definition "check if the sample flow rate is nominal"@en;
   skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checksheathairflow a skos:Concept;
-  skos:prefLabel "check sheath air flow"@en;
+ACTRIS_ctrl_lists:checksheathairflow skos:prefLabel "check sheath air flow"@en;
   skos:definition "check if the sheat flow rate is nominal"@en;
   skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checkdataacquisition a skos:Concept;
-  skos:prefLabel "check data acquisition"@en;
+ACTRIS_ctrl_lists:checkdataacquisition skos:prefLabel "check data acquisition"@en;
   skos:definition "This control performs a check on the proper communication of the instrument with the data acquisition software (if applicable)."@en;
   skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checkoperatingfluids a skos:Concept;
-  skos:prefLabel "check operating fluids"@en;
+ACTRIS_ctrl_lists:checkoperatingfluids skos:prefLabel "check operating fluids"@en;
   skos:definition "This control performs a check of the sufficiency of the operating fluid."@en;
   skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checkfiltertapelength a skos:Concept;
-  skos:prefLabel "check filter tape length"@en;
+ACTRIS_ctrl_lists:checkfiltertapelength skos:prefLabel "check filter tape length"@en;
   skos:definition "This control performs a check of the sufficiency of the filter tape."@en;
   skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checktransmittancedecrease a skos:Concept;
-  skos:prefLabel "check transmittance decrease"@en;
+ACTRIS_ctrl_lists:checktransmittancedecrease skos:prefLabel "check transmittance decrease"@en;
   skos:definition "This control performs a check on the gradual decrease of the light transmittance."@en;
   skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:instrumentperformancecheck a skos:Concept;
-  skos:prefLabel "instrument performance check"@en;
+ACTRIS_ctrl_lists:instrumentperformancecheck skos:prefLabel "instrument performance check"@en;
   skos:broader ACTRIS_ctrl_lists:aerosolinsitucontrolledlists;
   skos:exactMatch ACTRIS_vocab:instrumentperformancecheck;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checkofdetectionefficiency a skos:Concept;
-  skos:prefLabel "check of detection efficiency"@en;
+ACTRIS_ctrl_lists:checkofdetectionefficiency skos:prefLabel "check of detection efficiency"@en;
   skos:definition "this control performs a check on ability of the instrument to detect signals related to an observation"@en;
   skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checkofsizingaccuracy a skos:Concept;
-  skos:prefLabel "check of sizing accuracy"@en;
+ACTRIS_ctrl_lists:checkofsizingaccuracy skos:prefLabel "check of sizing accuracy"@en;
   skos:definition "this control performs a check on the ability of the instrument to determine the size of a particle"@en;
   skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checkofbaseline-zerocheck a skos:Concept;
-  skos:prefLabel "check of baseline (zero check)"@en;
+ACTRIS_ctrl_lists:checkofbaseline-zerocheck skos:prefLabel "check of baseline (zero check)"@en;
   skos:definition "this control performs a check of the presence/absence of leaks or contamination within a system or an instrument"@en;
   skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checkofnoise a skos:Concept;
-  skos:prefLabel "check of noise"@en;
+ACTRIS_ctrl_lists:checkofnoise skos:prefLabel "check of noise"@en;
   skos:definition "this control performs a check of the presence or absence of random fluctuation in the signal that limits our ability to detect the presence of the underlying signal"@en;
   skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checkofoffset a skos:Concept;
-  skos:prefLabel "check of offset"@en;
+ACTRIS_ctrl_lists:checkofoffset skos:prefLabel "check of offset"@en;
   skos:definition "this control performs a check of the presense/absence of a deviation of the measured signal from the reference or known signal."@en;
   skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checkoffilterspot a skos:Concept;
-  skos:prefLabel "check of filter spot"@en;
+ACTRIS_ctrl_lists:checkoffilterspot skos:prefLabel "check of filter spot"@en;
   skos:definition "this control performs a visual check on spot on the filter where particles are loaded"@en;
   skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:checkofhighvoltage a skos:Concept;
-  skos:prefLabel "check of high voltage"@en;
+ACTRIS_ctrl_lists:checkofhighvoltage skos:prefLabel "check of high voltage"@en;
   skos:definition "check if the voltage output is nominal"@en;
   skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:highspancheckorspangascheck a skos:Concept;
-  skos:prefLabel "high span check or span gas check"@en;
+ACTRIS_ctrl_lists:highspancheckorspangascheck skos:prefLabel "high span check or span gas check"@en;
   skos:definition "this control performs a check on how well the nephelometer measures a quantity with a known scattering value"@en;
   skos:broader ACTRIS_ctrl_lists:instrumentperformancecheck;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:instrumentcalibration a skos:Concept;
-  skos:prefLabel "instrument calibration"@en;
+ACTRIS_ctrl_lists:instrumentcalibration skos:prefLabel "instrument calibration"@en;
   skos:broader ACTRIS_ctrl_lists:aerosolinsitucontrolledlists;
   skos:exactMatch ACTRIS_vocab:instrumentcalibration;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:highvoltagecalibration a skos:Concept;
-  skos:prefLabel "high voltage calibration"@en;
+ACTRIS_ctrl_lists:highvoltagecalibration skos:prefLabel "high voltage calibration"@en;
   skos:definition "This control performes an adjustment of the voltage output."@en;
   skos:broader ACTRIS_ctrl_lists:instrumentcalibration;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:highspancalibration a skos:Concept;
-  skos:prefLabel "high span calibration"@en;
+ACTRIS_ctrl_lists:highspancalibration skos:prefLabel "high span calibration"@en;
   skos:broader ACTRIS_ctrl_lists:instrumentcalibration;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:flowcalibration a skos:Concept;
-  skos:prefLabel "flow calibration"@en;
+ACTRIS_ctrl_lists:flowcalibration skos:prefLabel "flow calibration"@en;
   skos:definition "This control performs an adjustment of the flow if is out of the nominal range."@en;
   skos:broader ACTRIS_ctrl_lists:instrumentcalibration;
   skos:related ACTRIS_vocab:aerosolinsitu;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:cloudinsitucontrolledlists a skos:Concept;
-  skos:prefLabel "cloud in situ controlled lists"@en;
-  skos:broader ACTRIS_ctrl_lists:usemetadata, ACTRIS_ctrl_lists:cloudinsitucontrolledlists;
-  dct:creator <https://orcid.org/0000-0002-3380-3470> .
-
-ACTRIS_ctrl_lists:reactivetracegasinsitucontrolledlists a skos:Concept;
-  skos:prefLabel "reactive trace gas in situ controlled lists"@en;
+ACTRIS_ctrl_lists:cloudinsitucontrolledlists skos:prefLabel "cloud in situ controlled lists"@en;
   skos:broader ACTRIS_ctrl_lists:usemetadata;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-ACTRIS_ctrl_lists:voltagesettingcheck a skos:Concept;
-  skos:prefLabel "voltage setting check"@en;
+ACTRIS_ctrl_lists:reactivetracegasinsitucontrolledlists skos:prefLabel "reactive trace gas in situ controlled lists"@en;
+  skos:broader ACTRIS_ctrl_lists:usemetadata;
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
+
+ACTRIS_ctrl_lists:voltagesettingcheck skos:prefLabel "voltage setting check"@en;
   skos:definition "Check if the voltage output is nominal."@en;
   skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
   skos:related ACTRIS_vocab:reactivetracegasesinsitu;
   dct:creator <https://orcid.org/0000-0003-0648-6622> .
 
-ACTRIS_ctrl_lists:flowsettingcheck a skos:Concept;
-  skos:prefLabel "flow setting check"@en;
+ACTRIS_ctrl_lists:flowsettingcheck skos:prefLabel "flow setting check"@en;
   skos:definition "Check if the flow measurement is nominal."@en;
   skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
   skos:related ACTRIS_vocab:reactivetracegasesinsitu;
   dct:creator <https://orcid.org/0000-0003-0648-6623> .
 
-ACTRIS_ctrl_lists:pressuresettingcheck a skos:Concept;
-  skos:prefLabel "pressure setting check"@en;
+ACTRIS_ctrl_lists:pressuresettingcheck skos:prefLabel "pressure setting check"@en;
   skos:definition "Check if the pressure measurement is nominal."@en;
   skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
   skos:related ACTRIS_vocab:reactivetracegasesinsitu;
   dct:creator <https://orcid.org/0000-0003-0648-6624> .
 
-ACTRIS_ctrl_lists:instrumentinterferencecheck a skos:Concept;
-  skos:prefLabel "instrument interference check"@en;
+ACTRIS_ctrl_lists:instrumentinterferencecheck skos:prefLabel "instrument interference check"@en;
   skos:definition "Test whether measurement has interferences with other species in sample besides the targeted one, e.g. ozone and water vapour interferences for NOx measurements."@en;
   skos:broader ACTRIS_ctrl_lists:instrumentstatuscheck;
   skos:related ACTRIS_vocab:reactivetracegasesinsitu;
   dct:creator <https://orcid.org/0000-0003-0648-6625> .
 
-ACTRIS_ctrl_lists:stationaudit a skos:Concept;
-  skos:prefLabel "station audit"@en;
+ACTRIS_ctrl_lists:stationaudit skos:prefLabel "station audit"@en;
   skos:broader ACTRIS_ctrl_lists:reactivetracegasinsitucontrolledlists, ACTRIS_ctrl_lists:aerosolremotesensingcontrolledlists;
   skos:exactMatch ACTRIS_vocab:stationaudit;
   dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
 ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-NMHCmeasurementguidelinerequirements
-  a skos:Concept;
   skos:prefLabel "check if processed according to CiGas-NMHC measurement guideline requirements"@en;
   skos:definition "check if processed according to CiGas-NMHC measurement guideline requirements"@en;
   skos:broader ACTRIS_ctrl_lists:stationaudit;
@@ -1205,15 +1235,431 @@ ACTRIS_ctrl_lists:checkifprocessedbyCARSapprovedlidarconfiguration skos:prefLabe
 
 ACTRIS_ctrl_lists:cloudremotesensingcontrolledlists skos:prefLabel "cloud remote sensing controlled lists"@en;
   skos:broader ACTRIS_ctrl_lists:usemetadata;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  skos:altLabel ACTRIS_ctrl_lists:cloudremotesensingcontrolledlists .
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
 ACTRIS_ctrl_lists:reactivetracegasremotesensingcontrolledlists skos:prefLabel "reactive trace gas remote sensing controlled lists"@en;
   skos:broader ACTRIS_ctrl_lists:usemetadata;
-  dct:creator <https://orcid.org/0000-0002-3380-3470>;
-  skos:altLabel ACTRIS_ctrl_lists:reactivetracegasremotesensingcontrolledlists .
+  dct:creator <https://orcid.org/0000-0002-3380-3470> .
 
-<https://orcid.org/0000-0002-3380-3470> dct:creator <https://orcid.org/0000-0002-3380-3470> .
+ACTRIS_ctrl_lists:AMAP a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:ARM a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:ATMO-ACCESS a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:AutoPollen a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:CAMP a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:CAPMoN a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:CARIBIC a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:CLOUDNET a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:CREATE a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:EANET a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:EARLINET a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:EMEP a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:EMEP_campaign a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:EUCAARI a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:EUROCHAMP a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:EUSAAR a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:GALION a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:GAW-WDCA a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:GAW-WDCRG a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:GEOmon a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:GUAN a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:HELCOM a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:IMPACTS a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:IMPROVE a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:INDAAF a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:InGOS a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:MAMCS a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:MOCA a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:MOE a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NAtChem a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NDACC a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NILU a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:noframework a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NOAA-ESRL a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NOAA-GGGRN a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:OECD a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:PARIS a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:PollenScience a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:ReGAME a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:RI-URBANS a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:ROSHYDROMET a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SOGE a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SYLVA a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:UKDECC a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WeBaSOOP a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Glossary a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:ACTRISdata;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
+  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:ACTRISdata a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:calibrationscale a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:Apel-Riemer, ACTRIS_ctrl_lists:Empa-2015-p, ACTRIS_ctrl_lists:MPI-2009,
+    ACTRIS_ctrl_lists:NOAA-2003, ACTRIS_ctrl_lists:NOAA-2003B, ACTRIS_ctrl_lists:NOAA-2004,
+    ACTRIS_ctrl_lists:NOAA-Jul10-p, ACTRIS_ctrl_lists:NOAA04, ACTRIS_ctrl_lists:NPL, ACTRIS_ctrl_lists:NPLplusGPT,
+    ACTRIS_ctrl_lists:SIO1998, ACTRIS_ctrl_lists:SIO2005, ACTRIS_ctrl_lists:SIO2007, ACTRIS_ctrl_lists:SIO2012,
+    ACTRIS_ctrl_lists:SIO2014, ACTRIS_ctrl_lists:SIO-p, ACTRIS_ctrl_lists:UB-98, ACTRIS_ctrl_lists:UB-p,
+    ACTRIS_ctrl_lists:WMOCH4X2004, ACTRIS_ctrl_lists:WMOCOX2004, ACTRIS_ctrl_lists:WMOCOX2014,
+    ACTRIS_ctrl_lists:WMOCOX2014A, ACTRIS_ctrl_lists:WMOCO2X2007, ACTRIS_ctrl_lists:WMOCO2X2019,
+    ACTRIS_ctrl_lists:WMON2OX2006A;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
+  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Apel-Riemer a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Empa-2015-p a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:MPI-2009 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NOAA-2003 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NOAA-2003B a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NOAA-2004 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NOAA-Jul10-p a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NOAA04 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NPL a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:NPLplusGPT a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SIO1998 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SIO2005 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SIO2007 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SIO2012 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SIO2014 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:SIO-p a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:UB-98 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:UB-p a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMOCH4X2004 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMOCOX2004 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMOCOX2014 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMOCOX2014A a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMOCO2X2007 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMOCO2X2019 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:WMON2OX2006A a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:usemetadata a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:simulationchambercontrolledlists, ACTRIS_ctrl_lists:aerosolinsitucontrolledlists,
+    ACTRIS_ctrl_lists:cloudinsitucontrolledlists, ACTRIS_ctrl_lists:reactivetracegasinsitucontrolledlists,
+    ACTRIS_ctrl_lists:aerosolremotesensingcontrolledlists, ACTRIS_ctrl_lists:cloudremotesensingcontrolledlists,
+    ACTRIS_ctrl_lists:reactivetracegasremotesensingcontrolledlists;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
+  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:simulationchambercontrolledlists a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:simulationchamberlightsources, ACTRIS_ctrl_lists:simulationchamberwalltypes;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:simulationchamberlightsources a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:darkchamber, ACTRIS_ctrl_lists:fluorescentlamps, ACTRIS_ctrl_lists:naturalsunlight,
+    ACTRIS_ctrl_lists:otherartificiallightsource, ACTRIS_ctrl_lists:xenonarclamps;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:darkchamber a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:fluorescentlamps a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:naturalsunlight a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:otherartificiallightsource a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:xenonarclamps a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:simulationchamberwalltypes a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:aluminium, ACTRIS_ctrl_lists:fluorinatedethylenepropylenefilm,
+    ACTRIS_ctrl_lists:Pyrex, ACTRIS_ctrl_lists:quartz, ACTRIS_ctrl_lists:stainlesssteel;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:aluminium a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:fluorinatedethylenepropylenefilm a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Pyrex a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:quartz a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:stainlesssteel a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:aerosolinsitucontrolledlists a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:filtertype, ACTRIS_ctrl_lists:instrumentstatuscheck,
+    ACTRIS_ctrl_lists:instrumentperformancecheck, ACTRIS_ctrl_lists:instrumentcalibration;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:filtertype a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:MageeAE33-FT, ACTRIS_ctrl_lists:Magee8050, ACTRIS_ctrl_lists:Magee8060;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:MageeAE33-FT a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Magee8050 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:Magee8060 a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:instrumentstatuscheck a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:checkdiagnosticvalues, ACTRIS_ctrl_lists:checkcleanlinessofoptics,
+    ACTRIS_ctrl_lists:boundarycheck, ACTRIS_ctrl_lists:checksampleflow, ACTRIS_ctrl_lists:checksheathairflow,
+    ACTRIS_ctrl_lists:checkdataacquisition, ACTRIS_ctrl_lists:checkoperatingfluids, ACTRIS_ctrl_lists:checkfiltertapelength,
+    ACTRIS_ctrl_lists:checktransmittancedecrease, ACTRIS_ctrl_lists:voltagesettingcheck,
+    ACTRIS_ctrl_lists:flowsettingcheck, ACTRIS_ctrl_lists:pressuresettingcheck, ACTRIS_ctrl_lists:instrumentinterferencecheck,
+    ACTRIS_ctrl_lists:batterylevelcheck, ACTRIS_ctrl_lists:trackingsystemcheck, ACTRIS_ctrl_lists:humiditysensorcheck,
+    ACTRIS_ctrl_lists:temperaturesensorcheck, ACTRIS_ctrl_lists:calibrationshiftcheck,
+    ACTRIS_ctrl_lists:opticscheck, ACTRIS_ctrl_lists:collimatorcheck, ACTRIS_ctrl_lists:systemcablingcheck,
+    ACTRIS_ctrl_lists:telecovertest, ACTRIS_ctrl_lists:Rayleightfittest, ACTRIS_ctrl_lists:fulloverlapminimumheighttest,
+    ACTRIS_ctrl_lists:triggerdelaytest, ACTRIS_ctrl_lists:darkcurrenttest, ACTRIS_ctrl_lists:offsetanglecheck,
+    ACTRIS_ctrl_lists:calibrationfactorcheck, ACTRIS_ctrl_lists:GHKcoefficientscheck;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkdiagnosticvalues a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkcleanlinessofoptics a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:boundarycheck a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:negativeerrorcheck, ACTRIS_ctrl_lists:negativevaluescheck,
+    ACTRIS_ctrl_lists:checkonAerosolOpticalDepth, ACTRIS_ctrl_lists:checkonIntegratedBackscatter,
+    ACTRIS_ctrl_lists:checkonlidarratio, ACTRIS_ctrl_lists:checkonvolumedepolarization,
+    ACTRIS_ctrl_lists:checkonparticledepolarization, ACTRIS_ctrl_lists:checkonwatervapormixingratio;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checksampleflow a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checksheathairflow a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkdataacquisition a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkoperatingfluids a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkfiltertapelength a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checktransmittancedecrease a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:instrumentperformancecheck a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:checkofdetectionefficiency, ACTRIS_ctrl_lists:checkofsizingaccuracy,
+    ACTRIS_ctrl_lists:checkofbaseline-zerocheck, ACTRIS_ctrl_lists:checkofnoise, ACTRIS_ctrl_lists:checkofoffset,
+    ACTRIS_ctrl_lists:checkoffilterspot, ACTRIS_ctrl_lists:checkofhighvoltage, ACTRIS_ctrl_lists:highspancheckorspangascheck;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkofdetectionefficiency a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkofsizingaccuracy a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkofbaseline-zerocheck a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkofnoise a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkofoffset a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkoffilterspot a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkofhighvoltage a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:highspancheckorspangascheck a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:instrumentcalibration a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:highvoltagecalibration, ACTRIS_ctrl_lists:highspancalibration,
+    ACTRIS_ctrl_lists:flowcalibration;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:highvoltagecalibration a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:highspancalibration a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:flowcalibration a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:cloudinsitucontrolledlists a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:reactivetracegasinsitucontrolledlists a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:instrumentstatuscheck, ACTRIS_ctrl_lists:stationaudit;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:voltagesettingcheck a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:flowsettingcheck a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:pressuresettingcheck a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:instrumentinterferencecheck a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:stationaudit a skos:Concept;
+  skos:narrower ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-NMHCmeasurementguidelinerequirements,
+    ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-VOCmeasurementguidelinerequirements,
+    ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-NOxmeasurementguidelinerequirements,
+    ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-condensablesmeasurementguidelinerequirements,
+    ACTRIS_ctrl_lists:checkifprocessedbyCARSapprovedlidarconfiguration;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
+
+ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-NMHCmeasurementguidelinerequirements
+  a skos:Concept;
+  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
 ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-VOCmeasurementguidelinerequirements
   a skos:Concept;
@@ -1331,10 +1777,6 @@ ACTRIS_ctrl_lists:cloudremotesensingcontrolledlists a skos:Concept;
 ACTRIS_ctrl_lists:reactivetracegasremotesensingcontrolledlists a skos:Concept;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
-<https://orcid.org/0000-0002-3380-3470> a skos:Concept;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
-  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
 ACTRIS_ctrl_lists:level skos:narrower ACTRIS_ctrl_lists:aggregate, ACTRIS_ctrl_lists:application,
     ACTRIS_ctrl_lists:attribute, ACTRIS_ctrl_lists:attributeType, ACTRIS_ctrl_lists:collection,
     ACTRIS_ctrl_lists:collectionHardware, ACTRIS_ctrl_lists:collectionSession, ACTRIS_ctrl_lists:coverage,
@@ -1370,105 +1812,21 @@ ACTRIS_ctrl_lists:identifieruse skos:narrower ACTRIS_ctrl_lists:submissionPID, A
     ACTRIS_ctrl_lists:conceptPID, ACTRIS_ctrl_lists:collectionPID;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
-ACTRIS_ctrl_lists:framework skos:narrower ACTRIS_ctrl_lists:ACTRIS, ACTRIS_ctrl_lists:AMAP,
-    ACTRIS_ctrl_lists:ARM, ACTRIS_ctrl_lists:ATMO-ACCESS, ACTRIS_ctrl_lists:CAMP, ACTRIS_ctrl_lists:CLOUDNET,
-    ACTRIS_ctrl_lists:CREATE, ACTRIS_ctrl_lists:EARLINET, ACTRIS_ctrl_lists:EMEP, ACTRIS_ctrl_lists:EUROCHAMP,
-    ACTRIS_ctrl_lists:EUSAAR, ACTRIS_ctrl_lists:GAW-WDCA, ACTRIS_ctrl_lists:GAW-WDCRG,
-    ACTRIS_ctrl_lists:GUAN, ACTRIS_ctrl_lists:HELCOM, ACTRIS_ctrl_lists:NDACC, ACTRIS_ctrl_lists:NILU,
-    ACTRIS_ctrl_lists:NOAA-ESRL, ACTRIS_ctrl_lists:GALION, ACTRIS_ctrl_lists:AERONET,
-    ACTRIS_ctrl_lists:RI-URBANS;
+ACTRIS_ctrl_lists:framework skos:narrower ACTRIS_ctrl_lists:ACTRIS, ACTRIS_ctrl_lists:AERONET,
+    ACTRIS_ctrl_lists:AMAP, ACTRIS_ctrl_lists:ARM, ACTRIS_ctrl_lists:ATMO-ACCESS, ACTRIS_ctrl_lists:AutoPollen,
+    ACTRIS_ctrl_lists:CAMP, ACTRIS_ctrl_lists:CAPMoN, ACTRIS_ctrl_lists:CARIBIC, ACTRIS_ctrl_lists:CLOUDNET,
+    ACTRIS_ctrl_lists:CREATE, ACTRIS_ctrl_lists:EANET, ACTRIS_ctrl_lists:EARLINET, ACTRIS_ctrl_lists:EMEP,
+    ACTRIS_ctrl_lists:EMEP_campaign, ACTRIS_ctrl_lists:EUCAARI, ACTRIS_ctrl_lists:EUROCHAMP,
+    ACTRIS_ctrl_lists:EUSAAR, ACTRIS_ctrl_lists:GALION, ACTRIS_ctrl_lists:GAW-WDCA, ACTRIS_ctrl_lists:GAW-WDCRG,
+    ACTRIS_ctrl_lists:GEOmon, ACTRIS_ctrl_lists:GUAN, ACTRIS_ctrl_lists:HELCOM, ACTRIS_ctrl_lists:IMPACTS,
+    ACTRIS_ctrl_lists:IMPROVE, ACTRIS_ctrl_lists:INDAAF, ACTRIS_ctrl_lists:InGOS, ACTRIS_ctrl_lists:MAMCS,
+    ACTRIS_ctrl_lists:MOCA, ACTRIS_ctrl_lists:MOE, ACTRIS_ctrl_lists:NAtChem, ACTRIS_ctrl_lists:NDACC,
+    ACTRIS_ctrl_lists:NILU, ACTRIS_ctrl_lists:noframework, ACTRIS_ctrl_lists:NOAA-ESRL,
+    ACTRIS_ctrl_lists:NOAA-GGGRN, ACTRIS_ctrl_lists:OECD, ACTRIS_ctrl_lists:PARIS, ACTRIS_ctrl_lists:PollenScience,
+    ACTRIS_ctrl_lists:ReGAME, ACTRIS_ctrl_lists:RI-URBANS, ACTRIS_ctrl_lists:ROSHYDROMET,
+    ACTRIS_ctrl_lists:SOGE, ACTRIS_ctrl_lists:SYLVA, ACTRIS_ctrl_lists:UKDECC, ACTRIS_ctrl_lists:WeBaSOOP;
   skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
   skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:Glossary skos:narrower ACTRIS_ctrl_lists:ACTRISdata;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
-  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:calibrationscale skos:narrower ACTRIS_ctrl_lists:Apel-Riemer, ACTRIS_ctrl_lists:Empa-2015-p,
-    ACTRIS_ctrl_lists:MPI-2009, ACTRIS_ctrl_lists:NOAA-2003, ACTRIS_ctrl_lists:NOAA-2003B,
-    ACTRIS_ctrl_lists:NOAA-2004, ACTRIS_ctrl_lists:NOAA-Jul10-p, ACTRIS_ctrl_lists:NOAA04,
-    ACTRIS_ctrl_lists:NPL, ACTRIS_ctrl_lists:NPLplusGPT, ACTRIS_ctrl_lists:SIO1998, ACTRIS_ctrl_lists:SIO2005,
-    ACTRIS_ctrl_lists:SIO2007, ACTRIS_ctrl_lists:SIO2012, ACTRIS_ctrl_lists:SIO2014, ACTRIS_ctrl_lists:SIO-p,
-    ACTRIS_ctrl_lists:UB-98, ACTRIS_ctrl_lists:UB-p, ACTRIS_ctrl_lists:WMOCH4X2004, ACTRIS_ctrl_lists:WMOCOX2004,
-    ACTRIS_ctrl_lists:WMOCOX2014, ACTRIS_ctrl_lists:WMOCOX2014A, ACTRIS_ctrl_lists:WMOCO2X2007,
-    ACTRIS_ctrl_lists:WMOCO2X2019, ACTRIS_ctrl_lists:WMON2OX2006A;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
-  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:usemetadata skos:narrower ACTRIS_ctrl_lists:simulationchambercontrolledlists,
-    ACTRIS_ctrl_lists:aerosolinsitucontrolledlists, ACTRIS_ctrl_lists:cloudinsitucontrolledlists,
-    ACTRIS_ctrl_lists:reactivetracegasinsitucontrolledlists, ACTRIS_ctrl_lists:aerosolremotesensingcontrolledlists,
-    ACTRIS_ctrl_lists:cloudremotesensingcontrolledlists, ACTRIS_ctrl_lists:reactivetracegasremotesensingcontrolledlists;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/>;
-  skos:topConceptOf <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:simulationchambercontrolledlists skos:narrower ACTRIS_ctrl_lists:simulationchamberlightsources,
-    ACTRIS_ctrl_lists:simulationchamberwalltypes;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:simulationchamberlightsources skos:narrower ACTRIS_ctrl_lists:darkchamber,
-    ACTRIS_ctrl_lists:fluorescentlamps, ACTRIS_ctrl_lists:naturalsunlight, ACTRIS_ctrl_lists:otherartificiallightsource,
-    ACTRIS_ctrl_lists:xenonarclamps;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:simulationchamberwalltypes skos:narrower ACTRIS_ctrl_lists:aluminium,
-    ACTRIS_ctrl_lists:fluorinatedethylenepropylenefilm, ACTRIS_ctrl_lists:Pyrex, ACTRIS_ctrl_lists:quartz,
-    ACTRIS_ctrl_lists:stainlesssteel;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:aerosolinsitucontrolledlists skos:narrower ACTRIS_ctrl_lists:filtertype,
-    ACTRIS_ctrl_lists:instrumentstatuscheck, ACTRIS_ctrl_lists:instrumentperformancecheck,
-    ACTRIS_ctrl_lists:instrumentcalibration;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:filtertype skos:narrower ACTRIS_ctrl_lists:MageeAE33-FT, ACTRIS_ctrl_lists:Magee8050,
-    ACTRIS_ctrl_lists:Magee8060;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:instrumentstatuscheck skos:narrower ACTRIS_ctrl_lists:checkdiagnosticvalues,
-    ACTRIS_ctrl_lists:checkcleanlinessofoptics, ACTRIS_ctrl_lists:boundarycheck, ACTRIS_ctrl_lists:checksampleflow,
-    ACTRIS_ctrl_lists:checksheathairflow, ACTRIS_ctrl_lists:checkdataacquisition, ACTRIS_ctrl_lists:checkoperatingfluids,
-    ACTRIS_ctrl_lists:checkfiltertapelength, ACTRIS_ctrl_lists:checktransmittancedecrease,
-    ACTRIS_ctrl_lists:voltagesettingcheck, ACTRIS_ctrl_lists:flowsettingcheck, ACTRIS_ctrl_lists:pressuresettingcheck,
-    ACTRIS_ctrl_lists:instrumentinterferencecheck, ACTRIS_ctrl_lists:batterylevelcheck,
-    ACTRIS_ctrl_lists:trackingsystemcheck, ACTRIS_ctrl_lists:humiditysensorcheck, ACTRIS_ctrl_lists:temperaturesensorcheck,
-    ACTRIS_ctrl_lists:calibrationshiftcheck, ACTRIS_ctrl_lists:opticscheck, ACTRIS_ctrl_lists:collimatorcheck,
-    ACTRIS_ctrl_lists:systemcablingcheck, ACTRIS_ctrl_lists:telecovertest, ACTRIS_ctrl_lists:Rayleightfittest,
-    ACTRIS_ctrl_lists:fulloverlapminimumheighttest, ACTRIS_ctrl_lists:triggerdelaytest,
-    ACTRIS_ctrl_lists:darkcurrenttest, ACTRIS_ctrl_lists:offsetanglecheck, ACTRIS_ctrl_lists:calibrationfactorcheck,
-    ACTRIS_ctrl_lists:GHKcoefficientscheck;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:instrumentperformancecheck skos:narrower ACTRIS_ctrl_lists:checkofdetectionefficiency,
-    ACTRIS_ctrl_lists:checkofsizingaccuracy, ACTRIS_ctrl_lists:checkofbaseline-zerocheck,
-    ACTRIS_ctrl_lists:checkofnoise, ACTRIS_ctrl_lists:checkofoffset, ACTRIS_ctrl_lists:checkoffilterspot,
-    ACTRIS_ctrl_lists:checkofhighvoltage, ACTRIS_ctrl_lists:highspancheckorspangascheck;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:instrumentcalibration skos:narrower ACTRIS_ctrl_lists:highvoltagecalibration,
-    ACTRIS_ctrl_lists:highspancalibration, ACTRIS_ctrl_lists:flowcalibration;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:cloudinsitucontrolledlists skos:narrower ACTRIS_ctrl_lists:cloudinsitucontrolledlists;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:reactivetracegasinsitucontrolledlists skos:narrower ACTRIS_ctrl_lists:instrumentstatuscheck,
-    ACTRIS_ctrl_lists:stationaudit;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:stationaudit skos:narrower ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-NMHCmeasurementguidelinerequirements,
-    ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-VOCmeasurementguidelinerequirements,
-    ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-NOxmeasurementguidelinerequirements,
-    ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-condensablesmeasurementguidelinerequirements,
-    ACTRIS_ctrl_lists:checkifprocessedbyCARSapprovedlidarconfiguration;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:boundarycheck skos:narrower ACTRIS_ctrl_lists:negativeerrorcheck,
-    ACTRIS_ctrl_lists:negativevaluescheck, ACTRIS_ctrl_lists:checkonAerosolOpticalDepth,
-    ACTRIS_ctrl_lists:checkonIntegratedBackscatter, ACTRIS_ctrl_lists:checkonlidarratio,
-    ACTRIS_ctrl_lists:checkonvolumedepolarization, ACTRIS_ctrl_lists:checkonparticledepolarization,
-    ACTRIS_ctrl_lists:checkonwatervapormixingratio;
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
 ACTRIS_ctrl_lists:aggregate skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
@@ -1572,174 +1930,9 @@ ACTRIS_ctrl_lists:collectionPID skos:inScheme <https://vocabulary.actris.nilu.no
 
 ACTRIS_ctrl_lists:ACTRIS skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
-ACTRIS_ctrl_lists:AMAP skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:ARM skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:ATMO-ACCESS skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:CAMP skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:CLOUDNET skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:CREATE skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:EARLINET skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:EMEP skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:EUROCHAMP skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:EUSAAR skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:GAW-WDCA skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:GAW-WDCRG skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:GUAN skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:HELCOM skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:NDACC skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:NILU skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:NOAA-ESRL skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:GALION skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
 ACTRIS_ctrl_lists:AERONET skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:RI-URBANS skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:ACTRISdata skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:Apel-Riemer skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:Empa-2015-p skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:MPI-2009 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:NOAA-2003 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:NOAA-2003B skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:NOAA-2004 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:NOAA-Jul10-p skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:NOAA04 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:NPL skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:NPLplusGPT skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:SIO1998 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:SIO2005 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:SIO2007 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:SIO2012 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:SIO2014 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:SIO-p skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:UB-98 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:UB-p skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:WMOCH4X2004 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:WMOCOX2004 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:WMOCOX2014 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:WMOCOX2014A skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:WMOCO2X2007 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:WMOCO2X2019 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:WMON2OX2006A skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:darkchamber skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:fluorescentlamps skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:naturalsunlight skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:otherartificiallightsource skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:xenonarclamps skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:aluminium skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:fluorinatedethylenepropylenefilm skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:Pyrex skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:quartz skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:stainlesssteel skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:MageeAE33-FT skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:Magee8050 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:Magee8060 skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checkdiagnosticvalues skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checkcleanlinessofoptics skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checksampleflow skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checksheathairflow skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checkdataacquisition skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checkoperatingfluids skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checkfiltertapelength skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checktransmittancedecrease skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checkofdetectionefficiency skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checkofsizingaccuracy skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checkofbaseline-zerocheck skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checkofnoise skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checkofoffset skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checkoffilterspot skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checkofhighvoltage skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:highspancheckorspangascheck skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:highvoltagecalibration skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:highspancalibration skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:flowcalibration skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:voltagesettingcheck skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:flowsettingcheck skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:pressuresettingcheck skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:instrumentinterferencecheck skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
-
-ACTRIS_ctrl_lists:checkifprocessedaccordingtoCiGas-NMHCmeasurementguidelinerequirements
-  skos:inScheme <https://vocabulary.actris.nilu.no/actris_controlled_lists/> .
 
 <https://vocabulary.actris.nilu.no/actris_controlled_lists/> a skos:ConceptScheme;
   skos:hasTopConcept ACTRIS_ctrl_lists:level, ACTRIS_ctrl_lists:userroles, ACTRIS_ctrl_lists:identifier,
     ACTRIS_ctrl_lists:framework, ACTRIS_ctrl_lists:Glossary, ACTRIS_ctrl_lists:calibrationscale,
-    ACTRIS_ctrl_lists:usemetadata, <https://orcid.org/0000-0002-3380-3470> .
+    ACTRIS_ctrl_lists:usemetadata .
